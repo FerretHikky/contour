@@ -37,7 +37,8 @@ def download(url: str) -> bytes:
     if url.startswith("https://api.github.com/") and os.environ.get("GH_TOKEN"):
         headers["Authorization"] = "Bearer " + os.environ["GH_TOKEN"]
     request = Request(url, headers=headers)
-    with urlopen(request, timeout=60) as response:
+    # Only the HTTPS GitHub API/release prefixes validated above can reach this call.
+    with urlopen(request, timeout=60) as response:  # nosec B310
         data = response.read(256 * 1024 * 1024 + 1)
     if len(data) > 256 * 1024 * 1024:
         raise ValueError("Contour download exceeds limit")
