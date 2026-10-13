@@ -22,3 +22,5 @@ It does not replace Reflower hosting or deploy consumer products. The public
 `library-release.json` records the source version and revision. Advancing the
 published catalog requires an explicit change to the pinned release and a
 separate publication request.
+
+Published 14 October 2026 by [workflow 38470292652](https://github.com/FerretHikky/contour/actions/runs/38470292652), source tag v1.0.1 / revision `d006e9e545131c557f8f77baea4d543b91628e12`. HTTPS release metadata and the rendered catalog were checked at 390 and 1440 px: no broken images or horizontal overflow. [Mobile](operations/catalog-mobile.png), [desktop](operations/catalog-desktop.png).
