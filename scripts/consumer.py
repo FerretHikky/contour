@@ -18,6 +18,12 @@ LOCK = ROOT / "contour.lock.json"
 VERSION = re.compile(r"^[1-9][0-9]*\.[0-9]+\.[0-9]+$")
 
 
+def product_owned(name: str) -> bool:
+    return (name.startswith("design/design-system/site/.openai/")
+            or name in ("design/design-system/site/wrangler.jsonc", "design/design-system/site/wrangler.toml")
+            or PurePosixPath(name).name in ("legacy-baseline.json", "lint-exceptions.json", "icon-legacy-usage.json"))
+
+
 def digest(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
@@ -84,7 +90,7 @@ def projected(profile: str, sources: dict[str, bytes]) -> dict[str, bytes]:
                     "design/brand/foundations/", "design/brand/typography/", "docs/design-system/")
         excluded = ("legacy-baseline.json", "lint-exceptions.json", "icon-legacy-usage.json")
         for name, content in sources.items():
-            if name.startswith(prefixes) and PurePosixPath(name).name not in excluded:
+            if name.startswith(prefixes) and PurePosixPath(name).name not in excluded and not product_owned(name):
                 result[name] = content
         direct = {
             "design/design-system/generated/web/core-ui.css": "design-system/core-ui.css",
@@ -190,13 +196,19 @@ def install(profile: str, data: bytes, url: str) -> None:
     # Validate every destination before touching the checkout.
     destinations = {name: checked_destination(name) for name in files}
     old_names = set(previous["managedFiles"]) if previous else set()
-    retired = {name: checked_destination(name) for name in old_names - set(files)}
+    retired = {name: checked_destination(name) for name in old_names - set(files) if not product_owned(name)}
     for name, path in destinations.items():
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_bytes(files[name])
     for path in retired.values():
         path.unlink(missing_ok=True)
     if profile == "reflower":
+        # First adoption can contain old generated catalog assets that were never
+        # in a Contour lock. Only complete generator-owned output trees are pruned.
+        for directory in ("design/design-system/site/public", "design/design-system/web/icon-data", "design/design-system/generated"):
+            for path in (ROOT / directory).rglob("*"):
+                if path.is_file() and path.relative_to(ROOT).as_posix() not in files:
+                    path.unlink()
         # Do not execute downloaded package code in the PR updater's writable-token job.
         version_product_templates()
     lock = {"schemaVersion": 1, "repository": REPOSITORY, "version": manifest["version"],

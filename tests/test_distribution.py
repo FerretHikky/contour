@@ -60,6 +60,26 @@ class DistributionTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "edit Contour upstream"):
                 consumer.check(lock)
 
+    def test_consumer_hosting_identity_is_never_replaced_by_library(self):
+        files = {
+            "design/design-system/generated/web/core-ui.css": b"core",
+            "design/design-system/web/core-ui.js": b"core",
+            "design/design-system/web/icon-glyphs.js": b"icon",
+            "design/brand/colors/tokens.css": b"colors",
+            "design/brand/foundations/tokens.css": b"foundations",
+            "design/brand/typography/typography.css": b"type",
+            "design/design-system/site/.openai/hosting.json": b"foreign-project",
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            identity = root / "design/design-system/site/.openai/hosting.json"
+            identity.parent.mkdir(parents=True)
+            identity.write_bytes(b"product-project")
+            with patch.object(consumer, "ROOT", root), patch.object(consumer, "LOCK", root / "contour.lock.json"):
+                consumer.install("reflower", bundle(files), "local-test")
+                self.assertEqual(identity.read_bytes(), b"product-project")
+                self.assertNotIn(identity.relative_to(root).as_posix(), json.loads(consumer.LOCK.read_text())["managedFiles"])
+
     def test_update_installs_sources_without_executing_downloaded_code(self):
         files = {
             "design/design-system/generated/web/core-ui.css": b"core",
