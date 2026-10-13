@@ -6,6 +6,7 @@ import argparse
 import hashlib
 import io
 import json
+import os
 from pathlib import Path, PurePosixPath
 import re
 import sys
@@ -32,7 +33,10 @@ def download(url: str) -> bytes:
     if not url.startswith(("https://api.github.com/repos/" + REPOSITORY + "/",
                            "https://github.com/" + REPOSITORY + "/releases/download/")):
         raise ValueError("Untrusted Contour URL")
-    request = Request(url, headers={"User-Agent": "Contour-consumer/1", "Accept": "application/vnd.github+json"})
+    headers = {"User-Agent": "Contour-consumer/1", "Accept": "application/vnd.github+json"}
+    if url.startswith("https://api.github.com/") and os.environ.get("GH_TOKEN"):
+        headers["Authorization"] = "Bearer " + os.environ["GH_TOKEN"]
+    request = Request(url, headers=headers)
     with urlopen(request, timeout=60) as response:
         data = response.read(256 * 1024 * 1024 + 1)
     if len(data) > 256 * 1024 * 1024:
