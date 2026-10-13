@@ -1,0 +1,52 @@
+name: Publish Contour catalog
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: contour-pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: v1.0.1
+          persist-credentials: false
+      - name: Require verified immutable library revision
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          revision=$(git rev-parse HEAD)
+          run=$(gh run list --workflow verify.yml --commit "$revision" --status success --json databaseId,headSha,conclusion --jq 'map(select(.headSha == "'"$revision"'" and .conclusion == "success")) | first | .databaseId // empty')
+          test -n "$run"
+          python3 design/design-system/scripts/build_hosted_catalog.py --check
+      - name: Prepare public static entry point
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import json, subprocess
+          root = Path('design/design-system/site/public')
+          (root / '.nojekyll').touch()
+          (root / 'index.html').write_text('<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contour</title><meta http-equiv="refresh" content="0;url=design-system/web/catalog.html#overview"></head><body><a href="design-system/web/catalog.html#overview">Contour Design System</a></body></html>')
+          revision = subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip()
+          (root / 'library-release.json').write_text(json.dumps({'version': '1.0.1', 'revision': revision}) + '\n')
+          PY
+      - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa
+        with:
+          path: design/design-system/site/public
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.publication.outputs.page_url }}
+    steps:
+      - name: Publish verified catalog
+        id: publication
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e

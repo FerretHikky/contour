@@ -11,3 +11,14 @@ Each consumer runs its Contour update PR workflow on weekdays or manual dispatch
 Local build: pnpm install --frozen-lockfile, pnpm --dir design/design-system/site install --frozen-lockfile, python scripts/build.py. Check: python scripts/check.py --browser (Playwright Chromium required). Catalog: serve this checkout and open design/design-system/web/catalog.html. React exports are built under design/design-system/adapters/react/dist. Root package.json also permits use as a version-pinned Git npm dependency; the product installations currently use the release bundle, not an npm registry.
 
 Project source is public but no third-party reuse license has been assigned. Font licenses are included. The repository owner can use the system across their own products.
+
+## Public catalog hosting
+
+The Contour catalog is published independently on GitHub Pages at
+https://ferrethikky.github.io/contour/. `Publish Contour catalog` is manual,
+checks out the immutable v1.0.1 release, requires successful library CI for its
+exact source revision, and publishes only the generated static public bundle.
+It does not replace Reflower hosting or deploy consumer products. The public
+`library-release.json` records the source version and revision. Advancing the
+published catalog requires an explicit change to the pinned release and a
+separate publication request.
