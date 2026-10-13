@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title">
+  <title id="title">Палитра Reflower</title>
+  <rect width="1200" height="680" fill="#FFFFFF"/>
+  <g font-family="Onest,Arial,sans-serif" fill="#34343A">
+    <text x="64" y="66" font-size="28" font-weight="700">Reflower · color system</text>
+    <text x="64" y="112" font-size="18" fill="#59595D">Brand / Accent — действия и бренд · Neutral — структура</text>
+    <text x="64" y="184" font-size="18" font-weight="650">BRAND / ACCENT</text>
+    <g transform="translate(64 210)"><rect width="128" height="120" rx="18" fill="#FDE3EA"/><rect x="136" width="128" height="120" rx="18" fill="#F8A8BC"/><rect x="272" width="128" height="120" rx="18" fill="#F36488"/><rect x="408" width="128" height="120" rx="18" fill="#BE4E6A"/><rect x="544" width="128" height="120" rx="18" fill="#86374B"/></g>
+    <text x="64" y="382" font-size="18" font-weight="650">STATUS / GREEN</text>
+    <g transform="translate(64 408)"><rect width="128" height="120" rx="18" fill="#DAE7E0"/><rect x="136" width="128" height="120" rx="18" fill="#8CB59F"/><rect x="272" width="128" height="120" rx="18" fill="#317B54"/><rect x="408" width="128" height="120" rx="18" fill="#266042"/><rect x="544" width="128" height="120" rx="18" fill="#1B442E"/></g>
+    <g transform="translate(780 180)"><rect width="350" height="350" rx="34" fill="#FFFFFF" stroke="#C6C6C8"/><text x="36" y="58" font-size="16" font-weight="650" fill="#59595D">CONTEXT PAIRS</text><rect x="36" y="88" width="278" height="64" rx="16" fill="#BE4E6A"/><text x="74" y="130" font-size="20" font-weight="650" fill="#FFFFFF">Главное действие</text><rect x="36" y="170" width="278" height="64" rx="16" fill="#FDE3EA"/><text x="74" y="212" font-size="20" font-weight="650" fill="#A3435B">Брендовый акцент</text><text x="36" y="282" font-size="24" font-weight="700">Цветы остаются</text><text x="36" y="316" font-size="18" fill="#59595D">главными на нейтральном фоне</text></g>
+  </g>
+</svg>

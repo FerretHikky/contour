@@ -1,0 +1,11 @@
+{
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "Absolute colors that never change between themes.",
+  "color": {
+    "static": {
+      "$type": "color",
+      "black": {"$value": {"colorSpace": "srgb", "components": [0, 0, 0], "alpha": 1, "hex": "#000000"}},
+      "white": {"$value": {"colorSpace": "srgb", "components": [1, 1, 1], "alpha": 1, "hex": "#FFFFFF"}}
+    }
+  }
+}

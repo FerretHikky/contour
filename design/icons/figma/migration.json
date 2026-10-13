@@ -1,0 +1,271 @@
+{
+  "status": "approved-by-owner",
+  "notes": "Owner approved product migration, including rocket → lightning, hash → pin-code and sparkles → ai-02. x is close, never the X brand glyph. review records the mappings that required explicit review.",
+  "aliases": {
+    "search": {
+      "glyph": "search",
+      "style": "line",
+      "review": false
+    },
+    "copy": {
+      "glyph": "content-copy",
+      "style": "line",
+      "review": false
+    },
+    "x": {
+      "glyph": "close",
+      "style": "line",
+      "review": false
+    },
+    "plus": {
+      "glyph": "plus",
+      "style": "line",
+      "review": false
+    },
+    "sparkles": {
+      "glyph": "ai-02",
+      "style": "line",
+      "review": true
+    },
+    "sun": {
+      "glyph": "sunny",
+      "style": "line",
+      "review": false
+    },
+    "moon": {
+      "glyph": "clear-night-01",
+      "style": "line",
+      "review": false
+    },
+    "rocket": {
+      "glyph": "lightning",
+      "style": "line",
+      "review": true
+    },
+    "clock-3": {
+      "glyph": "clock-03",
+      "style": "line",
+      "review": false
+    },
+    "check": {
+      "glyph": "checkmark",
+      "style": "line",
+      "review": false
+    },
+    "info": {
+      "glyph": "info-cr-fr",
+      "style": "line",
+      "review": false
+    },
+    "circle-alert": {
+      "glyph": "exclamation-mark-cr-fr",
+      "style": "line",
+      "review": false
+    },
+    "triangle-alert": {
+      "glyph": "warning",
+      "style": "line",
+      "review": false
+    },
+    "mail": {
+      "glyph": "mail",
+      "style": "line",
+      "review": false
+    },
+    "mail-filled": {
+      "glyph": "mail",
+      "style": "solid",
+      "review": false
+    },
+    "circle-user": {
+      "glyph": "user-cr-fr",
+      "style": "line",
+      "review": false
+    },
+    "circle-user-filled": {
+      "glyph": "user-cr-fr",
+      "style": "solid",
+      "review": false
+    },
+    "user-round": {
+      "glyph": "user",
+      "style": "line",
+      "review": false
+    },
+    "users": {
+      "glyph": "user-group",
+      "style": "line",
+      "review": false
+    },
+    "hash": {
+      "glyph": "pin-code",
+      "style": "line",
+      "review": true
+    },
+    "shopping-bag": {
+      "glyph": "shopping-bag",
+      "style": "line",
+      "review": false
+    },
+    "shopping-bag-filled": {
+      "glyph": "shopping-bag",
+      "style": "solid",
+      "review": false
+    },
+    "list": {
+      "glyph": "list-bullet-portrait",
+      "style": "line",
+      "review": false
+    },
+    "pencil": {
+      "glyph": "pencil",
+      "style": "line",
+      "review": false
+    },
+    "camera": {
+      "glyph": "camera",
+      "style": "line",
+      "review": false
+    },
+    "image-off": {
+      "glyph": "image-off",
+      "style": "line",
+      "review": false
+    },
+    "image-up": {
+      "glyph": "image-upload-ou-lc",
+      "style": "line",
+      "review": false
+    },
+    "map-pin": {
+      "glyph": "location",
+      "style": "line",
+      "review": false
+    },
+    "globe-2": {
+      "glyph": "globe",
+      "style": "line",
+      "review": false
+    },
+    "archive": {
+      "glyph": "archive-box",
+      "style": "line",
+      "review": false
+    },
+    "rotate-ccw": {
+      "glyph": "refresh-ccw",
+      "style": "line",
+      "review": false
+    },
+    "calendar": {
+      "glyph": "calendar",
+      "style": "line",
+      "review": false
+    },
+    "calendar-days": {
+      "glyph": "calendar-01",
+      "style": "line",
+      "review": false
+    },
+    "trash-2": {
+      "glyph": "trash-can",
+      "style": "line",
+      "review": false
+    },
+    "send": {
+      "glyph": "send",
+      "style": "line",
+      "review": false
+    },
+    "arrow-left": {
+      "glyph": "left-arrow",
+      "style": "line",
+      "review": false
+    },
+    "arrow-right": {
+      "glyph": "right-arrow",
+      "style": "line",
+      "review": false
+    },
+    "chevron-left": {
+      "glyph": "chevron-left",
+      "style": "line",
+      "review": false
+    },
+    "chevron-right": {
+      "glyph": "chevron-right",
+      "style": "line",
+      "review": false
+    },
+    "chevron-down": {
+      "glyph": "chevron-down",
+      "style": "line",
+      "review": false
+    },
+    "chevron-up": {
+      "glyph": "chevron-up",
+      "style": "line",
+      "review": false
+    },
+    "more-vertical": {
+      "glyph": "more-vr-al",
+      "style": "line",
+      "review": false
+    },
+    "layout-dashboard": {
+      "glyph": "grid-four-01",
+      "style": "line",
+      "review": false
+    },
+    "chart-column-increasing": {
+      "glyph": "column-01-up",
+      "style": "line",
+      "review": false
+    },
+    "package": {
+      "glyph": "cube",
+      "style": "line",
+      "review": false
+    },
+    "credit-card": {
+      "glyph": "bank-card",
+      "style": "line",
+      "review": false
+    },
+    "megaphone": {
+      "glyph": "megaphone",
+      "style": "line",
+      "review": false
+    },
+    "log-out": {
+      "glyph": "logout",
+      "style": "line",
+      "review": false
+    },
+    "eye": {
+      "glyph": "eye",
+      "style": "line",
+      "review": false
+    },
+    "eye-off": {
+      "glyph": "eye-off",
+      "style": "line",
+      "review": false
+    },
+    "ban": {
+      "glyph": "road-sign-no-entry",
+      "style": "line",
+      "review": false
+    },
+    "shield": {
+      "glyph": "shield",
+      "style": "line",
+      "review": false
+    },
+    "shield-check": {
+      "glyph": "verified-user",
+      "style": "line",
+      "review": false
+    }
+  }
+}

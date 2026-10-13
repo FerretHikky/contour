@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="3">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Админка временно недоступна · Reflower</title>
+  <link rel="icon" type="image/svg+xml" sizes="any" href="assets/contour-mark.svg">
+  <link rel="stylesheet" href="../../brand/typography/typography.css">
+  <link rel="stylesheet" href="../generated/web/tokens.css">
+  <link rel="stylesheet" href="../generated/web/core-ui.css">
+  <script src="admin-unavailable.js" defer></script>
+  <style>
+    body {
+      margin: var(--rf-spacing-0);
+      background: var(--rf-color-context-background-canvas);
+      color: var(--rf-color-context-text-primary-default);
+      font-family: var(--rf-font-family-body);
+      -webkit-font-smoothing: antialiased;
+    }
+    .admin-unavailable {
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: grid;
+      place-items: center;
+      padding: max(var(--rf-spacing-24), env(safe-area-inset-top))
+        max(var(--rf-spacing-24), env(safe-area-inset-right))
+        max(var(--rf-spacing-24), env(safe-area-inset-bottom))
+        max(var(--rf-spacing-24), env(safe-area-inset-left));
+    }
+    .admin-unavailable .rf-error-state {
+      width: min(100%, var(--rf-dialog-max-width));
+    }
+  </style>
+</head>
+<body>
+  <main class="admin-unavailable">
+    <section class="rf-error-state rf-error-state--illustrated" role="alert" aria-live="assertive">
+      <span class="rf-error-state__media" aria-hidden="true">
+        <img class="rf-image rf-image--contain" src="../../illustrations/catalog-error-refresh-3d.png" alt="">
+      </span>
+      <h1 class="rf-error-state__title rf-text rf-text--headline-xs">Админка временно недоступна</h1>
+      <p class="rf-error-state__description rf-text rf-text--body-s">Переподключаемся к серверу. Страница обновится автоматически.</p>
+      <div class="rf-error-state__actions">
+        <a class="rf-button rf-button--primary" href="">Обновить сейчас</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,141 @@
+/* Reflower Web primitives. They contain no product meaning and no literal visual values. */
+*,*::before,*::after{box-sizing:border-box}
+
+.rf-container{width:min(100%,var(--rf-spacing-1600));margin-inline:auto;padding-inline:var(--rf-spacing-16)}
+.rf-safe-area{padding-top:max(var(--rf-spacing-0),env(safe-area-inset-top));padding-inline-end:max(var(--rf-spacing-0),env(safe-area-inset-right));padding-bottom:max(var(--rf-spacing-0),env(safe-area-inset-bottom));padding-inline-start:max(var(--rf-spacing-0),env(safe-area-inset-left))}
+
+.rf-stack{display:flex;min-width:0;flex-direction:column;gap:var(--rf-spacing-16)}
+.rf-stack--gap-1{gap:var(--rf-spacing-4)}
+.rf-stack--gap-2{gap:var(--rf-spacing-8)}
+.rf-stack--gap-3{gap:var(--rf-spacing-12)}
+.rf-stack--gap-6{gap:var(--rf-spacing-24)}
+.rf-stack--gap-8{gap:var(--rf-spacing-32)}
+
+.rf-inline{display:flex;min-width:0;align-items:center;flex-wrap:wrap;gap:var(--rf-spacing-8)}
+.rf-inline--gap-1{gap:var(--rf-spacing-4)}
+.rf-inline--gap-3{gap:var(--rf-spacing-12)}
+.rf-inline--gap-4{gap:var(--rf-spacing-16)}
+.rf-inline--between{justify-content:space-between}
+.rf-inline--nowrap{flex-wrap:nowrap}
+
+.rf-text{min-width:0;margin:0;overflow-wrap:anywhere;color:var(--rf-text-primary)}
+.rf-text--display-xl{font-family:var(--rf-typography-style-display-xl-font-family);font-size:var(--rf-typography-style-display-xl-font-size);font-weight:var(--rf-typography-style-display-xl-font-weight);letter-spacing:var(--rf-typography-style-display-xl-letter-spacing);line-height:var(--rf-typography-style-display-xl-line-height)}
+.rf-text--display-l{font-family:var(--rf-typography-style-display-l-font-family);font-size:var(--rf-typography-style-display-l-font-size);font-weight:var(--rf-typography-style-display-l-font-weight);letter-spacing:var(--rf-typography-style-display-l-letter-spacing);line-height:var(--rf-typography-style-display-l-line-height)}
+.rf-text--display-m{font-family:var(--rf-typography-style-display-m-font-family);font-size:var(--rf-typography-style-display-m-font-size);font-weight:var(--rf-typography-style-display-m-font-weight);letter-spacing:var(--rf-typography-style-display-m-letter-spacing);line-height:var(--rf-typography-style-display-m-line-height)}
+.rf-text--display-s,.rf-text--display-small{font-family:var(--rf-typography-style-display-s-font-family);font-size:var(--rf-typography-style-display-s-font-size);font-weight:var(--rf-typography-style-display-s-font-weight);letter-spacing:var(--rf-typography-style-display-s-letter-spacing);line-height:var(--rf-typography-style-display-s-line-height)}
+.rf-text--title-xl{font-family:var(--rf-typography-style-title-xl-font-family);font-size:var(--rf-typography-style-title-xl-font-size);font-weight:var(--rf-typography-style-title-xl-font-weight);letter-spacing:var(--rf-typography-style-title-xl-letter-spacing);line-height:var(--rf-typography-style-title-xl-line-height)}
+.rf-text--title-l{font-family:var(--rf-typography-style-title-l-font-family);font-size:var(--rf-typography-style-title-l-font-size);font-weight:var(--rf-typography-style-title-l-font-weight);letter-spacing:var(--rf-typography-style-title-l-letter-spacing);line-height:var(--rf-typography-style-title-l-line-height)}
+.rf-text--title-m{font-family:var(--rf-typography-style-title-m-font-family);font-size:var(--rf-typography-style-title-m-font-size);font-weight:var(--rf-typography-style-title-m-font-weight);letter-spacing:var(--rf-typography-style-title-m-letter-spacing);line-height:var(--rf-typography-style-title-m-line-height)}
+.rf-text--title-s{font-family:var(--rf-typography-style-title-s-font-family);font-size:var(--rf-typography-style-title-s-font-size);font-weight:var(--rf-typography-style-title-s-font-weight);letter-spacing:var(--rf-typography-style-title-s-letter-spacing);line-height:var(--rf-typography-style-title-s-line-height)}
+.rf-text--headline-xl{font-family:var(--rf-typography-style-headline-xl-font-family);font-size:var(--rf-typography-style-headline-xl-font-size);font-weight:var(--rf-typography-style-headline-xl-font-weight);letter-spacing:var(--rf-typography-style-headline-xl-letter-spacing);line-height:var(--rf-typography-style-headline-xl-line-height)}
+.rf-text--headline-l{font-family:var(--rf-typography-style-headline-l-font-family);font-size:var(--rf-typography-style-headline-l-font-size);font-weight:var(--rf-typography-style-headline-l-font-weight);letter-spacing:var(--rf-typography-style-headline-l-letter-spacing);line-height:var(--rf-typography-style-headline-l-line-height)}
+.rf-text--headline-m{font-family:var(--rf-typography-style-headline-m-font-family);font-size:var(--rf-typography-style-headline-m-font-size);font-weight:var(--rf-typography-style-headline-m-font-weight);letter-spacing:var(--rf-typography-style-headline-m-letter-spacing);line-height:var(--rf-typography-style-headline-m-line-height)}
+.rf-text--headline-s{font-family:var(--rf-typography-style-headline-s-font-family);font-size:var(--rf-typography-style-headline-s-font-size);font-weight:var(--rf-typography-style-headline-s-font-weight);letter-spacing:var(--rf-typography-style-headline-s-letter-spacing);line-height:var(--rf-typography-style-headline-s-line-height)}
+.rf-text--headline-xs{font-family:var(--rf-typography-style-headline-xs-font-family);font-size:var(--rf-typography-style-headline-xs-font-size);font-weight:var(--rf-typography-style-headline-xs-font-weight);letter-spacing:var(--rf-typography-style-headline-xs-letter-spacing);line-height:var(--rf-typography-style-headline-xs-line-height)}
+.rf-text--headline-xxs{font-family:var(--rf-typography-style-headline-xxs-font-family);font-size:var(--rf-typography-style-headline-xxs-font-size);font-weight:var(--rf-typography-style-headline-xxs-font-weight);letter-spacing:var(--rf-typography-style-headline-xxs-letter-spacing);line-height:var(--rf-typography-style-headline-xxs-line-height)}
+.rf-text--body-xl{font-family:var(--rf-typography-style-body-xl-font-family);font-size:var(--rf-typography-style-body-xl-font-size);font-weight:var(--rf-typography-style-body-xl-font-weight);letter-spacing:var(--rf-typography-style-body-xl-letter-spacing);line-height:var(--rf-typography-style-body-xl-line-height)}
+.rf-text--body-l{font-family:var(--rf-typography-style-body-l-font-family);font-size:var(--rf-typography-style-body-l-font-size);font-weight:var(--rf-typography-style-body-l-font-weight);letter-spacing:var(--rf-typography-style-body-l-letter-spacing);line-height:var(--rf-typography-style-body-l-line-height)}
+.rf-text--body-m{font-family:var(--rf-typography-style-body-m-font-family);font-size:var(--rf-typography-style-body-m-font-size);font-weight:var(--rf-typography-style-body-m-font-weight);letter-spacing:var(--rf-typography-style-body-m-letter-spacing);line-height:var(--rf-typography-style-body-m-line-height)}
+.rf-text--body-s{font-family:var(--rf-typography-style-body-s-font-family);font-size:var(--rf-typography-style-body-s-font-size);font-weight:var(--rf-typography-style-body-s-font-weight);letter-spacing:var(--rf-typography-style-body-s-letter-spacing);line-height:var(--rf-typography-style-body-s-line-height)}
+.rf-text--body-xs{font-family:var(--rf-typography-style-body-xs-font-family);font-size:var(--rf-typography-style-body-xs-font-size);font-weight:var(--rf-typography-style-body-xs-font-weight);letter-spacing:var(--rf-typography-style-body-xs-letter-spacing);line-height:var(--rf-typography-style-body-xs-line-height)}
+.rf-text--body-xxs{font-family:var(--rf-typography-style-body-xxs-font-family);font-size:var(--rf-typography-style-body-xxs-font-size);font-weight:var(--rf-typography-style-body-xxs-font-weight);letter-spacing:var(--rf-typography-style-body-xxs-letter-spacing);line-height:var(--rf-typography-style-body-xxs-line-height)}
+/* Compatibility selectors keep their original metrics while products migrate to typography.style.*. */
+.rf-text--display-large{font-family:var(--rf-font-family-title);font-size:var(--rf-font-size-6xl);font-weight:var(--rf-font-weight-bold);letter-spacing:var(--rf-font-letter-spacing-tight);line-height:var(--rf-font-line-height-7xl)}
+.rf-text--display-medium{font-family:var(--rf-font-family-title);font-size:var(--rf-font-size-5xl);font-weight:var(--rf-font-weight-bold);letter-spacing:var(--rf-font-letter-spacing-tight);line-height:var(--rf-font-line-height-6xl)}
+.rf-text--heading-h1{font-family:var(--rf-font-family-title);font-size:var(--rf-font-size-5xl);font-weight:var(--rf-font-weight-bold);letter-spacing:var(--rf-font-letter-spacing-tight);line-height:var(--rf-font-line-height-6xl)}
+.rf-text--heading-h2{font-family:var(--rf-font-family-title);font-size:var(--rf-font-size-4xl);font-weight:var(--rf-font-weight-bold);letter-spacing:var(--rf-font-letter-spacing-tight);line-height:var(--rf-font-line-height-5xl)}
+.rf-text--heading-h3{font-family:var(--rf-font-family-title);font-size:var(--rf-font-size-2xl);font-weight:var(--rf-font-weight-bold);letter-spacing:var(--rf-font-letter-spacing-tight);line-height:var(--rf-font-line-height-3xl)}
+.rf-text--headline-large{font-family:var(--rf-font-family-headline);font-size:var(--rf-font-size-2xl);font-weight:var(--rf-font-weight-medium);letter-spacing:var(--rf-font-letter-spacing-normal);line-height:var(--rf-font-line-height-3xl)}
+.rf-text--headline-medium{font-family:var(--rf-font-family-headline);font-size:var(--rf-font-size-l);font-weight:var(--rf-font-weight-medium);letter-spacing:var(--rf-font-letter-spacing-normal);line-height:var(--rf-font-line-height-3xl)}
+.rf-text--headline-small{font-family:var(--rf-font-family-headline);font-size:var(--rf-font-size-m);font-weight:var(--rf-font-weight-medium);letter-spacing:var(--rf-font-letter-spacing-normal);line-height:var(--rf-font-line-height-xl)}
+.rf-text--body-large{font-family:var(--rf-font-family-body);font-size:var(--rf-font-size-l);font-weight:var(--rf-font-weight-regular);letter-spacing:var(--rf-font-letter-spacing-normal);line-height:var(--rf-font-line-height-3xl)}
+.rf-text--body-medium{font-family:var(--rf-font-family-body);font-size:var(--rf-font-size-m);font-weight:var(--rf-font-weight-regular);letter-spacing:var(--rf-font-letter-spacing-normal);line-height:var(--rf-font-line-height-xl)}
+.rf-text--body-small{font-family:var(--rf-font-family-body);font-size:var(--rf-font-size-s);font-weight:var(--rf-font-weight-regular);letter-spacing:var(--rf-font-letter-spacing-normal);line-height:var(--rf-font-line-height-m)}
+.rf-text--label-large{font-family:var(--rf-font-family-headline);font-size:var(--rf-font-size-m);font-weight:var(--rf-font-weight-medium);letter-spacing:var(--rf-font-letter-spacing-normal);line-height:var(--rf-font-line-height-xl)}
+.rf-text--label-medium{font-family:var(--rf-font-family-headline);font-size:var(--rf-font-size-s);font-weight:var(--rf-font-weight-medium);letter-spacing:var(--rf-font-letter-spacing-normal);line-height:var(--rf-font-line-height-m)}
+.rf-text--label-small,.rf-text--caption{font-family:var(--rf-font-family-headline);font-size:var(--rf-font-size-xs);font-weight:var(--rf-font-weight-medium);letter-spacing:var(--rf-font-letter-spacing-normal);line-height:var(--rf-font-line-height-xs)}
+.rf-text--code-medium{font-family:var(--rf-font-family-body);font-size:var(--rf-font-size-m);font-weight:var(--rf-font-weight-regular);letter-spacing:var(--rf-font-letter-spacing-normal);line-height:var(--rf-font-line-height-xl)}
+.rf-text--code-small{font-family:var(--rf-font-family-body);font-size:var(--rf-font-size-s);font-weight:var(--rf-font-weight-regular);letter-spacing:var(--rf-font-letter-spacing-normal);line-height:var(--rf-font-line-height-m)}
+.rf-text--brand{color:var(--rf-color-context-text-brand-default)}
+.rf-text--secondary{color:var(--rf-text-secondary)}
+.rf-text--tertiary{color:var(--rf-text-tertiary)}
+.rf-text--inverse{color:var(--rf-text-inverse)}
+
+.rf-icon{display:inline-flex;width:var(--rf-spacing-24);height:var(--rf-spacing-24);flex:0 0 auto;align-items:center;justify-content:center;color:currentColor;line-height:var(--rf-spacing-0);vertical-align:middle}
+.rf-icon>svg{display:block;width:100%;height:100%;flex:0 0 auto;margin:var(--rf-spacing-0)}
+.rf-icon--xs{width:var(--rf-spacing-12);height:var(--rf-spacing-12)}
+.rf-icon--sm{width:var(--rf-spacing-16);height:var(--rf-spacing-16)}
+.rf-icon--md{width:var(--rf-spacing-24);height:var(--rf-spacing-24)}
+.rf-icon--lg{width:var(--rf-spacing-32);height:var(--rf-spacing-32)}
+.rf-icon--brand{color:var(--rf-icon-brand)}
+.rf-icon--primary{color:var(--rf-icon-primary)}
+.rf-icon--secondary{color:var(--rf-icon-secondary)}
+.rf-icon--tertiary{color:var(--rf-icon-tertiary)}
+.rf-icon--danger{color:var(--rf-icon-danger)}
+.rf-icon--success{color:var(--rf-icon-success)}
+.rf-icon[data-state="disabled"]{color:var(--rf-icon-disabled)}
+.rf-icon[data-state="skeleton"]{background:var(--rf-icon-skeleton);border-radius:var(--rf-radius-sm)}
+.rf-icon[data-state="skeleton"]>svg{visibility:hidden}
+.rf-icon__tone{opacity:var(--rf-icon-duotone-opacity)}
+@media (forced-colors:active){.rf-icon[data-state="disabled"]{color:GrayText}.rf-icon[data-state="skeleton"]{outline:var(--rf-border-width-thin) solid GrayText}}
+
+.rf-surface{min-width:0;background:var(--rf-surface-primary);color:var(--rf-text-primary)}
+.rf-surface--secondary{background:var(--rf-surface-secondary)}
+.rf-surface--elevated{background:var(--rf-surface-elevated);box-shadow:var(--rf-elevation-md)}
+.rf-surface--bordered{border:var(--rf-border-width-thin) var(--rf-border-style-solid) var(--rf-surface-border)}
+.rf-surface--rounded{border-radius:var(--rf-radius-lg)}
+.rf-surface--padding-sm{padding:var(--rf-spacing-12)}
+.rf-surface--padding-md{padding:var(--rf-spacing-16)}
+.rf-surface--padding-lg{padding:var(--rf-spacing-24)}
+
+.rf-aspect-ratio{position:relative;overflow:hidden;aspect-ratio:var(--rf-media-aspect-ratio-product);border-radius:var(--rf-radius-lg);background:var(--rf-color-context-background-primary-active)}
+.rf-aspect-ratio--square{aspect-ratio:var(--rf-media-aspect-ratio-square)}
+.rf-aspect-ratio--portrait{aspect-ratio:var(--rf-media-aspect-ratio-portrait)}
+.rf-aspect-ratio--landscape{aspect-ratio:var(--rf-media-aspect-ratio-landscape)}
+.rf-image{display:block;width:100%;height:100%;object-fit:cover}
+.rf-aspect-ratio>.rf-image{position:absolute;inset:var(--rf-spacing-0)}
+.rf-image--contain{object-fit:contain}
+
+.rf-sr-only{position:absolute;width:var(--rf-border-width-thin);height:var(--rf-border-width-thin);padding:0;margin:calc(var(--rf-border-width-thin) * -1);overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* Typography foundation: native text links; rf-link remains the public utility. */
+.rf-link:focus-visible{outline:var(--rf-border-width-medium) var(--rf-border-style-solid) var(--rf-color-context-border-brand-default);outline-offset:var(--rf-spacing-0);box-shadow:none}
+.rf-link{color:var(--rf-color-context-text-brand-default);font:inherit;text-decoration:underline;text-decoration-thickness:var(--rf-border-width-thin);text-underline-offset:var(--rf-spacing-4);cursor:pointer;transition:color var(--rf-motion-duration-normal) var(--rf-motion-easing-standard)}
+.rf-link:hover{color:var(--rf-color-context-text-brand-hover)}
+.rf-link[aria-disabled="true"]{color:var(--rf-text-disabled);pointer-events:none;cursor:not-allowed}
+@media(forced-colors:active){.rf-link:focus-visible{outline-color:Highlight}}
+
+/* Shared layout options; spacing and breakpoints remain Foundation-owned. */
+.rf-stack--gap-4{gap:var(--rf-spacing-16)}
+:is(.rf-stack,.rf-inline)[data-align="start"]{align-items:flex-start}
+:is(.rf-stack,.rf-inline)[data-align="center"]{align-items:center}
+:is(.rf-stack,.rf-inline)[data-align="end"]{align-items:flex-end}
+:is(.rf-stack,.rf-inline)[data-align="stretch"]{align-items:stretch}
+:is(.rf-stack,.rf-inline)[data-justify="start"]{justify-content:flex-start}
+:is(.rf-stack,.rf-inline)[data-justify="center"]{justify-content:center}
+:is(.rf-stack,.rf-inline)[data-justify="end"]{justify-content:flex-end}
+:is(.rf-stack,.rf-inline)[data-justify="between"]{justify-content:space-between}
+:is(.rf-stack,.rf-inline)[data-grow="true"]>*{flex:1;min-width:0}
+:is(.rf-stack,.rf-inline)[data-wrap="wrap"]{flex-wrap:wrap}
+:is(.rf-stack,.rf-inline)[data-wrap="nowrap"]{flex-wrap:nowrap}
+:is(.rf-stack,.rf-inline)[data-rf-layout-mobile="row"][data-rf-layout-compact="true"]{flex-direction:row}
+:is(.rf-stack,.rf-inline)[data-rf-layout-mobile="column"][data-rf-layout-compact="true"]{flex-direction:column}
+/* Foundation Grid implementation: preserve empty columns in incomplete rows. */
+.rf-layout-grid{display:grid;min-width:0;grid-template-columns:repeat(auto-fill,minmax(min(100%,calc(var(--rf-spacing-248) + var(--rf-spacing-32))),1fr));gap:var(--rf-spacing-16)}
+.rf-layout-grid--compact{grid-template-columns:repeat(auto-fill,minmax(min(100%,var(--rf-spacing-160)),1fr))}
+.rf-layout-grid--wide{grid-template-columns:repeat(auto-fill,minmax(min(100%,calc(var(--rf-spacing-248) + var(--rf-spacing-128))),1fr))}
+.rf-layout-grid>*{min-width:0}
+
+/* Child options override container-wide Grow without changing DOM order. */
+:is(.rf-stack,.rf-inline)>[data-rf-item-size="grow"]{flex:1 1 0;min-width:0;min-height:0}
+:is(.rf-stack,.rf-inline)>[data-rf-item-size="content"]{flex:0 1 auto;min-width:0}
+:is(.rf-stack,.rf-inline)>[data-rf-item-size="fixed"]{flex:0 0 auto;min-width:0;max-width:100%}
+:is(.rf-stack,.rf-inline)>[data-rf-item-align="start"]{align-self:flex-start}
+:is(.rf-stack,.rf-inline)>[data-rf-item-align="center"]{align-self:center}
+:is(.rf-stack,.rf-inline)>[data-rf-item-align="end"]{align-self:flex-end}
+:is(.rf-stack,.rf-inline)>[data-rf-item-align="stretch"]{align-self:stretch}
+.rf-layout-grid>[data-rf-grid-span]{grid-column:span 1}
+.rf-layout-grid>[data-rf-grid-span="all"]{grid-column:1 / -1}
+
+.rf-layout-grid>[data-rf-grid-span-effective="2"]{grid-column:span 2}
+.rf-layout-grid>[data-rf-grid-span-effective="3"]{grid-column:span 3}

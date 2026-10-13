@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="refresh" content="3">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Витрина временно недоступна · Reflower</title>
+  <link rel="icon" type="image/svg+xml" sizes="any" href="assets/contour-mark.svg">
+  <link rel="stylesheet" href="../../brand/typography/typography.css">
+  <link rel="stylesheet" href="../generated/web/tokens.css">
+  <link rel="stylesheet" href="../generated/web/core-ui.css">
+  <script src="miniapp-unavailable.js" defer></script>
+  <style>
+    body {
+      margin: var(--rf-spacing-0);
+      background: var(--rf-color-context-background-canvas);
+      color: var(--rf-color-context-text-primary-default);
+      font-family: var(--rf-font-family-body);
+      -webkit-font-smoothing: antialiased;
+    }
+    .miniapp-unavailable {
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: grid;
+      place-items: center;
+      padding: max(var(--rf-spacing-24), env(safe-area-inset-top))
+        max(var(--rf-spacing-24), env(safe-area-inset-right))
+        max(var(--rf-spacing-24), env(safe-area-inset-bottom))
+        max(var(--rf-spacing-24), env(safe-area-inset-left));
+    }
+    .miniapp-unavailable .rf-error-state {
+      width: min(100%, var(--rf-dialog-max-width));
+    }
+  </style>
+</head>
+<body>
+  <main class="miniapp-unavailable">
+    <section class="rf-error-state rf-error-state--illustrated" role="alert" aria-live="assertive">
+      <span class="rf-error-state__media" aria-hidden="true">
+        <img class="rf-image rf-image--contain" src="../../illustrations/catalog-error-refresh-3d.png" alt="">
+      </span>
+      <h1 class="rf-error-state__title rf-text rf-text--headline-xs" data-unavailable-title>Витрина временно недоступна</h1>
+      <p class="rf-error-state__description rf-text rf-text--body-s" data-unavailable-description>Переподключаемся к серверу. Страница обновится автоматически.</p>
+      <div class="rf-error-state__actions">
+        <a class="rf-button rf-button--primary" href="" data-unavailable-action>Обновить сейчас</a>
+      </div>
+    </section>
+  </main>
+
+  <template data-unavailable-locale="ru" data-page-title="Витрина временно недоступна · Reflower">
+    <span data-title>Витрина временно недоступна</span>
+    <span data-description>Переподключаемся к серверу. Страница обновится автоматически.</span>
+    <span data-action>Обновить сейчас</span>
+  </template>
+  <template data-unavailable-locale="en" data-page-title="The shop is temporarily unavailable · Reflower">
+    <span data-title>The shop is temporarily unavailable</span>
+    <span data-description>We are reconnecting to the server. The page will refresh automatically.</span>
+    <span data-action>Refresh now</span>
+  </template>
+  <template data-unavailable-locale="ky" data-page-title="Витрина убактылуу жеткиликсиз · Reflower">
+    <span data-title>Витрина убактылуу жеткиликсиз</span>
+    <span data-description>Серверге кайра туташып жатабыз. Барак автоматтык түрдө жаңыртылат.</span>
+    <span data-action>Азыр жаңыртуу</span>
+  </template>
+  <template data-unavailable-locale="uz" data-page-title="Vitrina vaqtincha ishlamayapti · Reflower">
+    <span data-title>Vitrina vaqtincha ishlamayapti</span>
+    <span data-description>Serverga qayta ulanmoqdamiz. Sahifa avtomatik yangilanadi.</span>
+    <span data-action>Hozir yangilash</span>
+  </template>
+  <template data-unavailable-locale="ka" data-page-title="ვიტრინა დროებით მიუწვდომელია · Reflower">
+    <span data-title>ვიტრინა დროებით მიუწვდომელია</span>
+    <span data-description>სერვერთან კავშირი აღდგება. გვერდი ავტომატურად განახლდება.</span>
+    <span data-action>ახლავე განახლება</span>
+  </template>
+</body>
+</html>

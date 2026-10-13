@@ -1,0 +1,565 @@
+{
+  "schemaVersion": 1,
+  "components": {
+    "Radio": {
+      "useWhen": [
+        "Нужно выбрать ровно один вариант из небольшого видимого набора.",
+        "Варианты нужно сравнить перед выбором."
+      ],
+      "dontUseWhen": [
+        "Для нескольких независимых значений используйте Checkbox.",
+        "Для немедленного включения настройки используйте Switch."
+      ],
+      "anatomy": [
+        "Named group",
+        "Native radio input",
+        "Control",
+        "Selection indicator",
+        "Accessible name"
+      ]
+    },
+    "Checkbox": {
+      "useWhen": [
+        "Нужно выбрать несколько независимых значений в форме.",
+        "Пользователь подтверждает согласие перед отправкой формы."
+      ],
+      "dontUseWhen": [
+        "Настройка применяется немедленно — используйте Switch.",
+        "Можно выбрать только один пункт — используйте Radio."
+      ],
+      "anatomy": [
+        "Native input",
+        "Control",
+        "Indicator Icon",
+        "Accessible name"
+      ]
+    },
+    "Tab": {
+      "useWhen": [
+        "Нужен один элемент группы Tabs с подписью и необязательными иконками.",
+        "Выбор и состояние элемента координируются его группой Tabs."
+      ],
+      "dontUseWhen": [
+        "Для самостоятельного действия нужен Button.",
+        "Для перехода к URL нужен Link."
+      ],
+      "anatomy": [
+        "Tab button",
+        "Optional Start icon",
+        "Label",
+        "Optional End icon",
+        "Selection indicator"
+      ]
+    },
+    "Tabs": {
+      "useWhen": [
+        "Нужно переключать связанные панели одного уровня на текущей странице.",
+        "Нужна доступная группа с выбором одной панели и клавиатурной навигацией."
+      ],
+      "dontUseWhen": [
+        "Для переходов по страницам нужен Link или TabBar.",
+        "Для локального режима или фильтра используйте SegmentedControl."
+      ],
+      "anatomy": [
+        "Tab list",
+        "Tab",
+        "Selected value",
+        "Associated tab panel"
+      ]
+    },
+    "Button": {
+      "useWhen": [
+        "Нужно запустить действие в текущем контексте: сохранить, подтвердить, создать или удалить.",
+        "Действие должно быть доступно с клавиатуры и иметь явный loading contract."
+      ],
+      "dontUseWhen": [
+        "Пользователь переходит к другому URL или ресурсу — для этого нужен Link.",
+        "Нужен отдельный бизнес-компонент только ради нового цвета или формы."
+      ],
+      "anatomy": [
+        "Action root",
+        "Optional Start icon",
+        "Label",
+        "Optional Subtitle",
+        "Optional End icon",
+        "Core-owned loading indicator"
+      ]
+    },
+    "TextField": {
+      "useWhen": [
+        "Пользователь вводит одну строку текста, email, телефон или другое нативное input value.",
+        "Нужны системные размеры, focus, readonly, disabled и invalid presentations.",
+        "Нужен многострочный текст — используйте TextField с Variant Multiline и Placeholder."
+      ],
+      "dontUseWhen": [
+        "Нужен приблизительный выбор числа в диапазоне — используйте Slider.",
+        "Нужен выбор из конечного списка — используйте Dropdown mode=selection или Radio."
+      ],
+      "anatomy": [
+        "TextField control with optional floating label",
+        "Native input",
+        "Optional leading slot",
+        "Editable value",
+        "Optional trailing action slot"
+      ]
+    },
+    "Icon": {
+      "useWhen": [
+        "Нужна системная пиктограмма для действия, статуса или пояснения.",
+        "Нужно заполнить Start/End slot Button, TextField или другого компонента."
+      ],
+      "dontUseWhen": [
+        "Нужно самостоятельное действие — используйте IconButton с вложенным Icon и доступным именем.",
+        "Нужен логотип, флаг, фотография или иллюстрация — это отдельный медиа-ассет, не Glyph."
+      ],
+      "anatomy": [
+        "Non-interactive fixed-size container",
+        "Glyph from the shared Line, Solid or Duotone set",
+        "Inherited color or semantic variant",
+        "Decorative aria-hidden or meaningful accessible name"
+      ]
+    },
+    "Switch": {
+      "useWhen": [
+        "Настройка имеет два значения: включено и выключено.",
+        "Изменение применяется сразу, без отдельной кнопки сохранения."
+      ],
+      "dontUseWhen": [
+        "Выбор отправляется вместе с формой — используйте Checkbox.",
+        "Нужно запустить разовое действие — используйте Button."
+      ],
+      "anatomy": [
+        "Control",
+        "Native input",
+        "Track",
+        "Thumb"
+      ]
+    },
+    "Chip": {
+      "useWhen": [
+        "Нужно включить или выключить компактный локальный фильтр.",
+        "Нужно показать выбранное условие, которое пользователь может снять."
+      ],
+      "dontUseWhen": [
+        "Нужно показать неинтерактивный статус — используйте Badge.",
+        "Нужно основное действие экрана — используйте Button."
+      ],
+      "anatomy": [
+        "Native button or link selected by purpose",
+        "Optional Start icon",
+        "Short label",
+        "Optional End icon",
+        "Selected or current state semantics"
+      ]
+    },
+    "Dropdown": {
+      "useWhen": [
+        "Нужно выбрать значение из конечного списка без browser select popup.",
+        "Нужно открыть компактное меню команд с единым keyboard/focus contract."
+      ],
+      "dontUseWhen": [
+        "Небольшой обязательный выбор лучше постоянно показать через Radio или SegmentedControl.",
+        "Нужен произвольный overlay-контент, а не options или commands — используйте Dialog, Drawer или Popover по задаче."
+      ],
+      "anatomy": [
+        "Named trigger with one trailing disclosure chevron",
+        "Mode-specific listbox or menu panel",
+        "System ListItem rows",
+        "Optional leading Icon and description",
+        "Hidden form/model bridge for selection"
+      ]
+    },
+    "TabBar": {
+      "useWhen": [
+        "Главные разделы приложения.",
+        "Мобильный Web вместо верхнего NavigationBar."
+      ],
+      "dontUseWhen": [
+        "Верхняя или боковая текстовая навигация — NavigationBar.",
+        "Локальные панели — Tabs."
+      ],
+      "anatomy": [
+        "Нижняя панель навигации",
+        "Обязательная Icon в каждом пункте",
+        "Опциональные подпись и Counter",
+        "Один текущий раздел"
+      ]
+    },
+    "IconButton": {
+      "useWhen": [
+        "Знакомое компактное действие однозначно выражается системной иконкой.",
+        "Есть обязательное accessible name и системная touch target."
+      ],
+      "dontUseWhen": [
+        "Иконка неоднозначна без постоянно видимой подписи — используйте Button.",
+        "Нужна обычная навигационная ссылка."
+      ],
+      "anatomy": [
+        "Action root with accessible name",
+        "Decorative Icon",
+        "Core-owned loading indicator"
+      ]
+    },
+    "SegmentedControl": {
+      "useWhen": [
+        "Нужно переключить один из небольшого числа локальных режимов или фильтров на месте.",
+        "Выбор взаимоисключающий и не меняет URL или задачу пользователя."
+      ],
+      "dontUseWhen": [
+        "Controls переключают связанные tab panels — используйте Tabs.",
+        "Выбор ведёт на другой URL — используйте Navigation или Link."
+      ],
+      "anatomy": [
+        "Named selection group",
+        "Two to five option items",
+        "Native radio or equivalent selected semantics",
+        "Optional non-interactive count inside an option label",
+        "Core-owned fallback to the first enabled option",
+        "Visible selected and focus presentations"
+      ]
+    },
+    "Badge": {
+      "useWhen": [
+        "Нужно компактно показать статус, категорию или короткую метку данных.",
+        "Смысл полностью выражен текстом и не зависит только от цвета."
+      ],
+      "dontUseWhen": [
+        "Элемент можно выбрать, удалить или нажать — используйте Chip или Button.",
+        "Нужно длинное пояснение или persistent feedback — используйте Alert."
+      ],
+      "anatomy": [
+        "Non-interactive root",
+        "Optional decorative Icon",
+        "Short text label"
+      ]
+    },
+    "Skeleton": {
+      "useWhen": [
+        "Во время загрузки нужно сохранить ожидаемую геометрию карточки, списка или media.",
+        "Несколько primitive shapes можно собрать в placeholder будущего content."
+      ],
+      "dontUseWhen": [
+        "Операция короткая и локальна внутри Button — используйте loading Button или Spinner.",
+        "Форма будущего content неизвестна и placeholder будет вводить в заблуждение."
+      ],
+      "anatomy": [
+        "Loading region with one accessible announcement",
+        "One or more decorative placeholder shapes",
+        "Geometry matching the future content"
+      ]
+    },
+    "Alert": {
+      "useWhen": [
+        "Сообщение должно оставаться в потоке страницы, пока пользователь его не обработает.",
+        "Нужен явный info, success, warning или error context с возможными actions."
+      ],
+      "dontUseWhen": [
+        "Сообщение краткое и неперехватывающее после завершённого действия — используйте Toast.",
+        "Обычный статический текст ошибочно получил срочный role alert."
+      ],
+      "anatomy": [
+        "Optional semantic Icon",
+        "Content region",
+        "Optional title",
+        "Message body",
+        "Optional actions"
+      ]
+    },
+    "EmptyState": {
+      "useWhen": [
+        "Область пуста при первом использовании, после фильтра или из-за отсутствия доступа.",
+        "Нужно объяснить причину и предложить один понятный следующий шаг."
+      ],
+      "dontUseWhen": [
+        "Данные ещё загружаются — используйте Spinner или Skeleton.",
+        "Запрос завершился ошибкой и возможен retry — используйте ErrorState."
+      ],
+      "anatomy": [
+        "Optional Icon or Image",
+        "Title",
+        "Description",
+        "Optional actions"
+      ]
+    },
+    "NavigationBar": {
+      "useWhen": [
+        "Главные разделы Web на широком экране.",
+        "Одна верхняя панель навигации для каталога или админки."
+      ],
+      "dontUseWhen": [
+        "Нижняя навигация приложения — TabBar.",
+        "Переключение локальных панелей — Tabs."
+      ],
+      "anatomy": [
+        "Именованная область навигации",
+        "Текстовые ссылки разделов",
+        "Один текущий раздел"
+      ]
+    }
+  },
+  "comparisons": [
+    {
+      "id": "button-vs-link",
+      "title": "Button или Link",
+      "choices": [
+        {
+          "target": "Button",
+          "when": "Запустить действие в текущем контексте."
+        },
+        {
+          "target": "Text",
+          "when": "Перейти к адресу через нативный a[href], оформленный правилом ссылок Foundation → Typography."
+        }
+      ],
+      "summary": "Смысл действия определяет элемент; визуальная похожесть не меняет семантику."
+    },
+    {
+      "id": "badge-vs-chip",
+      "title": "Badge или Chip",
+      "choices": [
+        {
+          "target": "Badge",
+          "when": "Показать неинтерактивный статус или metadata."
+        },
+        {
+          "target": "Chip",
+          "when": "Выбрать, снять фильтр или удалить компактную сущность."
+        }
+      ],
+      "summary": "Badge сообщает, Chip принимает пользовательское действие."
+    },
+    {
+      "id": "dialog-vs-bottom-sheet",
+      "title": "Dialog или BottomSheet",
+      "choices": [
+        {
+          "target": "Dialog",
+          "when": "Нужна общая модальная задача с Web presentation."
+        },
+        {
+          "target": "BottomSheet",
+          "when": "Нужна mobile presentation с platform-specific viewport и gesture contract."
+        }
+      ],
+      "summary": "Обе поверхности остаются experimental; выбор presentation не переносит product controller в Core."
+    },
+    {
+      "id": "toast-vs-alert",
+      "title": "Toast или Alert",
+      "choices": [
+        {
+          "target": "Toast",
+          "when": "Кратко подтвердить завершённое действие без перехвата фокуса."
+        },
+        {
+          "target": "Alert",
+          "when": "Оставить важное сообщение в контексте страницы."
+        }
+      ],
+      "summary": "Ошибка, требующая решения, не должна исчезать только по таймеру."
+    },
+    {
+      "id": "tabs-vs-segmented-control",
+      "title": "Tabs или SegmentedControl",
+      "choices": [
+        {
+          "target": "Tabs",
+          "when": "Переключать связанные tab panels и их content."
+        },
+        {
+          "target": "SegmentedControl",
+          "when": "Менять локальный режим или взаимоисключающий фильтр."
+        }
+      ],
+      "summary": "URL navigation не является ни Tabs, ни SegmentedControl."
+    },
+    {
+      "id": "spinner-vs-skeleton",
+      "title": "Spinner или Skeleton",
+      "choices": [
+        {
+          "target": "Spinner",
+          "when": "Показать короткую локальную работу неопределённой длительности."
+        },
+        {
+          "target": "Skeleton",
+          "when": "Сохранить известную будущую геометрию content."
+        }
+      ],
+      "summary": "Уровень feedback должен совпадать с областью, которая действительно занята."
+    }
+  ],
+  "compositions": [
+    {
+      "id": "search-controls",
+      "title": "Search controls",
+      "parts": [
+        "TextField",
+        "Chip",
+        "IconButton"
+      ],
+      "note": "Product query, routing и filter state остаются feature logic."
+    },
+    {
+      "id": "user-row",
+      "title": "User row",
+      "parts": [
+        "ListItem",
+        "Avatar",
+        "Badge"
+      ],
+      "note": "Row anatomy и business actions определяются feature context."
+    },
+    {
+      "id": "content-card",
+      "title": "Content card",
+      "parts": [
+        "Image",
+        "Badge",
+        "Text",
+        "Button"
+      ],
+      "note": "Listing-specific fields и photo lifecycle не становятся Card API."
+    },
+    {
+      "id": "empty-content",
+      "title": "Empty content",
+      "parts": [
+        "EmptyState",
+        "Button"
+      ],
+      "note": "Copy определяет first-use, no-results или no-access meaning."
+    },
+    {
+      "id": "confirmation",
+      "title": "Confirmation",
+      "parts": [
+        "Dialog",
+        "Button"
+      ],
+      "note": "ConfirmationDialog остаётся отдельным experimental pattern, пока не выполнены lifecycle criteria."
+    }
+  ],
+  "coreVsFeature": {
+    "decisionSteps": [
+      "Найти существующий canonical component.",
+      "Проверить, решается ли задача композицией.",
+      "Проверить, достаточно ли semantic variant существующего API.",
+      "Собрать evidence из независимых product areas.",
+      "Оставить Reflower business meaning в feature layer.",
+      "Предлагать Core candidate только после повторяемой generic need."
+    ],
+    "examples": [
+      {
+        "subject": "Button",
+        "decision": "core",
+        "registryRef": "Button",
+        "reason": "Общий action contract без бизнес-смысла."
+      },
+      {
+        "subject": "ListingCard",
+        "decision": "feature-composition",
+        "registryRef": "ListingCard",
+        "reason": "Template собирает Card, Image, Badge, Skeleton, Text и Icon. Цена, listing status, booking meaning и photo lifecycle остаются продуктовой логикой Reflower."
+      },
+      {
+        "subject": "LanguageOption",
+        "decision": "feature-composition",
+        "registryRef": "Radio",
+        "reason": "Native radio, flag asset и localized language data решают один product flow."
+      },
+      {
+        "subject": "BottomSheet",
+        "decision": "registry-lifecycle",
+        "registryRef": "BottomSheet",
+        "reason": "Presentation зарегистрирована, но Telegram behavior и product controller ещё не являются общим stable API."
+      }
+    ]
+  },
+  "pilotExamples": [
+    {
+      "id": "admin-login",
+      "title": "Admin Login",
+      "core": [
+        "TextField",
+        "IconButton",
+        "Button",
+        "Alert"
+      ],
+      "supporting": [
+        "Stack",
+        "Text"
+      ],
+      "feature": [
+        "LoginLayout",
+        "BrandLockup",
+        "PasswordField composition",
+        "authentication flow"
+      ],
+      "lesson": "Core controls не поглощают layout, branding и authentication orchestration."
+    },
+    {
+      "id": "profile-settings",
+      "title": "Profile Settings",
+      "core": [
+        "Button",
+        "IconButton",
+        "TextField"
+      ],
+      "supporting": [
+        "SafeArea",
+        "Radio",
+        "ListItem",
+        "Stack",
+        "Text"
+      ],
+      "feature": [
+        "Fullscreen controller",
+        "LanguageOption",
+        "geocoder",
+        "validation and save orchestration"
+      ],
+      "lesson": "Platform inset composition переиспользуется, а geography identity и product controller остаются feature-owned."
+    },
+    {
+      "id": "catalog-listing-detail",
+      "title": "Catalog to Listing Detail",
+      "core": [
+        "Badge",
+        "Skeleton",
+        "EmptyState",
+        "Button",
+        "IconButton"
+      ],
+      "supporting": [
+        "ErrorState",
+        "ListItem",
+        "Image",
+        "AspectRatio",
+        "BottomSheet",
+        "Stack",
+        "Text"
+      ],
+      "feature": [
+        "CatalogFilters",
+        "CatalogGrid",
+        "ListingCard",
+        "ListingDetailSheet controller",
+        "authorized photo lifecycle"
+      ],
+      "lesson": "Core presentation переиспользуется без переноса listing semantics и overlay lifecycle в общий API."
+    }
+  ],
+  "buildingFeatureSteps": [
+    "Понять product requirement и границу feature.",
+    "Найти canonical name через Catalog search.",
+    "Проверить Registry lifecycle и реальную platform implementation.",
+    "Переиспользовать существующий Core component.",
+    "Собрать задачу композицией primitives и components.",
+    "Проверить documented variants, sizes и states.",
+    "Проверить существующие Patterns и их evidence.",
+    "Использовать только semantic tokens.",
+    "Оставить product semantics в feature component.",
+    "Предлагать новый Core API только после gap analysis и независимого evidence."
+  ]
+}

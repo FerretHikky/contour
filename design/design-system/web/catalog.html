@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="ru" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Рабочий каталог Contour Design System: Foundations, Core UI, patterns, lifecycle и guidance.">
+<title>Contour Design System Catalog</title>
+<link rel="stylesheet" href="../generated/web/tokens.css?v=1b12b04ac3269bde">
+<link rel="icon" href="assets/contour-mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../brand/typography/typography.css?v=87befe59c7916351">
+<link rel="stylesheet" href="../generated/web/core-ui.css?v=d90fc42101299908">
+  <link rel="stylesheet" href="catalog.css?v=fe3bed7e0c5bdcce">
+<script src="core-ui.js?v=4c8f7b0db8401827" defer></script>
+  <script src="catalog-react.js?v=39aed632bed420fa" defer></script>
+  <script src="catalog.js?v=cd20892065170ae8" defer></script>
+</head>
+<body>
+<a class="catalog-skip rf-link" href="#catalog-content">Перейти к содержанию</a>
+<div class="catalog-shell" id="catalog-shell" data-catalog-compact="true">
+<header class="catalog-topbar">
+<a class="catalog-brand" href="#overview" aria-label="Contour Design System — Overview">
+<img class="catalog-brand__logo catalog-brand__logo--light" src="assets/contour-wordmark.svg" alt="">
+<img class="catalog-brand__logo catalog-brand__logo--dark" src="assets/contour-wordmark-white.svg" alt="">
+</a>
+<nav class="catalog-primary-navigation rf-navigation-bar rf-navigation-bar--top" id="catalog-react-primary" aria-label="Основные разделы Design System"><noscript><a class="rf-navigation-bar__item" href="#overview" data-catalog-section="home">Home</a><a class="rf-navigation-bar__item" href="#foundations" data-catalog-section="foundation">Foundation</a><a class="rf-navigation-bar__item" href="#primitives" data-catalog-section="primitives">Primitives</a><a class="rf-navigation-bar__item" href="#components" data-catalog-section="components">Components</a><a class="rf-navigation-bar__item" href="#patterns" data-catalog-section="template">Templates</a></noscript></nav>
+<div class="catalog-topbar__actions" id="catalog-react-actions"></div>
+</header>
+<main class="catalog-content" id="catalog-content" tabindex="-1">
+<div class="catalog-error rf-alert rf-alert--error" id="catalog-load-error" role="alert" hidden>
+<span class="rf-icon rf-icon--sm" data-rf-icon-glyph="exclamation-mark-cr-fr" aria-hidden="true"></span>
+<div class="rf-alert__content">
+<span class="rf-alert__title">Catalog model не загрузился</span>
+<span id="catalog-load-error-detail">Запустите Catalog через локальный HTTP server и проверьте Design System build.</span>
+</div>
+</div>
+<article class="catalog-route catalog-home" id="overview" data-catalog-route data-search="home foundations colors typography dimensions elevation motion iconography components templates patterns">
+<header class="catalog-home-hero">
+<div class="catalog-home-hero__copy rf-stack rf-stack--gap-4">
+<h1 class="rf-text rf-text--display-medium">Создаём Contour как единую систему</h1>
+<p class="rf-text rf-text--body-large rf-text--secondary">Foundations, компоненты и правила, которые помогают собирать узнаваемые интерфейсы быстрее и увереннее.</p>
+</div>
+<div class="catalog-home-hero__media">
+<img class="rf-image catalog-home-hero__image" src="assets/catalog-home-hero.png" alt="Абстрактная композиция из интерфейсных карточек, цветовых образцов и лепестков Contour" width="1536" height="1024">
+</div>
+</header>
+<section class="catalog-home-section" aria-label="Основные разделы Design System">
+<div class="catalog-home-grid catalog-home-grid--featured">
+<a class="catalog-home-card catalog-home-card--featured rf-card rf-card--interactive" href="#foundations"><span class="catalog-home-card__visual"><img class="rf-image catalog-home-card__illustration" src="assets/catalog-foundations-hero.png" alt="" width="1402" height="1122"></span><span class="catalog-home-card__body"><strong>Foundation</strong><span>Цвет, типографика, размеры, сетка и другие основы интерфейса.</span></span></a>
+<a class="catalog-home-card catalog-home-card--featured rf-card rf-card--interactive" href="#primitives"><span class="catalog-home-card__visual"><img class="rf-image catalog-home-card__illustration" src="assets/catalog-home/components-primitives.png" alt="" width="1536" height="1024"></span><span class="catalog-home-card__body"><strong>Primitives</strong><span>Базовые элементы расположения, текста и доступности.</span></span></a>
+<a class="catalog-home-card catalog-home-card--featured rf-card rf-card--interactive" href="#components"><span class="catalog-home-card__visual"><img class="rf-image catalog-home-card__illustration" src="assets/catalog-home/components-components.png" alt="" width="1536" height="1024"></span><span class="catalog-home-card__body"><strong>Components</strong><span>Готовые элементы интерфейса, сгруппированные по назначению и статусу.</span></span></a>
+<a class="catalog-home-card catalog-home-card--featured rf-card rf-card--interactive" href="#patterns"><span class="catalog-home-card__visual"><img class="rf-image catalog-home-card__illustration" src="assets/catalog-home/guidelines-composition.png" alt="" width="1536" height="1024"></span><span class="catalog-home-card__body"><strong>Templates</strong><span>Готовые сборки из системных компонентов для повторяемых сценариев.</span></span></a>
+</div>
+</section>
+</article>
+<template id="catalog-foundation-cards-template">
+<div class="catalog-home-grid">
+<a class="catalog-foundation-card-template rf-card rf-card--interactive" href="#foundations/colors"><span class="catalog-home-card__visual"><img class="rf-image catalog-home-card__illustration" src="assets/catalog-home/foundations-colors.png" alt="" width="1536" height="1024"></span><span class="catalog-home-card__body"><strong>Colors</strong><span>Палитры, семантические роли и состояния.</span></span></a>
+<a class="catalog-foundation-card-template rf-card rf-card--interactive" href="#foundations/dimensions"><span class="catalog-home-card__visual"><img class="rf-image catalog-home-card__illustration" src="assets/catalog-home/foundations-dimensions.png" alt="" width="1536" height="1024"></span><span class="catalog-home-card__body"><strong>Metrics</strong><span>Размеры, отступы, скругления, границы и прозрачность.</span></span></a>
+<a class="catalog-foundation-card-template rf-card rf-card--interactive" href="#foundations/typography"><span class="catalog-home-card__visual"><img class="rf-image catalog-home-card__illustration" src="assets/catalog-home/foundations-typography.png" alt="" width="1536" height="1024"></span><span class="catalog-home-card__body"><strong>Typography</strong><span>Шрифтовая шкала и роли текста.</span></span></a>
+<a class="catalog-foundation-card-template rf-card rf-card--interactive" href="#foundations/elevation"><span class="catalog-home-card__visual"><img class="rf-image catalog-home-card__illustration" src="assets/catalog-home/foundations-elevation.png" alt="" width="1536" height="1024"></span><span class="catalog-home-card__body"><strong>Elevation</strong><span>Глубина и иерархия поверхностей.</span></span></a>
+<a class="catalog-foundation-card-template rf-card rf-card--interactive" href="#foundations/motion"><span class="catalog-home-card__visual"><img class="rf-image catalog-home-card__illustration" src="assets/catalog-home/foundations-motion.png" alt="" width="1536" height="1024"></span><span class="catalog-home-card__body"><strong>Motion</strong><span>Длительности, easing и переходы.</span></span></a>
+<a class="catalog-foundation-card-template rf-card rf-card--interactive" href="#foundations/grid"><span class="catalog-home-card__visual"><img class="rf-image catalog-home-card__illustration" src="assets/catalog-home/foundations-breakpoints.png" alt="" width="1536" height="1024"></span><span class="catalog-home-card__body"><strong>Grid</strong><span>Колонки, отступы, контейнеры и адаптивная композиция.</span></span></a>
+<a class="catalog-foundation-card-template rf-card rf-card--interactive" href="#foundations/icons"><span class="catalog-home-card__visual"><img class="rf-image catalog-home-card__illustration" src="assets/catalog-home/foundations-iconography.png" alt="" width="1536" height="1024"></span><span class="catalog-home-card__body"><strong>Iconography</strong><span>Системные иконки, размеры и правила.</span></span></a>
+<a class="catalog-foundation-card-template rf-card rf-card--interactive" href="#foundations/media"><span class="catalog-home-card__visual"><img class="rf-image catalog-home-card__illustration" src="assets/catalog-home/foundations-media.png" alt="" width="1536" height="1024"></span><span class="catalog-home-card__body"><strong>Media &amp; illustrations</strong><span>Изображения, пропорции и fallback-состояния.</span></span></a>
+</div>
+</template>
+<article class="catalog-route catalog-home" id="foundations" data-catalog-route hidden></article>
+<article class="catalog-route" id="catalog-foundation-page" data-catalog-route hidden></article>
+<article class="catalog-route" id="catalog-index-page" data-catalog-route hidden></article>
+<article class="catalog-route" id="catalog-entity-page" data-catalog-route hidden></article>
+<article class="catalog-route" id="guidelines/terminology" data-catalog-route data-search="terminology canonical aliases naming input modal drawer row separator" hidden>
+<header class="catalog-page-header"><div class="rf-stack rf-stack--gap-3"><span class="catalog-page-kicker">Guidelines</span><h1 class="rf-text rf-text--display-medium">Terminology</h1><p class="rf-text rf-text--body-large rf-text--secondary">Canonical names нужны для одного общего языка. Synonyms используются только для discovery.</p></div></header>
+<section class="catalog-section rf-stack rf-stack--gap-4">
+<div class="catalog-table-wrap"><table class="catalog-table"><thead><tr><th>Часто путают</th><th>Как выбирать</th></tr></thead><tbody>
+<tr><td>TextField vs Input</td><td><strong>TextField</strong> — canonical editable field. Input deprecated и ведёт на TextField.</td></tr>
+<tr><td>Dialog vs Modal</td><td><strong>Dialog</strong> — canonical overlay contract. Modal deprecated.</td></tr>
+<tr><td>BottomSheet vs Drawer</td><td><strong>BottomSheet</strong> адаптирован к нижнему краю Mini App; Drawer — боковая Web surface. Оба experimental.</td></tr>
+<tr><td>Toast vs Alert</td><td><strong>Toast</strong> transient и глобальный; <strong>Alert</strong> остаётся в контексте.</td></tr>
+<tr><td>Badge vs Chip</td><td><strong>Badge</strong> сообщает metadata/status; <strong>Chip</strong> интерактивно выбирает compact option.</td></tr>
+<tr><td>Spinner vs Skeleton</td><td><strong>Spinner</strong> — индикатор; <strong>Skeleton</strong> — заготовка геометрии загружаемого содержимого.</td></tr>
+<tr><td>Divider vs Separator</td><td><strong>Divider</strong> — canonical primitive; Separator — discovery synonym.</td></tr>
+<tr><td>ListItem vs Row</td><td><strong>ListItem</strong> — structured reusable row; Row без contract остаётся layout/feature term.</td></tr>
+<tr><td>SegmentedControl vs Tabs</td><td><strong>SegmentedControl</strong> меняет local value; <strong>Tabs</strong> переключают content/navigation context.</td></tr>
+<tr><td>Button vs Link</td><td><strong>Button</strong> запускает action; <strong>Link</strong> ведёт на location.</td></tr>
+</tbody></table></div>
+</section>
+</article>
+<article class="catalog-route" id="guidelines/comparisons" data-catalog-route data-search="comparison button link badge chip dialog bottomsheet toast alert tabs segmented spinner skeleton card listitem" hidden>
+<header class="catalog-page-header"><div class="rf-stack rf-stack--gap-3"><span class="catalog-page-kicker">Guidelines</span><h1 class="rf-text rf-text--display-medium">Component comparison</h1><p class="rf-text rf-text--body-large rf-text--secondary">Выбор начинается с user intent, а не с визуального сходства.</p></div></header>
+<section class="catalog-section"><div class="catalog-grid" id="catalog-comparison-grid"></div></section>
+</article>
+<article class="catalog-route" id="guidelines/composition" data-catalog-route data-search="composition form search user row content card empty confirmation examples" hidden>
+<header class="catalog-page-header"><div class="rf-stack rf-stack--gap-3"><span class="catalog-page-kicker">Guidelines</span><h1 class="rf-text rf-text--display-medium">Composition</h1><p class="rf-text rf-text--body-large rf-text--secondary">Examples ниже показывают reuse, но не становятся Patterns без evidence и lifecycle decision.</p></div></header>
+<section class="catalog-section"><div class="catalog-grid" id="catalog-composition-grid"></div></section>
+</article>
+<article class="catalog-route" id="guidelines/core-or-feature" data-catalog-route data-search="should this be core decision tree feature listing card language option evidence" hidden>
+<header class="catalog-page-header"><div class="rf-stack rf-stack--gap-3"><span class="catalog-page-kicker">Decision guide</span><h1 class="rf-text rf-text--display-medium">Should this be Core?</h1><p class="rf-text rf-text--body-large rf-text--secondary">Business reuse ещё не означает общий Design System contract.</p></div></header>
+<section class="catalog-section rf-stack rf-stack--gap-6">
+<ol class="catalog-decision-list rf-text rf-text--body-medium">
+<li><strong>Есть existing component?</strong> Reuse его canonical API.</li>
+<li><strong>Нет. Composition решает задачу?</strong> Соберите feature из Core.</li>
+<li><strong>Нет. Нужен semantic variant?</strong> Предложите ограниченное расширение существующего contract.</li>
+<li><strong>Нет. Generic need повторяется в unrelated product areas?</strong> Соберите evidence для Pattern/Core candidate.</li>
+<li><strong>UI содержит Contour business meaning?</strong> Оставьте его feature component.</li>
+</ol>
+<div class="catalog-do-dont">
+<div class="catalog-do rf-stack rf-stack--gap-2"><span class="rf-badge rf-badge--success">Core</span><strong>Button</strong><span>Generic action contract без product semantics.</span></div>
+<div class="catalog-dont rf-stack rf-stack--gap-2"><span class="rf-badge rf-badge--warning">Feature</span><strong>ListingCard</strong><span>Знает объявление, цену, location и response actions.</span></div>
+<div class="catalog-dont rf-stack rf-stack--gap-2"><span class="rf-badge rf-badge--warning">Feature composition</span><strong>LanguageOption</strong><span>ListItem + Radio с product-specific language data.</span></div>
+<div class="catalog-callout catalog-callout--warning rf-stack rf-stack--gap-2"><strong>BottomSheet</strong><span>Core candidate по Registry, но experimental и supported только там, где есть canonical adapter.</span></div>
+</div>
+</section>
+</article>
+<article class="catalog-route" id="guidelines/real-product" data-catalog-route data-search="pilot migration admin login profile settings catalog listing detail production usage" hidden>
+<header class="catalog-page-header"><div class="rf-stack rf-stack--gap-3"><span class="catalog-page-kicker">Pilot evidence</span><h1 class="rf-text rf-text--display-medium">Real product usage</h1><p class="rf-text rf-text--body-large rf-text--secondary">Decomposition из pilot migration показывает Core/Feature boundary без копирования feature code.</p></div></header>
+<section class="catalog-section"><div class="catalog-grid" id="catalog-pilot-grid"></div></section>
+<section class="catalog-section rf-stack rf-stack--gap-4" aria-labelledby="listing-card-specimen-title">
+<div class="rf-stack rf-stack--gap-2">
+<span class="rf-badge rf-badge--warning">Feature composition</span>
+<h2 class="rf-text rf-text--heading-h2" id="listing-card-specimen-title">Listing Card · storefront</h2>
+<p class="rf-text rf-text--body-small rf-text--secondary">Card + Image + Badge + Skeleton + Text + Icon. Нижняя панель частично перекрывает фотографию; бейдж «Новое» живёт первый час после серверного времени публикации; product semantics и photo lifecycle не переносятся в Core.</p>
+</div>
+<div class="rf-inline rf-inline--wrap rf-inline--gap-2" role="group" aria-label="Состояние карточки">
+<button class="rf-chip" type="button" aria-pressed="true" data-listing-card-state="default">Базовая</button>
+<button class="rf-chip" type="button" aria-pressed="false" data-listing-card-state="responded">Отклик</button>
+<button class="rf-chip" type="button" aria-pressed="false" data-listing-card-state="new">Новое · до 1 часа</button>
+<button class="rf-chip" type="button" aria-pressed="false" data-listing-card-state="owned">Моё</button>
+<button class="rf-chip" type="button" aria-pressed="false" data-listing-card-state="new-owned">Новое + моё</button>
+<button class="rf-chip" type="button" aria-pressed="false" data-listing-card-state="new-responded">Новое + отклик · до 1 часа</button>
+<button class="rf-chip" type="button" aria-pressed="false" data-listing-card-state="loading">Загрузка</button>
+<button class="rf-chip" type="button" aria-pressed="false" data-listing-card-state="error">Ошибка фото</button>
+<button class="rf-chip" type="button" aria-pressed="false" data-listing-card-state="long">Длинный текст</button>
+</div>
+<div class="listing-card-preview">
+<button class="rf-listing-card listing-card-specimen " type="button" data-listing-card-specimen data-listing-card-mode="new-owned" aria-label="Открыть объявление: букет, 3 500 рублей, Москва">
+<span class="rf-listing-card__media listing-card-specimen__media rf-aspect-ratio rf-aspect-ratio--portrait rf-image-frame" data-state="loaded">
+<img class="rf-image" src="assets/listing-card-figma-bouquet.png" alt="Букет с подсолнухом и розовыми цветами">
+<span class="rf-skeleton rf-skeleton--fill" aria-hidden="true"></span>
+<span class="rf-media-fallback" role="img" aria-label="Фото не загрузилось"><span class="rf-media-fallback__icon" aria-hidden="true"><span class="rf-icon rf-icon--lg" data-rf-icon-glyph="image-off"></span></span><span class="rf-media-fallback__label">Фото не загрузилось</span></span>
+<span class="rf-listing-card__statuses listing-card-specimen__statuses">
+<span class="rf-listing-card__new listing-card-specimen__new rf-badge rf-badge--brand-solid rf-badge--sm">Новое</span>
+<span class="rf-listing-card__own listing-card-specimen__own rf-badge rf-badge--info rf-badge--sm">Моё</span>
+<span class="rf-listing-card__response listing-card-specimen__response rf-badge rf-badge--success rf-badge--sm" hidden>Отклик</span>
+</span>
+<span class="rf-listing-card__place listing-card-specimen__place rf-badge rf-badge--brand-subtle rf-badge--sm"><span class="rf-icon rf-icon--xs" data-rf-icon-glyph="location" data-rf-icon-style="solid" aria-hidden="true"></span><span data-listing-card-place>Москва</span></span>
+</span>
+<span class="rf-listing-card__content listing-card-specimen__content ">
+<span class="rf-listing-card__details listing-card-specimen__details" data-listing-card-details>
+<strong class="rf-listing-card__line rf-listing-card__price listing-card-specimen__line listing-card-specimen__price rf-text rf-text--title-s" data-listing-card-price>3 500 ₽</strong>
+<span class="rf-listing-card__description listing-card-specimen__description">
+<span class="rf-listing-card__line listing-card-specimen__line rf-text rf-text--headline-xs" data-listing-card-type>Букет</span>
+<span class="rf-listing-card__line rf-listing-card__freshness listing-card-specimen__line listing-card-specimen__freshness rf-text rf-text--body-s rf-text--secondary" data-listing-card-freshness>Свежайший</span>
+</span>
+</span>
+<span class="rf-listing-card__content-skeleton listing-card-specimen__content-skeleton" hidden aria-hidden="true">
+<span class="rf-listing-card__skeleton-line rf-listing-card__skeleton-line--price listing-card-specimen__skeleton-line listing-card-specimen__skeleton-line--price rf-skeleton"></span>
+<span class="rf-listing-card__skeleton-line listing-card-specimen__skeleton-line rf-skeleton"></span>
+<span class="rf-listing-card__skeleton-line rf-listing-card__skeleton-line--freshness listing-card-specimen__skeleton-line listing-card-specimen__skeleton-line--freshness rf-skeleton"></span>
+</span>
+</span>
+</button>
+</div>
+<section class="listing-card-freshness rf-card rf-stack rf-stack--gap-3" aria-labelledby="listing-card-freshness-title">
+<h3 class="rf-text rf-text--heading-h3" id="listing-card-freshness-title">Типы свежести</h3>
+<dl class="listing-card-freshness__list rf-stack rf-stack--gap-2">
+<div><dt><span class="rf-badge rf-badge--success rf-badge--sm">Свежайший</span></dt><dd>до 24 часов</dd></div>
+<div><dt><span class="rf-badge rf-badge--success rf-badge--sm">Хорошее состояние</span></dt><dd>1–3 дня</dd></div>
+<div><dt><span class="rf-badge rf-badge--info rf-badge--sm">Теряет свежесть</span></dt><dd>4–7 дней</dd></div>
+<div><dt><span class="rf-badge rf-badge--warning rf-badge--sm">Заметно вянут</span></dt><dd>более 7 дней</dd></div>
+<div><dt><span class="rf-badge rf-badge--brand rf-badge--sm">Увядшие</span></dt><dd>не рекомендуется</dd></div>
+</dl>
+</section>
+</section>
+</article>
+<article class="catalog-route" id="guidelines/do-dont" data-catalog-route data-search="do don't semantic tokens red button custom input local card feature rules" hidden>
+<header class="catalog-page-header"><div class="rf-stack rf-stack--gap-3"><span class="catalog-page-kicker">Guidelines</span><h1 class="rf-text rf-text--display-medium">Do / Don’t</h1><p class="rf-text rf-text--body-large rf-text--secondary">Короткие правила, которые останавливают visual debt до code review.</p></div></header>
+<section class="catalog-section"><div class="catalog-do-dont">
+<div class="catalog-do rf-stack rf-stack--gap-2"><span class="rf-badge rf-badge--success">Do</span><strong>Use semantic tokens.</strong><span>Выбирайте роль, а не конкретный primitive color.</span></div>
+<div class="catalog-dont rf-stack rf-stack--gap-2"><span class="rf-badge rf-badge--error">Don’t</span><strong>Use raw HEX.</strong><span>Raw color не выражает intent и не адаптируется к theme.</span></div>
+<div class="catalog-do rf-stack rf-stack--gap-2"><span class="rf-badge rf-badge--success">Do</span><strong>Use Button destructive variant.</strong><span>Переиспользуйте canonical action contract.</span></div>
+<div class="catalog-dont rf-stack rf-stack--gap-2"><span class="rf-badge rf-badge--error">Don’t</span><strong>Create RedButton.</strong><span>Цвет не является новым component meaning.</span></div>
+<div class="catalog-do rf-stack rf-stack--gap-2"><span class="rf-badge rf-badge--success">Do</span><strong>Compose Card + ListItem + Badge.</strong><span>Композиция остаётся прозрачной и проверяемой.</span></div>
+<div class="catalog-dont rf-stack rf-stack--gap-2"><span class="rf-badge rf-badge--error">Don’t</span><strong>Create another local Card.</strong><span>Local clone обходит Core contract и quality gates.</span></div>
+<div class="catalog-do rf-stack rf-stack--gap-2"><span class="rf-badge rf-badge--success">Do</span><strong>Keep ListingCard in feature layer.</strong><span>Product semantics остаётся рядом с business logic.</span></div>
+<div class="catalog-dont rf-stack rf-stack--gap-2"><span class="rf-badge rf-badge--error">Don’t</span><strong>Promote after two similar screens.</strong><span>Core требует unrelated evidence и lifecycle review.</span></div>
+<div class="catalog-do rf-stack rf-stack--gap-2"><span class="rf-badge rf-badge--success">Do</span><strong>Use TextField.</strong><span>Search canonical name и existing variants.</span></div>
+<div class="catalog-dont rf-stack rf-stack--gap-2"><span class="rf-badge rf-badge--error">Don’t</span><strong>Create FormInput / CustomInput.</strong><span>Aliases не становятся параллельными components.</span></div>
+</div></section>
+</article>
+<article class="catalog-route" id="guidelines/building-feature" data-catalog-route data-search="building a feature workflow agents contributing search registry reuse compose semantic tokens" hidden>
+<header class="catalog-page-header"><div class="rf-stack rf-stack--gap-3"><span class="catalog-page-kicker">Practical workflow</span><h1 class="rf-text rf-text--display-medium">Building a feature with Design System</h1><p class="rf-text rf-text--body-large rf-text--secondary">Один workflow для людей и coding agents, согласованный с AGENTS и Contributing.</p></div></header>
+<section class="catalog-section rf-stack rf-stack--gap-6">
+<ol class="catalog-decision-list rf-text rf-text--body-medium" id="catalog-building-steps"></ol>
+<div class="catalog-callout rf-stack rf-stack--gap-2"><strong>Release contract</strong><span>После UI change запускаются generated check, Registry validation, DS lint, component/browser gates и обязательный product contour.</span></div>
+</section>
+</article>
+<article class="catalog-route" id="guidelines/accessibility" data-catalog-route data-search="accessibility keyboard focus visible semantics contrast touch target screen reader" hidden>
+<header class="catalog-page-header"><div class="rf-stack rf-stack--gap-3"><span class="catalog-page-kicker">Guidelines</span><h1 class="rf-text rf-text--display-medium">Accessibility</h1><p class="rf-text rf-text--body-large rf-text--secondary">Registry contracts и automated smoke checks снижают риск, но не доказывают полную compliance.</p></div></header>
+<section class="catalog-section rf-stack rf-stack--gap-6">
+<ul class="catalog-meta-list">
+<li class="catalog-meta-list__item"><strong>Semantics first</strong><span>Native button, link, input, select и dialog сохраняют platform behavior.</span></li>
+<li class="catalog-meta-list__item"><strong>Keyboard</strong><span>Основной flow доступен Tab/Shift+Tab/Enter/Space/Escape без pointer.</span></li>
+<li class="catalog-meta-list__item"><strong>Focus-visible</strong><span>Все interactive Core controls имеют явный semantic ring.</span></li>
+<li class="catalog-meta-list__item"><strong>Relationships</strong><span>Label, description, error, title и live feedback связаны через native/ARIA contracts.</span></li>
+<li class="catalog-meta-list__item"><strong>Touch</strong><span>Interactive targets проверяются против minimum touch target.</span></li>
+<li class="catalog-meta-list__item"><strong>Contrast and themes</strong><span>Light/Dark и forced colors проверяются отдельно; documentation не заменяет AT review.</span></li>
+</ul>
+</section>
+</article>
+<article class="catalog-route" id="guidelines/migration" data-catalog-route data-search="migration contribution inventory pilot quality gates gaps" hidden>
+<header class="catalog-page-header"><div class="rf-stack rf-stack--gap-3"><span class="catalog-page-kicker">Governance</span><h1 class="rf-text rf-text--display-medium">Migration &amp; contribution</h1><p class="rf-text rf-text--body-large rf-text--secondary">Catalog помогает выбрать API; lifecycle decisions остаются в Registry governance.</p></div></header>
+<section class="catalog-section"><div class="catalog-grid">
+<a class="rf-card rf-card--interactive" href="../../../docs/design-system/PILOT_MIGRATION.md"><span class="rf-stack rf-stack--gap-2"><strong>Pilot Migration</strong><span>Реальные decomposition и migration boundary.</span></span></a>
+<a class="rf-card rf-card--interactive rf-stack rf-stack--gap-2" href="../DESIGN_SYSTEM_CONTRIBUTING.md"><strong>Contributing</strong><span>Tokens, lifecycle, evidence и quality gates.</span></a>
+<a class="rf-card rf-card--interactive rf-stack rf-stack--gap-2" href="../../../docs/design-system/COMPONENT_INVENTORY.md"><strong>Component Inventory</strong><span>Product mapping, candidates и migration ownership.</span></a>
+<a class="rf-card rf-card--interactive rf-stack rf-stack--gap-2" href="../../../docs/design-system/CATALOG_AUDIT.md"><strong>Initial Catalog Audit</strong><span>Исходные проблемы, evidence и принятые решения.</span></a>
+<a class="rf-card rf-card--interactive rf-stack rf-stack--gap-2" href="../../../docs/design-system/CATALOG.md"><strong>Catalog report</strong><span>Coverage, architecture, quality gates и оставшиеся gaps.</span></a>
+</div></section>
+</article>
+<article class="catalog-route" id="guidelines/specimens" data-catalog-route data-search="specimen playground state matrix stress responsive button textfield checkbox radio switch badge card listitem tabs alert toast dialog bottomsheet emptystate skeleton" hidden>
+<header class="catalog-page-header"><div class="rf-stack rf-stack--gap-3"><span class="catalog-page-kicker">Documentation lab</span><h1 class="rf-text rf-text--display-medium">Specimens, states &amp; stress</h1><p class="rf-text rf-text--body-large rf-text--secondary">Все примеры используют настоящий Core UI. Catalog layer добавляет только layout, controls и fixtures.</p></div></header>
+<section class="catalog-section rf-stack rf-stack--gap-6" id="visual-actions" data-visual-surface="actions" aria-labelledby="actions-title">
+<div class="rf-stack rf-stack--gap-2"><h2 class="rf-text rf-text--heading-h2" id="actions-title">Button state matrix</h2><p class="rf-text rf-text--body-small rf-text--secondary">Hover, pressed и focus-visible проверяются на самих controls; disabled/loading показаны постоянно.</p></div>
+<div class="catalog-table-wrap"><table class="catalog-table"><thead><tr><th>Variant</th><th>Default</th><th>Disabled</th><th>Loading</th></tr></thead><tbody>
+<tr><td>Primary</td><td><button class="rf-button rf-button--primary" id="visual-button-primary" type="button"><span class="rf-icon rf-icon--sm" data-rf-icon-glyph="checkmark" aria-hidden="true"></span>Сохранить</button></td><td><button class="rf-button rf-button--primary" id="visual-button-disabled" type="button" disabled><span class="rf-icon rf-icon--sm" data-rf-icon-glyph="checkmark" aria-hidden="true"></span>Сохранить</button></td><td><button class="rf-button rf-button--primary" id="visual-button-loading" type="button" data-loading="true"><span class="rf-icon rf-icon--sm" data-rf-icon-glyph="checkmark" aria-hidden="true"></span>Сохраняем</button></td></tr>
+<tr><td>Secondary</td><td><button class="rf-button rf-button--secondary" type="button">Дальше<span class="rf-icon rf-icon--sm" data-rf-icon-glyph="right-arrow" aria-hidden="true"></span></button></td><td><button class="rf-button rf-button--secondary" type="button" disabled>Дальше<span class="rf-icon rf-icon--sm" data-rf-icon-glyph="right-arrow" aria-hidden="true"></span></button></td><td><button class="rf-button rf-button--secondary" type="button" data-loading="true">Дальше<span class="rf-icon rf-icon--sm" data-rf-icon-glyph="right-arrow" aria-hidden="true"></span></button></td></tr>
+<tr><td>Tertiary</td><td><button class="rf-button rf-button--tertiary" type="button">Подробнее</button></td><td><button class="rf-button rf-button--tertiary" type="button" disabled>Подробнее</button></td><td><button class="rf-button rf-button--tertiary" type="button" data-loading="true">Загрузка</button></td></tr>
+<tr><td>Danger</td><td><button class="rf-button rf-button--danger" id="visual-button-danger" type="button"><span class="rf-icon rf-icon--sm" data-rf-icon-glyph="trash-can" aria-hidden="true"></span>Удалить</button></td><td><button class="rf-button rf-button--danger" type="button" disabled><span class="rf-icon rf-icon--sm" data-rf-icon-glyph="trash-can" aria-hidden="true"></span>Удалить</button></td><td><button class="rf-button rf-button--danger" type="button" data-loading="true"><span class="rf-icon rf-icon--sm" data-rf-icon-glyph="trash-can" aria-hidden="true"></span>Удаляем</button></td></tr>
+</tbody></table></div>
+<div class="rf-inline rf-inline--gap-3"><button class="rf-button rf-button--primary rf-button--s" type="button">Small</button><button class="rf-button rf-button--primary" type="button">Medium</button><button class="rf-button rf-button--primary rf-button--l" type="button">Large</button><button class="rf-icon-button rf-icon-button--secondary" type="button" aria-label="Дополнительные действия"><span class="rf-icon rf-icon--sm" data-rf-icon-glyph="more-vr-al" aria-hidden="true"></span></button><button class="rf-icon-button rf-icon-button--secondary" type="button" aria-label="Поиск"><span class="rf-icon rf-icon--sm" data-rf-icon-glyph="search" aria-hidden="true"></span></button></div>
+<a class="rf-button rf-button--secondary" href="#guidelines/specimens" aria-disabled="true">Недоступная ссылка</a>
+</section>
+<a class="rf-link" href="text-field-mobile-preview.html">Проверить мобильный ввод: все размеры и состояния, светлая и тёмная темы</a>
+<section class="catalog-section rf-stack rf-stack--gap-6" id="visual-fields" data-visual-surface="fields" aria-labelledby="fields-title">
+<div class="rf-stack rf-stack--gap-2"><h2 class="rf-text rf-text--heading-h2" id="fields-title">TextField / Multiline state matrix</h2><p class="rf-text rf-text--body-small rf-text--secondary">Floating label определяется нативными focus и value; TextField сохраняет связь label, hint и error.</p></div>
+<div class="catalog-state-grid">
+<div class="catalog-state-cell"><span>Empty + label / focus</span><div class="rf-text-field-group"><span class="rf-text-field__control"><input class="rf-text-field" id="visual-field-default" type="text" aria-describedby="title-hint"><label class="rf-text-field__label" for="visual-field-default">Название</label></span><span class="rf-text-field__hint" id="title-hint">Короткая подсказка.</span></div></div>
+<div class="catalog-state-cell"><span>Disabled + value</span><div class="rf-text-field-group"><span class="rf-text-field__control"><input class="rf-text-field rf-text-field--lg" id="visual-field-disabled" type="text" value="Изменить нельзя" disabled><label class="rf-text-field__label" for="visual-field-disabled">Название</label></span></div></div>
+<div class="catalog-state-cell"><span>Error / error + focus</span><div class="rf-text-field-group"><span class="rf-text-field__control"><input class="rf-text-field" id="visual-field-error" type="text" aria-invalid="true" aria-describedby="price-error"><label class="rf-text-field__label" for="visual-field-error">Цена</label></span><span class="rf-text-field__error" id="price-error"><span class="rf-icon rf-icon--xs" data-rf-icon-glyph="exclamation-mark-cr-fr" aria-hidden="true"></span>Укажите цену</span></div></div>
+<div class="catalog-state-cell"><span>Multiline / readonly</span><textarea class="rf-text-field rf-text-field--multiline" id="visual-text-area" placeholder="Описание" aria-label="Описание" readonly>Описание в несколько строк.&#10;Вторая строка проверяет перенос.</textarea></div>
+</div>
+</section>
+<section class="catalog-section rf-stack rf-stack--gap-6" id="visual-selection" data-visual-surface="selection" aria-labelledby="selection-title">
+<div class="rf-stack rf-stack--gap-2"><h2 class="rf-text rf-text--heading-h2" id="selection-title">Selection states</h2><p class="rf-text rf-text--body-small rf-text--secondary">Native input contracts.</p></div>
+<div class="catalog-state-grid">
+<div class="catalog-state-cell"><span class="rf-text rf-text--label-small">Checkbox</span><label class="rf-choice"><input class="rf-choice__input" type="checkbox"><span class="rf-choice__label">Default</span></label><label class="rf-choice"><input class="rf-choice__input" type="checkbox" checked><span class="rf-choice__label">Checked</span></label><label class="rf-choice"><input class="rf-choice__input" type="checkbox" disabled><span class="rf-choice__label">Disabled</span></label><label class="rf-choice"><input class="rf-choice__input" id="visual-checkbox-indeterminate" type="checkbox"><span class="rf-choice__label">Indeterminate</span></label></div>
+<fieldset class="catalog-state-cell rf-radio-group"><legend class="rf-text rf-text--label-small">Radio</legend><label class="rf-choice"><input class="rf-choice__input" type="radio" name="delivery" checked><span class="rf-choice__label">Самовывоз</span></label><label class="rf-choice"><input class="rf-choice__input" type="radio" name="delivery"><span class="rf-choice__label">Доставка</span></label><label class="rf-choice"><input class="rf-choice__input" type="radio" name="delivery" disabled><span class="rf-choice__label">Недоступно</span></label></fieldset>
+<div class="catalog-state-cell"><span class="rf-text rf-text--label-small">Switch</span><label class="rf-switch"><span class="rf-switch__control"><input class="rf-switch__input" type="checkbox" role="switch" checked><span class="rf-switch__track"></span></span><span>Включено</span></label><label class="rf-switch"><span class="rf-switch__control"><input class="rf-switch__input" type="checkbox" role="switch"><span class="rf-switch__track"></span></span><span>Выключено</span></label><label class="rf-switch"><span class="rf-switch__control"><input class="rf-switch__input" type="checkbox" role="switch" disabled><span class="rf-switch__track"></span></span><span>Недоступно</span></label></div>
+<div class="catalog-state-cell"><fieldset class="rf-segmented-control"><legend class="rf-sr-only">Вид объявлений</legend><label class="rf-segmented-control__item"><input class="rf-segmented-control__input" type="radio" name="view"><span class="rf-segmented-control__label">Карточки</span></label><label class="rf-segmented-control__item"><input class="rf-segmented-control__input" type="radio" name="view"><span class="rf-segmented-control__label">Список</span></label><label class="rf-segmented-control__item"><input class="rf-segmented-control__input" type="radio" name="view" disabled><span class="rf-segmented-control__label">Карта</span></label></fieldset><fieldset class="rf-segmented-control rf-segmented-control--sm"><legend class="rf-sr-only">Плотность</legend><label class="rf-segmented-control__item"><input class="rf-segmented-control__input" type="radio" name="density" checked><span class="rf-segmented-control__label">Обычно</span></label><label class="rf-segmented-control__item"><input class="rf-segmented-control__input" type="radio" name="density"><span class="rf-segmented-control__label">Компактно</span></label></fieldset></div>
+</div>
+</section>
+<section class="catalog-section rf-stack rf-stack--gap-6" id="visual-navigation" data-visual-surface="navigation" aria-labelledby="navigation-title">
+<div class="rf-stack rf-stack--gap-2"><h2 class="rf-text rf-text--heading-h2" id="navigation-title">Navigation &amp; disclosure</h2><p class="rf-text rf-text--body-small rf-text--secondary">Tabs и stable Dropdown.</p></div>
+<div class="rf-tabs" data-rf-tabs>
+<div class="rf-tab-list" role="tablist" aria-label="Объявления">
+<button class="rf-tab" id="tab-active" type="button" role="tab" aria-selected="true" aria-controls="panel-active" tabindex="0">Активные</button>
+<button class="rf-tab" id="tab-archive" type="button" role="tab" aria-selected="false" aria-controls="panel-archive" tabindex="-1">Архив</button>
+</div>
+<div class="rf-tab-panel" id="panel-active" role="tabpanel" aria-labelledby="tab-active" tabindex="0"><p class="rf-text rf-text--body-small">Три активных объявления.</p></div>
+<div class="rf-tab-panel" id="panel-archive" role="tabpanel" aria-labelledby="tab-archive" tabindex="0" hidden><p class="rf-text rf-text--body-small">Архив пока пуст.</p></div>
+</div>
+<div class="rf-dropdown" data-rf-dropdown data-rf-dropdown-mode="actions">
+<button class="rf-button rf-button--secondary" type="button" data-rf-dropdown-trigger aria-haspopup="menu" aria-label="Действия объявления">Действия</button>
+<div class="rf-dropdown__panel" role="menu" hidden><button class="rf-dropdown__item rf-list-item rf-list-item--interactive" type="button" role="menuitem"><span class="rf-dropdown__item-content rf-list-item__content"><span class="rf-dropdown__item-label">Редактировать</span></span></button><button class="rf-dropdown__item rf-dropdown__item--destructive rf-list-item rf-list-item--interactive" type="button" role="menuitem"><span class="rf-dropdown__item-content rf-list-item__content"><span class="rf-dropdown__item-label">Удалить</span></span></button></div>
+</div>
+<nav class="rf-navigation-bar rf-navigation-bar--top" aria-label="Основная навигация"><a class="rf-navigation-bar__item" href="#overview" aria-current="page">Обзор</a><a class="rf-navigation-bar__item" href="#components">Компоненты</a><a class="rf-navigation-bar__item" href="#patterns" aria-disabled="true">Недоступно</a></nav>
+<nav class="catalog-bottom-navigation rf-navigation-bar rf-navigation-bar--bottom rf-bottom-navigation" aria-label="Нижняя навигация"><a class="rf-navigation-bar__item rf-bottom-navigation__item" href="#overview" aria-current="page"><span class="rf-icon rf-icon--sm" data-rf-icon-glyph="shopping-bag" data-rf-icon-style="solid" aria-hidden="true"></span>Каталог</a><a class="rf-navigation-bar__item rf-bottom-navigation__item" href="#components"><span class="rf-icon rf-icon--sm" data-rf-icon-glyph="user-cr-fr" data-rf-icon-style="solid" aria-hidden="true"></span>Профиль</a></nav>
+<div class="rf-accordion"><details class="rf-accordion__item"><summary class="rf-accordion__trigger">Что входит в стоимость?<span class="rf-accordion__icon rf-icon rf-icon--sm" data-rf-icon-glyph="chevron-down" aria-hidden="true"></span></summary><div class="rf-accordion__content">Букет, упаковка и открытка.</div></details></div>
+</section>
+<section class="catalog-section rf-stack rf-stack--gap-6" id="visual-cards" data-visual-surface="cards" aria-labelledby="cards-title">
+<div class="rf-stack rf-stack--gap-2"><h2 class="rf-text rf-text--heading-h2" id="cards-title">Content &amp; stress</h2></div>
+<div class="rf-inline rf-inline--gap-2"><div class="rf-text-field-group"><span class="rf-text-field__label" id="catalog-stress-label">Stress fixture</span><div class="rf-dropdown" data-rf-dropdown data-rf-dropdown-mode="selection"><button class="rf-dropdown__trigger" type="button" data-rf-dropdown-trigger aria-labelledby="catalog-stress-label catalog-stress-value"><span class="rf-dropdown__trigger-value" id="catalog-stress-value" data-rf-dropdown-value></span><span class="rf-dropdown__chevron rf-icon rf-icon--sm" data-rf-dropdown-chevron data-rf-icon-glyph="chevron-down" aria-hidden="true"></span></button><input id="catalog-stress-select" type="hidden" value="short" data-rf-dropdown-input><div class="rf-dropdown__panel" role="listbox" data-rf-dropdown-panel hidden><button class="rf-dropdown__item rf-list-item rf-list-item--interactive" type="button" role="option" data-value="short" aria-selected="true"><span class="rf-dropdown__item-content rf-list-item__content"><span class="rf-dropdown__item-label" data-rf-dropdown-label>Short</span></span></button><button class="rf-dropdown__item rf-list-item rf-list-item--interactive" type="button" role="option" data-value="long" aria-selected="false"><span class="rf-dropdown__item-content rf-list-item__content"><span class="rf-dropdown__item-label" data-rf-dropdown-label>Long text</span></span></button><button class="rf-dropdown__item rf-list-item rf-list-item--interactive" type="button" role="option" data-value="longUnbroken" aria-selected="false"><span class="rf-dropdown__item-content rf-list-item__content"><span class="rf-dropdown__item-label" data-rf-dropdown-label>Long unbroken</span></span></button><button class="rf-dropdown__item rf-list-item rf-list-item--interactive" type="button" role="option" data-value="longTitle" aria-selected="false"><span class="rf-dropdown__item-content rf-list-item__content"><span class="rf-dropdown__item-label" data-rf-dropdown-label>Long title</span></span></button><button class="rf-dropdown__item rf-list-item rf-list-item--interactive" type="button" role="option" data-value="multilineDescription" aria-selected="false"><span class="rf-dropdown__item-content rf-list-item__content"><span class="rf-dropdown__item-label" data-rf-dropdown-label>Multiline</span></span></button><button class="rf-dropdown__item rf-list-item rf-list-item--interactive" type="button" role="option" data-value="ky" aria-selected="false"><span class="rf-dropdown__item-content rf-list-item__content"><span class="rf-dropdown__item-label" data-rf-dropdown-label>Кыргызский</span></span></button><button class="rf-dropdown__item rf-list-item rf-list-item--interactive" type="button" role="option" data-value="uz" aria-selected="false"><span class="rf-dropdown__item-content rf-list-item__content"><span class="rf-dropdown__item-label" data-rf-dropdown-label>O‘zbekcha</span></span></button><button class="rf-dropdown__item rf-list-item rf-list-item--interactive" type="button" role="option" data-value="failedImage" aria-selected="false"><span class="rf-dropdown__item-content rf-list-item__content"><span class="rf-dropdown__item-label" data-rf-dropdown-label>Failed image</span></span></button></div></div></div><button class="rf-button rf-button--secondary" id="catalog-stress-apply" type="button">Применить</button></div>
+<div class="catalog-specimen-grid">
+<button class="rf-card rf-card--interactive rf-stack rf-stack--gap-4" id="visual-card-interactive" type="button">
+<div class="rf-aspect-ratio"><img class="rf-image" id="visual-card-image" src="../../illustrations/category-icons-3d/bouquet.png" alt="Букет"></div>
+<div class="rf-stack rf-stack--gap-2"><div class="rf-inline rf-inline--between"><span class="rf-badge rf-badge--brand">Новое</span><strong id="visual-card-price">3 500 сом</strong></div><span class="rf-text rf-text--heading-h3" id="visual-card-title">Букет пионов</span><span class="rf-text rf-text--body-small rf-text--secondary" id="visual-card-description">Свежий букет, доступен сегодня.</span></div>
+</button>
+<div class="rf-surface rf-surface--rounded rf-surface--bordered"><div class="rf-list"><button class="rf-list-item rf-list-item--interactive" type="button"><span class="rf-list-item__leading rf-avatar" aria-hidden="true">А</span><span class="rf-list-item__content"><strong class="rf-list-item__title">Анна</strong><span class="rf-list-item__description">Продавец</span></span><span class="rf-list-item__trailing rf-badge rf-badge--success">Online</span></button><button class="rf-list-item rf-list-item--interactive" type="button"><span class="rf-list-item__leading rf-icon rf-icon--sm" data-rf-icon-glyph="location" aria-hidden="true"></span><span class="rf-list-item__content"><span class="rf-list-item__title">Бишкек</span></span><span class="rf-list-item__trailing rf-icon rf-icon--sm" data-rf-icon-glyph="chevron-right" aria-hidden="true"></span></button></div></div>
+</div>
+</section>
+<section class="catalog-section rf-inline rf-inline--gap-2" id="visual-avatar" aria-label="Avatar XS–XL">
+<span class="rf-avatar rf-avatar--xs" aria-hidden="true">А</span><span class="rf-avatar rf-avatar--sm" aria-hidden="true">А</span><span class="rf-avatar" aria-hidden="true">А</span><span class="rf-avatar rf-avatar--lg" aria-hidden="true">А</span><span class="rf-avatar rf-avatar--xl" aria-hidden="true">А</span>
+</section>
+<section class="catalog-section rf-stack rf-stack--gap-6" id="visual-feedback" data-visual-surface="feedback" aria-labelledby="feedback-title">
+<div class="rf-stack rf-stack--gap-2"><h2 class="rf-text rf-text--heading-h2" id="feedback-title">Feedback</h2><p class="rf-text rf-text--body-small rf-text--secondary">Persistent feedback остаётся Alert; transient confirmation использует Toast.</p></div>
+<div class="catalog-specimen-grid"><div class="rf-stack rf-stack--gap-3" role="status" aria-busy="true"><span class="rf-sr-only">Загрузка карточки</span><span class="rf-skeleton rf-skeleton--avatar" aria-hidden="true"></span><span class="rf-skeleton rf-skeleton--media" aria-hidden="true"></span><span class="rf-skeleton rf-skeleton--text" aria-hidden="true"></span></div><div class="rf-stack rf-stack--gap-3"><div class="rf-alert"><span class="rf-icon rf-icon--sm" data-rf-icon-glyph="info-cr-fr" aria-hidden="true"></span><div class="rf-alert__content"><span class="rf-alert__title">Проверяем объявление</span><span>Обычно это занимает несколько минут.</span></div></div><div class="rf-alert rf-alert--error"><span class="rf-icon rf-icon--sm" data-rf-icon-glyph="exclamation-mark-cr-fr" aria-hidden="true"></span><div class="rf-alert__content"><span class="rf-alert__title">Фото не загрузилось</span><span>Попробуйте выбрать файл ещё раз.</span></div></div></div></div>
+<button class="rf-button rf-button--secondary" type="button" data-rf-toast-open="catalog-toast">Показать Toast</button>
+<div class="catalog-specimen-grid"><div class="rf-empty-state"><span class="rf-empty-state__media rf-icon rf-icon--lg" data-rf-icon-glyph="shopping-bag" aria-hidden="true"></span><h3 class="rf-empty-state__title rf-text rf-text--heading-h3">Объявлений пока нет</h3><p class="rf-empty-state__description rf-text rf-text--body-small">Создайте первое объявление.</p><div class="rf-empty-state__actions"><button class="rf-button rf-button--primary" type="button">Создать</button></div></div><div class="rf-error-state rf-error-state--illustrated"><span class="rf-error-state__media"><img class="rf-image" src="../../illustrations/catalog-error-refresh-3d.png" alt=""></span><h3 class="rf-error-state__title rf-text rf-text--heading-h3">Витрина недоступна</h3><p class="rf-error-state__description rf-text rf-text--body-small">Попробуйте ещё раз.</p><div class="rf-error-state__actions"><button class="rf-button rf-button--primary">Обновить</button></div></div></div>
+</section>
+<section class="catalog-section rf-stack rf-stack--gap-6" id="visual-overlays" data-visual-surface="overlays" aria-labelledby="overlay-title">
+<div class="rf-stack rf-stack--gap-2"><h2 class="rf-text rf-text--heading-h2" id="overlay-title">Overlays</h2><p class="rf-text rf-text--body-small rf-text--secondary">Dialog и BottomSheet остаются experimental. Core владеет поверхностью, backdrop, слоями, safe area и состоянием видимости BottomSheet; Telegram-adapter — Back Button, focus/inert, viewport и gestures.</p></div>
+<div class="rf-inline rf-inline--gap-2"><button class="rf-button rf-button--primary" type="button" data-rf-dialog-open="catalog-dialog">Открыть Dialog</button><button class="rf-button rf-button--secondary" type="button" data-rf-dialog-open="catalog-sheet">Открыть BottomSheet</button></div>
+</section>
+<section class="catalog-section rf-stack rf-stack--gap-6" aria-labelledby="responsive-title">
+<div class="rf-stack rf-stack--gap-2"><h2 class="rf-text rf-text--heading-h2" id="responsive-title">Responsive container preview</h2><p class="rf-text rf-text--body-small rf-text--secondary">Presets используют существующие breakpoint tokens и не имитируют декоративную рамку устройства.</p></div>
+<div class="rf-inline rf-inline--gap-2" role="group" aria-label="Ширина preview"><button class="rf-chip" type="button" data-preview-control="mobile" aria-pressed="true">Mobile</button><button class="rf-chip" type="button" data-preview-control="tablet" aria-pressed="false">Tablet</button><button class="rf-chip" type="button" data-preview-control="desktop" aria-pressed="false">Desktop</button></div>
+<div class="catalog-preview" id="catalog-responsive-preview" data-preview-size="mobile"><div class="catalog-preview__canvas"><form class="rf-card rf-stack rf-stack--gap-4" role="search"><label class="rf-text-field-group"><span class="rf-text-field__label">Поиск</span><span class="rf-text-field__control"><span class="rf-text-field__icon rf-icon rf-icon--sm" data-rf-icon-glyph="search" aria-hidden="true"></span><input class="rf-text-field rf-text-field--with-icon" type="search" placeholder="Найти объявление" autocomplete="off" data-rf-autofill="off"></span></label><button class="rf-button rf-button--primary" type="button">Найти</button></form></div></div>
+</section>
+</article>
+</main>
+<div class="rf-toast-region" aria-live="polite" aria-atomic="true">
+<div class="rf-toast" id="catalog-toast" role="status" hidden><span class="rf-icon rf-icon--sm" data-rf-icon-glyph="checkmark" aria-hidden="true"></span><span class="rf-toast__content">Изменения сохранены</span><button class="rf-toast__close" type="button" data-rf-toast-close aria-label="Закрыть уведомление"><span class="rf-icon rf-icon--sm" data-rf-icon-glyph="close" aria-hidden="true"></span></button></div>
+</div>
+<div class="catalog-live rf-toast" id="catalog-live" role="status" aria-live="polite" hidden></div>
+<div id="catalog-react-controller" hidden></div>
+<dialog class="rf-dialog" id="catalog-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description">
+<div class="rf-dialog__header"><div class="rf-stack rf-stack--gap-1"><h2 class="rf-text rf-text--heading-h2" id="dialog-title">Снять объявление?</h2><p class="rf-text rf-text--body-small rf-text--secondary" id="dialog-description">Покупатели больше не увидят его в каталоге.</p></div><button class="rf-icon-button rf-icon-button--tertiary rf-icon-button--close" type="button" data-rf-dialog-close aria-label="Закрыть"><span class="rf-icon rf-icon--sm" data-rf-icon-glyph="close" aria-hidden="true"></span></button></div>
+<div class="rf-dialog__body"><p class="rf-text rf-text--body-medium">Объявление останется в архиве, и его можно будет опубликовать снова.</p></div>
+<div class="rf-dialog__footer"><button class="rf-button rf-button--tertiary" type="button" data-rf-dialog-close>Отмена</button><button class="rf-button rf-button--danger" type="button" data-rf-dialog-close>Снять с продажи</button></div>
+</dialog>
+<div class="rf-bottom-sheet-backdrop" aria-hidden="true"></div>
+<dialog class="rf-dialog rf-bottom-sheet" id="catalog-sheet" aria-labelledby="sheet-title" aria-describedby="sheet-description">
+<div class="rf-bottom-sheet__grip" aria-hidden="true"></div>
+<div class="rf-bottom-sheet__header"><div class="rf-bottom-sheet__title rf-stack rf-stack--gap-1"><span class="rf-badge rf-badge--warning">Experimental · Mini App</span><h2 class="rf-text rf-text--title-xl" id="sheet-title">Действия с объявлением</h2><p class="rf-text rf-text--body-s rf-text--secondary" id="sheet-description">Выберите одно из доступных действий.</p></div><button class="rf-icon-button rf-icon-button--tertiary rf-icon-button--close" type="button" data-rf-dialog-close aria-label="Закрыть"><span class="rf-icon rf-icon--sm" data-rf-icon-glyph="close" aria-hidden="true"></span></button></div>
+<div class="rf-bottom-sheet__scroll"><div class="rf-bottom-sheet__body"><button class="rf-list-item rf-list-item--interactive" type="button"><span class="rf-list-item__leading rf-icon rf-icon--sm" data-rf-icon-glyph="pencil" aria-hidden="true"></span><span class="rf-list-item__content"><span class="rf-list-item__title">Редактировать</span></span></button><button class="rf-list-item rf-list-item--interactive" type="button"><span class="rf-list-item__leading rf-icon rf-icon--sm" data-rf-icon-glyph="archive-box" aria-hidden="true"></span><span class="rf-list-item__content"><span class="rf-list-item__title">Переместить в архив</span></span></button></div></div>
+<div class="rf-bottom-sheet__footer"><div class="rf-bottom-sheet__actions"><button class="rf-button rf-button--primary rf-button--block" type="button" data-rf-dialog-close>Готово</button></div><p class="rf-bottom-sheet__hint rf-text rf-text--body-s rf-text--secondary">Фон остаётся недоступным, пока шторка открыта.</p></div>
+</dialog>
+</body>
+</html>

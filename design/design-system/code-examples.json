@@ -1,0 +1,1120 @@
+{
+  "schemaVersion": 2,
+  "adapters": {
+    "core-web": {
+      "label": "Core Web",
+      "platforms": [
+        "web",
+        "telegram-mini-app"
+      ],
+      "implementations": {
+        "Button": "design/design-system/web/components/actions.css",
+        "IconButton": "design/design-system/web/components/actions.css",
+        "TextField": "design/design-system/web/components/forms.css",
+        "Switch": "design/design-system/web/components/forms.css",
+        "Badge": "design/design-system/web/components/content.css",
+        "Icon": "design/design-system/web/primitives.css",
+        "TabBar": "design/design-system/web/components/navigation.css",
+        "Tabs": "design/design-system/web/components/navigation.css",
+        "Tab": "design/design-system/web/components/navigation.css",
+        "Avatar": "design/design-system/web/components/content.css",
+        "Checkbox": "design/design-system/web/components/forms.css",
+        "Radio": "design/design-system/web/components/forms.css",
+        "Chip": "design/design-system/web/components/content.css",
+        "SegmentedControl": "design/design-system/web/components/forms.css",
+        "Counter": "design/design-system/web/components/content.css",
+        "NavigationBar": "design/design-system/web/components/navigation.css"
+      }
+    },
+    "react": {
+      "label": "React",
+      "platforms": [
+        "web"
+      ],
+      "implementations": {
+        "Button": "design/design-system/adapters/react/src/Button.tsx",
+        "IconButton": "design/design-system/adapters/react/src/IconButton.tsx",
+        "Icon": "design/design-system/adapters/react/src/Icon.tsx"
+      }
+    }
+  },
+  "components": {
+    "TabBar": {
+      "variants": {
+        "bottom": {
+          "previewLabel": "Bottom",
+          "description": "Нижняя навигация Mini App: Icon, подпись и safe area. URL и текущий раздел задаёт продукт. href в примере заменяется реальным маршрутом; Mini App может использовать button и свой controller.",
+          "targets": [
+            {
+              "platforms": [
+                "web",
+                "telegram-mini-app"
+              ],
+              "targetLabel": "Web + Mini App",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/tab-bar/bottom.html"
+            }
+          ]
+        }
+      }
+    },
+    "Counter": {
+      "variants": {
+        "brand": {
+          "previewLabel": "Brand",
+          "description": "Акцентная числовая метка без собственного действия. В примере 125 отображается как 99+, но точное число остаётся доступным скринридеру. Значение, предел и контекст задаёт потребитель.",
+          "targets": [
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "Web",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/counter/brand.html"
+            }
+          ]
+        },
+        "neutral": {
+          "previewLabel": "Neutral",
+          "description": "Нейтральная метка количества. Одна цифра помещается в круг 20 px, более длинное число расширяет метку. Counter не является кнопкой и не добавляется в порядок Tab.",
+          "targets": [
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "Web",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/counter/neutral.html"
+            }
+          ]
+        }
+      }
+    },
+    "SegmentedControl": {
+      "variants": {
+        "singleSelect": {
+          "previewLabel": "Single select",
+          "description": "Один локальный режим из нескольких. Fieldset и legend задают имя группы; общий name связывает нативные radio. Стрелки меняют выбор, Tab показывает фокус. Счётчик необязателен и не является отдельной кнопкой. Для каждой независимой группы нужен уникальный name.",
+          "targets": [
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "Web",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/segmented-control/single-select.html"
+            }
+          ]
+        }
+      }
+    },
+    "Chip": {
+      "variants": {
+        "primary": {
+          "previewLabel": "Primary",
+          "description": "Акцентный Chip с фирменной заливкой. Используйте native button; обработку действия задаёт продукт. Start и End Icon опциональны: L 24 px, M 16 px, S 12 px.",
+          "targets": [
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "Web",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/chip/primary.html"
+            }
+          ]
+        },
+        "secondary": {
+          "previewLabel": "Secondary",
+          "description": "Нейтральный Chip; data-label-wrap=nowrap сохраняет строку. Действие задаёт продукт.",
+          "targets": [
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "Web",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/chip/secondary.html"
+            }
+          ]
+        },
+        "tertiary": {
+          "previewLabel": "Tertiary",
+          "description": "Chip с прозрачным фоном, фирменным контуром и текстом. Hover и Pressed используют системные фоновые роли. Icon наследует цвет Chip.",
+          "targets": [
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "Web",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/chip/tertiary.html"
+            }
+          ]
+        }
+      }
+    },
+    "Radio": {
+      "variants": {
+        "default": {
+          "previewLabel": "Default",
+          "description": "Один вариант из группы. Общий name связывает нативные radio; fieldset и legend задают имя группы, label — имя варианта. Tab переводит фокус, стрелки меняют выбор. Повторное нажатие не снимает выбранное значение.",
+          "targets": [
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "Web",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/radio/default.html"
+            }
+          ]
+        }
+      }
+    },
+    "Checkbox": {
+      "variants": {
+        "default": {
+          "previewLabel": "Default",
+          "description": "Checkbox без встроенной подписи. Value: Unchecked или Checked. Доступное имя обязательно: aria-label или aria-labelledby. Tab переводит фокус, Space меняет checked.",
+          "targets": [
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "Web",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/checkbox/default.html"
+            }
+          ]
+        }
+      }
+    },
+    "Avatar": {
+      "variants": {
+        "image": {
+          "previewLabel": "Image",
+          "description": "Изображение заполняет круг без изменения пропорций. В примере используется локальная фотография цветов; в продукте — фото пользователя. Загрузкой и заменой недоступного фото управляет окружающий интерфейс.",
+          "targets": [
+            {
+              "platforms": [
+                "web",
+                "telegram-mini-app"
+              ],
+              "targetLabel": "Web + Mini App",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/avatar/image.html"
+            }
+          ]
+        },
+        "initials": {
+          "previewLabel": "Initials",
+          "description": "Одна или две буквы заменяют фото. Полное имя передаётся через aria-label. Если рядом уже есть имя пользователя, аватар можно скрыть от скринридера через aria-hidden.",
+          "targets": [
+            {
+              "platforms": [
+                "web",
+                "telegram-mini-app"
+              ],
+              "targetLabel": "Web + Mini App",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/avatar/initials.html"
+            }
+          ]
+        },
+        "placeholder": {
+          "previewLabel": "Placeholder",
+          "description": "Когда нет фото и инициалов, используется системный Icon. Avatar не является кнопкой; действие редактирования фото оформляется отдельным доступным контролом.",
+          "targets": [
+            {
+              "platforms": [
+                "web",
+                "telegram-mini-app"
+              ],
+              "targetLabel": "Web + Mini App",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/avatar/placeholder.html"
+            }
+          ]
+        }
+      }
+    },
+    "Tab": {
+      "variants": {
+        "line": {
+          "previewLabel": "Line",
+          "description": "Один элемент Tabs. Tab владеет Label, Value, State и необязательными Start/End Icon. Выбор среди соседей, клавиатуру и панели координирует Tabs.",
+          "targets": [
+            {
+              "platforms": [
+                "web",
+                "telegram-mini-app"
+              ],
+              "targetLabel": "Web + Mini App",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/tab/line.html"
+            }
+          ]
+        }
+      }
+    },
+    "Tabs": {
+      "variants": {
+        "line": {
+          "previewLabel": "Line",
+          "description": "Связанные панели одного уровня. Стрелки влево и вправо меняют вкладку, Home и End переходят к первой и последней доступной. Tab переводит фокус в открытую панель. Для перехода на другую страницу используйте Link.",
+          "targets": [
+            {
+              "platforms": [
+                "web",
+                "telegram-mini-app"
+              ],
+              "targetLabel": "Web + Mini App",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/tabs/line.html"
+            }
+          ]
+        }
+      }
+    },
+    "Badge": {
+      "variants": {
+        "brand-solid": {
+          "previewLabel": "Новое",
+          "description": "Компактная фирменная метка поверх фотографии.",
+          "targets": [
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "Web",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/badge/brand-solid.html"
+            }
+          ]
+        },
+        "brand-subtle": {
+          "previewLabel": "Москва",
+          "description": "Светлая фирменная метка города поверх фотографии.",
+          "targets": [
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "Web",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/badge/brand-subtle.html"
+            }
+          ]
+        },
+        "brand": {
+          "previewLabel": "Новое",
+          "description": "Фирменная метка для выделения важного.",
+          "targets": [
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "Web",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/badge/brand.html"
+            }
+          ]
+        },
+        "neutral": {
+          "previewLabel": "Частный продавец",
+          "description": "Нейтральная метка; data-label-wrap=nowrap запрещает перенос.",
+          "targets": [
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "Web",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/badge/neutral.html"
+            }
+          ]
+        },
+        "success": {
+          "previewLabel": "Готово",
+          "description": "Показывает успешное завершение.",
+          "targets": [
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "Web",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/badge/success.html"
+            }
+          ]
+        },
+        "warning": {
+          "previewLabel": "На проверке",
+          "description": "Обозначает состояние, требующее внимания.",
+          "targets": [
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "Web",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/badge/warning.html"
+            }
+          ]
+        },
+        "error": {
+          "previewLabel": "Ошибка",
+          "description": "Сообщает о проблеме коротким текстом.",
+          "targets": [
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "Web",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/badge/error.html"
+            }
+          ]
+        },
+        "info": {
+          "previewLabel": "Информация",
+          "description": "Дополнительная информация о состоянии.",
+          "targets": [
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "Web",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/badge/info.html"
+            }
+          ]
+        }
+      }
+    },
+    "Switch": {
+      "variants": {
+        "default": {
+          "previewLabel": "Уведомления",
+          "description": "Включает или выключает настройку сразу. Label не встроен; aria-label или aria-labelledby обязательны. Tab показывает фокус, Space меняет значение. Skeleton: disabled input скрыт от скринридера, контейнер сообщает загрузку через aria-busy.",
+          "targets": [
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "Web",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/switch/default.html"
+            }
+          ]
+        }
+      }
+    },
+    "Icon": {
+      "variants": {
+        "brand": {
+          "previewLabel": "Brand",
+          "description": "Фирменный цвет Reflower с поддержкой светлой и тёмной темы.",
+          "targets": [
+            {
+              "platforms": [
+                "web",
+                "telegram-mini-app"
+              ],
+              "targetLabel": "Web + Mini App",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/icon/brand.html"
+            },
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "React",
+              "adapter": "react",
+              "language": "tsx",
+              "languageLabel": "TSX",
+              "file": "design/design-system/adapters/react/examples/icon/brand.tsx"
+            }
+          ]
+        },
+        "primary": {
+          "previewLabel": "Primary",
+          "description": "Основная иконка. Внутри Button и TextField можно не задавать Variant — цвет будет унаследован от компонента.",
+          "targets": [
+            {
+              "platforms": [
+                "web",
+                "telegram-mini-app"
+              ],
+              "targetLabel": "Web + Mini App",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/icon/primary.html"
+            },
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "React",
+              "adapter": "react",
+              "language": "tsx",
+              "languageLabel": "TSX",
+              "file": "design/design-system/adapters/react/examples/icon/primary.tsx"
+            }
+          ]
+        },
+        "secondary": {
+          "previewLabel": "Secondary",
+          "description": "Второстепенная иконка для сопутствующей информации.",
+          "targets": [
+            {
+              "platforms": [
+                "web",
+                "telegram-mini-app"
+              ],
+              "targetLabel": "Web + Mini App",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/icon/secondary.html"
+            },
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "React",
+              "adapter": "react",
+              "language": "tsx",
+              "languageLabel": "TSX",
+              "file": "design/design-system/adapters/react/examples/icon/secondary.tsx"
+            }
+          ]
+        },
+        "tertiary": {
+          "previewLabel": "Tertiary",
+          "description": "Декоративная иконка с пониженным акцентом. Не использовать как единственный сигнал важного действия.",
+          "targets": [
+            {
+              "platforms": [
+                "web",
+                "telegram-mini-app"
+              ],
+              "targetLabel": "Web + Mini App",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/icon/tertiary.html"
+            },
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "React",
+              "adapter": "react",
+              "language": "tsx",
+              "languageLabel": "TSX",
+              "file": "design/design-system/adapters/react/examples/icon/tertiary.tsx"
+            }
+          ]
+        },
+        "danger": {
+          "previewLabel": "Danger",
+          "description": "Иконка ошибки или опасного действия. Смысл передаётся также подписью и выбранным Glyph.",
+          "targets": [
+            {
+              "platforms": [
+                "web",
+                "telegram-mini-app"
+              ],
+              "targetLabel": "Web + Mini App",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/icon/danger.html"
+            },
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "React",
+              "adapter": "react",
+              "language": "tsx",
+              "languageLabel": "TSX",
+              "file": "design/design-system/adapters/react/examples/icon/danger.tsx"
+            }
+          ]
+        },
+        "success": {
+          "previewLabel": "Success",
+          "description": "Иконка успешного результата. Смысл передаётся также подписью и выбранным Glyph.",
+          "targets": [
+            {
+              "platforms": [
+                "web",
+                "telegram-mini-app"
+              ],
+              "targetLabel": "Web + Mini App",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/icon/success.html"
+            },
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "React",
+              "adapter": "react",
+              "language": "tsx",
+              "languageLabel": "TSX",
+              "file": "design/design-system/adapters/react/examples/icon/success.tsx"
+            }
+          ]
+        }
+      }
+    },
+    "TextField": {
+      "variants": {
+        "multiline": {
+          "previewLabel": "Multiline",
+          "description": "Многострочный ввод с Placeholder. Растягивается по высоте за нижний угол; ширина остаётся в пределах контейнера. Без Label, Description и иконок.",
+          "targets": [
+            {
+              "platforms": [
+                "web",
+                "telegram-mini-app"
+              ],
+              "targetLabel": "Web + Mini App",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/text-field/multiline.html"
+            }
+          ]
+        },
+        "default": {
+          "previewLabel": "Default",
+          "description": "Обычное однострочное поле для произвольного текста. При вводе появляется крестик: он очищает значение и возвращает фокус в поле.",
+          "targets": [
+            {
+              "platforms": [
+                "web",
+                "telegram-mini-app"
+              ],
+              "targetLabel": "Web + Mini App",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/text-field/default.html"
+            }
+          ]
+        },
+        "search": {
+          "previewLabel": "Search",
+          "description": "Нативный поиск: type=\"search\". Крестик очищает запрос во время ввода; поисковая логика остаётся в продукте.",
+          "targets": [
+            {
+              "platforms": [
+                "web",
+                "telegram-mini-app"
+              ],
+              "targetLabel": "Web + Mini App",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/text-field/search.html"
+            }
+          ]
+        },
+        "password": {
+          "previewLabel": "Password",
+          "description": "Пароль скрыт по умолчанию. Постоянная кнопка глаза показывает и скрывает введённое значение.",
+          "targets": [
+            {
+              "platforms": [
+                "web",
+                "telegram-mini-app"
+              ],
+              "targetLabel": "Web + Mini App",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/text-field/password.html"
+            }
+          ]
+        },
+        "price": {
+          "previewLabel": "Price",
+          "description": "Сумма с постоянной валютой справа. Только неотрицательные числа, до двух знаков после запятой или точки; валюта не входит в значение.",
+          "targets": [
+            {
+              "platforms": [
+                "web",
+                "telegram-mini-app"
+              ],
+              "targetLabel": "Web + Mini App",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/text-field/price.html"
+            }
+          ]
+        },
+        "date": {
+          "previewLabel": "Date",
+          "description": "Ввод одной даты и системный календарь браузера. Значение хранится в ISO-формате; отображение зависит от языка браузера.",
+          "targets": [
+            {
+              "platforms": [
+                "web",
+                "telegram-mini-app"
+              ],
+              "targetLabel": "Web + Mini App",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/text-field/date.html"
+            }
+          ]
+        }
+      }
+    },
+    "Button": {
+      "variants": {
+        "primary": {
+          "previewLabel": "Продолжить",
+          "description": "Главное действие экрана или шага. Используйте один Primary в пределах одного контекста.",
+          "targets": [
+            {
+              "platforms": [
+                "web",
+                "telegram-mini-app"
+              ],
+              "targetLabel": "Web + Mini App",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML + i18n",
+              "file": "design/design-system/examples/button/primary.html"
+            },
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "React",
+              "adapter": "react",
+              "language": "tsx",
+              "languageLabel": "React · TSX",
+              "file": "design/design-system/adapters/react/examples/button/primary.tsx"
+            }
+          ]
+        },
+        "secondary": {
+          "previewLabel": "Изменить",
+          "description": "Альтернативное действие заметного приоритета на фоне background.primary.",
+          "targets": [
+            {
+              "platforms": [
+                "web",
+                "telegram-mini-app"
+              ],
+              "targetLabel": "Web + Mini App",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML + i18n",
+              "file": "design/design-system/examples/button/secondary.html"
+            },
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "React",
+              "adapter": "react",
+              "language": "tsx",
+              "languageLabel": "React · TSX",
+              "file": "design/design-system/adapters/react/examples/button/secondary.tsx"
+            }
+          ]
+        },
+        "tertiary": {
+          "previewLabel": "Отмена",
+          "description": "Действие меньшего приоритета, которое не должно конкурировать с Primary или Secondary.",
+          "targets": [
+            {
+              "platforms": [
+                "web",
+                "telegram-mini-app"
+              ],
+              "targetLabel": "Web + Mini App",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML + i18n",
+              "file": "design/design-system/examples/button/tertiary.html"
+            },
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "React",
+              "adapter": "react",
+              "language": "tsx",
+              "languageLabel": "React · TSX",
+              "file": "design/design-system/adapters/react/examples/button/tertiary.tsx"
+            }
+          ]
+        },
+        "ghost": {
+          "previewLabel": "Назад",
+          "description": "Самое лёгкое действие без фона и обводки для спокойных вспомогательных сценариев.",
+          "targets": [
+            {
+              "platforms": [
+                "web",
+                "telegram-mini-app"
+              ],
+              "targetLabel": "Web + Mini App",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML + i18n",
+              "file": "design/design-system/examples/button/ghost.html"
+            },
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "React",
+              "adapter": "react",
+              "language": "tsx",
+              "languageLabel": "React · TSX",
+              "file": "design/design-system/adapters/react/examples/button/ghost.tsx"
+            }
+          ]
+        },
+        "danger": {
+          "previewLabel": "Удалить навсегда",
+          "description": "Необратимое или рискованное действие. Текст должен прямо называть последствие.",
+          "targets": [
+            {
+              "platforms": [
+                "web",
+                "telegram-mini-app"
+              ],
+              "targetLabel": "Web + Mini App",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML + i18n",
+              "file": "design/design-system/examples/button/danger.html"
+            },
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "React",
+              "adapter": "react",
+              "language": "tsx",
+              "languageLabel": "React · TSX",
+              "file": "design/design-system/adapters/react/examples/button/danger.tsx"
+            }
+          ]
+        },
+        "success": {
+          "previewLabel": "Подтвердить",
+          "description": "Позитивное завершающее действие после подтверждённого успешного результата.",
+          "targets": [
+            {
+              "platforms": [
+                "web",
+                "telegram-mini-app"
+              ],
+              "targetLabel": "Web + Mini App",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML + i18n",
+              "file": "design/design-system/examples/button/success.html"
+            },
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "React",
+              "adapter": "react",
+              "language": "tsx",
+              "languageLabel": "React · TSX",
+              "file": "design/design-system/adapters/react/examples/button/success.tsx"
+            }
+          ]
+        }
+      }
+    },
+    "IconButton": {
+      "variants": {
+        "primary": {
+          "previewLabel": "Подтвердить",
+          "previewIcon": "check",
+          "description": "Главное компактное действие с однозначной иконкой и обязательным доступным именем.",
+          "targets": [
+            {
+              "platforms": [
+                "web",
+                "telegram-mini-app"
+              ],
+              "targetLabel": "Web + Mini App",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML + i18n",
+              "file": "design/design-system/examples/icon-button/primary.html"
+            },
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "React",
+              "adapter": "react",
+              "language": "tsx",
+              "languageLabel": "React · TSX",
+              "file": "design/design-system/adapters/react/examples/icon-button/primary.tsx"
+            }
+          ]
+        },
+        "secondary": {
+          "previewLabel": "Изменить",
+          "previewIcon": "pencil",
+          "description": "Заметное альтернативное icon-only действие на фоне background.primary.",
+          "targets": [
+            {
+              "platforms": [
+                "web",
+                "telegram-mini-app"
+              ],
+              "targetLabel": "Web + Mini App",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML + i18n",
+              "file": "design/design-system/examples/icon-button/secondary.html"
+            },
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "React",
+              "adapter": "react",
+              "language": "tsx",
+              "languageLabel": "React · TSX",
+              "file": "design/design-system/adapters/react/examples/icon-button/secondary.tsx"
+            }
+          ]
+        },
+        "tertiary": {
+          "previewLabel": "Отмена",
+          "previewIcon": "x",
+          "description": "Компактное действие меньшего приоритета с видимой границей.",
+          "targets": [
+            {
+              "platforms": [
+                "web",
+                "telegram-mini-app"
+              ],
+              "targetLabel": "Web + Mini App",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML + i18n",
+              "file": "design/design-system/examples/icon-button/tertiary.html"
+            },
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "React",
+              "adapter": "react",
+              "language": "tsx",
+              "languageLabel": "React · TSX",
+              "file": "design/design-system/adapters/react/examples/icon-button/tertiary.tsx"
+            }
+          ]
+        },
+        "ghost": {
+          "previewLabel": "Назад",
+          "previewIcon": "arrow-left",
+          "description": "Самое лёгкое icon-only действие без фона и обводки.",
+          "targets": [
+            {
+              "platforms": [
+                "web",
+                "telegram-mini-app"
+              ],
+              "targetLabel": "Web + Mini App",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML + i18n",
+              "file": "design/design-system/examples/icon-button/ghost.html"
+            },
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "React",
+              "adapter": "react",
+              "language": "tsx",
+              "languageLabel": "React · TSX",
+              "file": "design/design-system/adapters/react/examples/icon-button/ghost.tsx"
+            }
+          ]
+        },
+        "danger": {
+          "previewLabel": "Удалить навсегда",
+          "previewIcon": "trash-2",
+          "description": "Рискованное или необратимое компактное действие.",
+          "targets": [
+            {
+              "platforms": [
+                "web",
+                "telegram-mini-app"
+              ],
+              "targetLabel": "Web + Mini App",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML + i18n",
+              "file": "design/design-system/examples/icon-button/danger.html"
+            },
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "React",
+              "adapter": "react",
+              "language": "tsx",
+              "languageLabel": "React · TSX",
+              "file": "design/design-system/adapters/react/examples/icon-button/danger.tsx"
+            }
+          ]
+        },
+        "success": {
+          "previewLabel": "Подтвердить",
+          "previewIcon": "check",
+          "description": "Позитивное компактное действие после подтверждённого результата.",
+          "targets": [
+            {
+              "platforms": [
+                "web",
+                "telegram-mini-app"
+              ],
+              "targetLabel": "Web + Mini App",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML + i18n",
+              "file": "design/design-system/examples/icon-button/success.html"
+            },
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "React",
+              "adapter": "react",
+              "language": "tsx",
+              "languageLabel": "React · TSX",
+              "file": "design/design-system/adapters/react/examples/icon-button/success.tsx"
+            }
+          ]
+        },
+        "close": {
+          "previewLabel": "Закрыть",
+          "previewIcon": "x",
+          "description": "Системное закрытие поверхностей на подложке background.primary.",
+          "targets": [
+            {
+              "platforms": [
+                "web",
+                "telegram-mini-app"
+              ],
+              "targetLabel": "Web + Mini App",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML + i18n",
+              "file": "design/design-system/examples/icon-button/close.html"
+            },
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "React",
+              "adapter": "react",
+              "language": "tsx",
+              "languageLabel": "React · TSX",
+              "file": "design/design-system/adapters/react/examples/icon-button/close.tsx"
+            }
+          ]
+        }
+      }
+    },
+    "NavigationBar": {
+      "variants": {
+        "top": {
+          "previewLabel": "Top",
+          "description": "Горизонтальная навигация главных разделов Web. URL и текущий раздел задаёт продукт. href в примере заменяется реальным маршрутом; Mini App может использовать button и свой controller.",
+          "targets": [
+            {
+              "platforms": [
+                "web",
+                "telegram-mini-app"
+              ],
+              "targetLabel": "Web + Mini App",
+              "adapter": "core-web",
+              "language": "html",
+              "languageLabel": "HTML",
+              "file": "design/design-system/examples/navigation-bar/top.html"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "./stress-fixtures.schema.json",
+  "$description": "Reusable content and media stress fixtures for the Core UI catalog, contract tests and visual regression. These are test data, not product copy.",
+  "text": {
+    "short": "Пионы",
+    "long": "Свежий авторский букет с доставкой в согласованное время и подробным описанием условий получения",
+    "longUnbroken": "ОченьДлинноеНеразрывноеНазваниеОбъявленияДляПроверкиПереносаИОтсутствияГоризонтальногоПереполнения",
+    "emptyOptional": "",
+    "longUserName": "Александра-Мария Константиновна Цветкова-Давыдова",
+    "longTitle": "Большой авторский букет из сезонных пионов и садовых роз с доставкой",
+    "multilineDescription": "Свежие цветы от локального флориста.\nУпаковка и открытка входят в стоимость.\nДоставка по договорённости.",
+    "localized": {
+      "ru": "Настройки профиля и уведомлений",
+      "en": "Profile and notification settings",
+      "ky": "Профиль жана билдирмелер жөндөөлөрү",
+      "uz": "Profil va bildirishnoma sozlamalari"
+    },
+    "rtlReady": {
+      "dir": "auto",
+      "value": "مرحبا Reflower — logical order fixture"
+    }
+  },
+  "number": {
+    "large": "999 999 999 ₽"
+  },
+  "image": {
+    "missing": "",
+    "failed": "./__design_system_visual_missing_image__.jpg"
+  }
+}

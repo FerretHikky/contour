@@ -1,0 +1,4408 @@
+{
+  "schemaVersion": 3,
+  "generatedFrom": [
+    "design/design-system/tokens/primitives.json",
+    "design/design-system/tokens/typography.json",
+    "design/design-system/tokens/typography-mobile.json",
+    "design/design-system/tokens/components.json"
+  ],
+  "settings": {
+    "primaryFamily": "Onest",
+    "baseFontSize": {
+      "value": 16,
+      "unit": "px"
+    },
+    "scale": "Figma Typography: 20 public Styles in four base groups",
+    "lineHeight": "15 independent px Dimensions from the Figma scale",
+    "letterSpacing": "All 20 public Styles use normal tracking (0rem)",
+    "publicApi": "typography.style.* only",
+    "platformModes": [
+      "desktop",
+      "mobile"
+    ]
+  },
+  "counts": {
+    "primitive": 36,
+    "textStyle": 20
+  },
+  "layers": {
+    "primitive": [
+      {
+        "layer": "primitive",
+        "name": "font.family.body",
+        "type": "fontFamily",
+        "resolved": [
+          "Onest",
+          "system-ui",
+          "-apple-system",
+          "Segoe UI",
+          "sans-serif"
+        ],
+        "value": [
+          "Onest",
+          "system-ui",
+          "-apple-system",
+          "Segoe UI",
+          "sans-serif"
+        ]
+      },
+      {
+        "layer": "primitive",
+        "name": "font.family.headline",
+        "type": "fontFamily",
+        "resolved": [
+          "Onest",
+          "system-ui",
+          "-apple-system",
+          "Segoe UI",
+          "sans-serif"
+        ],
+        "value": [
+          "Onest",
+          "system-ui",
+          "-apple-system",
+          "Segoe UI",
+          "sans-serif"
+        ]
+      },
+      {
+        "layer": "primitive",
+        "name": "font.family.title",
+        "type": "fontFamily",
+        "resolved": [
+          "Onest",
+          "system-ui",
+          "-apple-system",
+          "Segoe UI",
+          "sans-serif"
+        ],
+        "value": [
+          "Onest",
+          "system-ui",
+          "-apple-system",
+          "Segoe UI",
+          "sans-serif"
+        ]
+      },
+      {
+        "layer": "primitive",
+        "name": "font.letterSpacing.normal",
+        "type": "dimension",
+        "resolved": {
+          "value": 0,
+          "unit": "rem"
+        },
+        "value": {
+          "value": 0,
+          "unit": "rem"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "font.letterSpacing.tight",
+        "type": "dimension",
+        "resolved": {
+          "value": -0.04,
+          "unit": "rem"
+        },
+        "value": {
+          "value": -0.04,
+          "unit": "rem"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "font.lineHeight.2xl",
+        "type": "dimension",
+        "resolved": {
+          "value": 26,
+          "unit": "px"
+        },
+        "value": {
+          "value": 26,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "font.lineHeight.2xs",
+        "type": "dimension",
+        "resolved": {
+          "value": 14,
+          "unit": "px"
+        },
+        "value": {
+          "value": 14,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "font.lineHeight.3xl",
+        "type": "dimension",
+        "resolved": {
+          "value": 28,
+          "unit": "px"
+        },
+        "value": {
+          "value": 28,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "font.lineHeight.3xs",
+        "type": "dimension",
+        "resolved": {
+          "value": 12,
+          "unit": "px"
+        },
+        "value": {
+          "value": 12,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "font.lineHeight.4xl",
+        "type": "dimension",
+        "resolved": {
+          "value": 32,
+          "unit": "px"
+        },
+        "value": {
+          "value": 32,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "font.lineHeight.4xs",
+        "type": "dimension",
+        "resolved": {
+          "value": 10,
+          "unit": "px"
+        },
+        "value": {
+          "value": 10,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "font.lineHeight.5xl",
+        "type": "dimension",
+        "resolved": {
+          "value": 40,
+          "unit": "px"
+        },
+        "value": {
+          "value": 40,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "font.lineHeight.6xl",
+        "type": "dimension",
+        "resolved": {
+          "value": 48,
+          "unit": "px"
+        },
+        "value": {
+          "value": 48,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "font.lineHeight.7xl",
+        "type": "dimension",
+        "resolved": {
+          "value": 56,
+          "unit": "px"
+        },
+        "value": {
+          "value": 56,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "font.lineHeight.8xl",
+        "type": "dimension",
+        "resolved": {
+          "value": 64,
+          "unit": "px"
+        },
+        "value": {
+          "value": 64,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "font.lineHeight.l",
+        "type": "dimension",
+        "resolved": {
+          "value": 22,
+          "unit": "px"
+        },
+        "value": {
+          "value": 22,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "font.lineHeight.m",
+        "type": "dimension",
+        "resolved": {
+          "value": 20,
+          "unit": "px"
+        },
+        "value": {
+          "value": 20,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "font.lineHeight.s",
+        "type": "dimension",
+        "resolved": {
+          "value": 18,
+          "unit": "px"
+        },
+        "value": {
+          "value": 18,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "font.lineHeight.xl",
+        "type": "dimension",
+        "resolved": {
+          "value": 24,
+          "unit": "px"
+        },
+        "value": {
+          "value": 24,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "font.lineHeight.xs",
+        "type": "dimension",
+        "resolved": {
+          "value": 16,
+          "unit": "px"
+        },
+        "value": {
+          "value": 16,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "font.size.2xl",
+        "type": "dimension",
+        "resolved": {
+          "value": 22,
+          "unit": "px"
+        },
+        "value": {
+          "value": 22,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "font.size.2xs",
+        "type": "dimension",
+        "resolved": {
+          "value": 10,
+          "unit": "px"
+        },
+        "value": {
+          "value": 10,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "font.size.3xl",
+        "type": "dimension",
+        "resolved": {
+          "value": 24,
+          "unit": "px"
+        },
+        "value": {
+          "value": 24,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "font.size.3xs",
+        "type": "dimension",
+        "resolved": {
+          "value": 8,
+          "unit": "px"
+        },
+        "value": {
+          "value": 8,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "font.size.4xl",
+        "type": "dimension",
+        "resolved": {
+          "value": 32,
+          "unit": "px"
+        },
+        "value": {
+          "value": 32,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "font.size.5xl",
+        "type": "dimension",
+        "resolved": {
+          "value": 40,
+          "unit": "px"
+        },
+        "value": {
+          "value": 40,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "font.size.6xl",
+        "type": "dimension",
+        "resolved": {
+          "value": 48,
+          "unit": "px"
+        },
+        "value": {
+          "value": 48,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "font.size.7xl",
+        "type": "dimension",
+        "resolved": {
+          "value": 56,
+          "unit": "px"
+        },
+        "value": {
+          "value": 56,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "font.size.l",
+        "type": "dimension",
+        "resolved": {
+          "value": 18,
+          "unit": "px"
+        },
+        "value": {
+          "value": 18,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "font.size.m",
+        "type": "dimension",
+        "resolved": {
+          "value": 16,
+          "unit": "px"
+        },
+        "value": {
+          "value": 16,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "font.size.s",
+        "type": "dimension",
+        "resolved": {
+          "value": 14,
+          "unit": "px"
+        },
+        "value": {
+          "value": 14,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "font.size.xl",
+        "type": "dimension",
+        "resolved": {
+          "value": 20,
+          "unit": "px"
+        },
+        "value": {
+          "value": 20,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "font.size.xs",
+        "type": "dimension",
+        "resolved": {
+          "value": 12,
+          "unit": "px"
+        },
+        "value": {
+          "value": 12,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "font.weight.bold",
+        "type": "fontWeight",
+        "resolved": 700,
+        "value": 700
+      },
+      {
+        "layer": "primitive",
+        "name": "font.weight.medium",
+        "type": "fontWeight",
+        "resolved": 500,
+        "value": 500
+      },
+      {
+        "layer": "primitive",
+        "name": "font.weight.regular",
+        "type": "fontWeight",
+        "resolved": 400,
+        "value": 400
+      }
+    ],
+    "textStyle": [
+      {
+        "layer": "textStyle",
+        "name": "typography.style.body.l",
+        "type": "typography",
+        "resolved": {
+          "fontFamily": [
+            "Onest",
+            "system-ui",
+            "-apple-system",
+            "Segoe UI",
+            "sans-serif"
+          ],
+          "fontSize": {
+            "value": 18,
+            "unit": "px"
+          },
+          "fontWeight": 400,
+          "letterSpacing": {
+            "value": 0,
+            "unit": "rem"
+          },
+          "lineHeight": {
+            "value": 22,
+            "unit": "px"
+          }
+        },
+        "branches": [
+          {
+            "property": "fontFamily",
+            "alias": "{font.family.body}"
+          },
+          {
+            "property": "fontSize",
+            "alias": "{font.size.l}"
+          },
+          {
+            "property": "fontWeight",
+            "alias": "{font.weight.regular}"
+          },
+          {
+            "property": "letterSpacing",
+            "alias": "{font.letterSpacing.normal}"
+          },
+          {
+            "property": "lineHeight",
+            "alias": "{font.lineHeight.l}"
+          }
+        ]
+      },
+      {
+        "layer": "textStyle",
+        "name": "typography.style.body.m",
+        "type": "typography",
+        "resolved": {
+          "fontFamily": [
+            "Onest",
+            "system-ui",
+            "-apple-system",
+            "Segoe UI",
+            "sans-serif"
+          ],
+          "fontSize": {
+            "value": 16,
+            "unit": "px"
+          },
+          "fontWeight": 400,
+          "letterSpacing": {
+            "value": 0,
+            "unit": "rem"
+          },
+          "lineHeight": {
+            "value": 20,
+            "unit": "px"
+          }
+        },
+        "branches": [
+          {
+            "property": "fontFamily",
+            "alias": "{font.family.body}"
+          },
+          {
+            "property": "fontSize",
+            "alias": "{font.size.m}"
+          },
+          {
+            "property": "fontWeight",
+            "alias": "{font.weight.regular}"
+          },
+          {
+            "property": "letterSpacing",
+            "alias": "{font.letterSpacing.normal}"
+          },
+          {
+            "property": "lineHeight",
+            "alias": "{font.lineHeight.m}"
+          }
+        ]
+      },
+      {
+        "layer": "textStyle",
+        "name": "typography.style.body.s",
+        "type": "typography",
+        "resolved": {
+          "fontFamily": [
+            "Onest",
+            "system-ui",
+            "-apple-system",
+            "Segoe UI",
+            "sans-serif"
+          ],
+          "fontSize": {
+            "value": 14,
+            "unit": "px"
+          },
+          "fontWeight": 400,
+          "letterSpacing": {
+            "value": 0,
+            "unit": "rem"
+          },
+          "lineHeight": {
+            "value": 18,
+            "unit": "px"
+          }
+        },
+        "branches": [
+          {
+            "property": "fontFamily",
+            "alias": "{font.family.body}"
+          },
+          {
+            "property": "fontSize",
+            "alias": "{font.size.s}"
+          },
+          {
+            "property": "fontWeight",
+            "alias": "{font.weight.regular}"
+          },
+          {
+            "property": "letterSpacing",
+            "alias": "{font.letterSpacing.normal}"
+          },
+          {
+            "property": "lineHeight",
+            "alias": "{font.lineHeight.s}"
+          }
+        ]
+      },
+      {
+        "layer": "textStyle",
+        "name": "typography.style.body.xl",
+        "type": "typography",
+        "resolved": {
+          "fontFamily": [
+            "Onest",
+            "system-ui",
+            "-apple-system",
+            "Segoe UI",
+            "sans-serif"
+          ],
+          "fontSize": {
+            "value": 20,
+            "unit": "px"
+          },
+          "fontWeight": 400,
+          "letterSpacing": {
+            "value": 0,
+            "unit": "rem"
+          },
+          "lineHeight": {
+            "value": 24,
+            "unit": "px"
+          }
+        },
+        "branches": [
+          {
+            "property": "fontFamily",
+            "alias": "{font.family.body}"
+          },
+          {
+            "property": "fontSize",
+            "alias": "{font.size.xl}"
+          },
+          {
+            "property": "fontWeight",
+            "alias": "{font.weight.regular}"
+          },
+          {
+            "property": "letterSpacing",
+            "alias": "{font.letterSpacing.normal}"
+          },
+          {
+            "property": "lineHeight",
+            "alias": "{font.lineHeight.xl}"
+          }
+        ]
+      },
+      {
+        "layer": "textStyle",
+        "name": "typography.style.body.xs",
+        "type": "typography",
+        "resolved": {
+          "fontFamily": [
+            "Onest",
+            "system-ui",
+            "-apple-system",
+            "Segoe UI",
+            "sans-serif"
+          ],
+          "fontSize": {
+            "value": 12,
+            "unit": "px"
+          },
+          "fontWeight": 400,
+          "letterSpacing": {
+            "value": 0,
+            "unit": "rem"
+          },
+          "lineHeight": {
+            "value": 16,
+            "unit": "px"
+          }
+        },
+        "branches": [
+          {
+            "property": "fontFamily",
+            "alias": "{font.family.body}"
+          },
+          {
+            "property": "fontSize",
+            "alias": "{font.size.xs}"
+          },
+          {
+            "property": "fontWeight",
+            "alias": "{font.weight.regular}"
+          },
+          {
+            "property": "letterSpacing",
+            "alias": "{font.letterSpacing.normal}"
+          },
+          {
+            "property": "lineHeight",
+            "alias": "{font.lineHeight.xs}"
+          }
+        ]
+      },
+      {
+        "layer": "textStyle",
+        "name": "typography.style.body.xxs",
+        "type": "typography",
+        "resolved": {
+          "fontFamily": [
+            "Onest",
+            "system-ui",
+            "-apple-system",
+            "Segoe UI",
+            "sans-serif"
+          ],
+          "fontSize": {
+            "value": 10,
+            "unit": "px"
+          },
+          "fontWeight": 400,
+          "letterSpacing": {
+            "value": 0,
+            "unit": "rem"
+          },
+          "lineHeight": {
+            "value": 14,
+            "unit": "px"
+          }
+        },
+        "branches": [
+          {
+            "property": "fontFamily",
+            "alias": "{font.family.body}"
+          },
+          {
+            "property": "fontSize",
+            "alias": "{font.size.2xs}"
+          },
+          {
+            "property": "fontWeight",
+            "alias": "{font.weight.regular}"
+          },
+          {
+            "property": "letterSpacing",
+            "alias": "{font.letterSpacing.normal}"
+          },
+          {
+            "property": "lineHeight",
+            "alias": "{font.lineHeight.2xs}"
+          }
+        ]
+      },
+      {
+        "layer": "textStyle",
+        "name": "typography.style.display.l",
+        "type": "typography",
+        "resolved": {
+          "fontFamily": [
+            "Onest",
+            "system-ui",
+            "-apple-system",
+            "Segoe UI",
+            "sans-serif"
+          ],
+          "fontSize": {
+            "value": 48,
+            "unit": "px"
+          },
+          "fontWeight": 700,
+          "letterSpacing": {
+            "value": 0,
+            "unit": "rem"
+          },
+          "lineHeight": {
+            "value": 56,
+            "unit": "px"
+          }
+        },
+        "branches": [
+          {
+            "property": "fontFamily",
+            "alias": "{font.family.title}"
+          },
+          {
+            "property": "fontSize",
+            "alias": "{font.size.6xl}"
+          },
+          {
+            "property": "fontWeight",
+            "alias": "{font.weight.bold}"
+          },
+          {
+            "property": "letterSpacing",
+            "alias": "{font.letterSpacing.normal}"
+          },
+          {
+            "property": "lineHeight",
+            "alias": "{font.lineHeight.7xl}"
+          }
+        ]
+      },
+      {
+        "layer": "textStyle",
+        "name": "typography.style.display.m",
+        "type": "typography",
+        "resolved": {
+          "fontFamily": [
+            "Onest",
+            "system-ui",
+            "-apple-system",
+            "Segoe UI",
+            "sans-serif"
+          ],
+          "fontSize": {
+            "value": 40,
+            "unit": "px"
+          },
+          "fontWeight": 700,
+          "letterSpacing": {
+            "value": 0,
+            "unit": "rem"
+          },
+          "lineHeight": {
+            "value": 48,
+            "unit": "px"
+          }
+        },
+        "branches": [
+          {
+            "property": "fontFamily",
+            "alias": "{font.family.title}"
+          },
+          {
+            "property": "fontSize",
+            "alias": "{font.size.5xl}"
+          },
+          {
+            "property": "fontWeight",
+            "alias": "{font.weight.bold}"
+          },
+          {
+            "property": "letterSpacing",
+            "alias": "{font.letterSpacing.normal}"
+          },
+          {
+            "property": "lineHeight",
+            "alias": "{font.lineHeight.6xl}"
+          }
+        ]
+      },
+      {
+        "layer": "textStyle",
+        "name": "typography.style.display.s",
+        "type": "typography",
+        "resolved": {
+          "fontFamily": [
+            "Onest",
+            "system-ui",
+            "-apple-system",
+            "Segoe UI",
+            "sans-serif"
+          ],
+          "fontSize": {
+            "value": 32,
+            "unit": "px"
+          },
+          "fontWeight": 700,
+          "letterSpacing": {
+            "value": 0,
+            "unit": "rem"
+          },
+          "lineHeight": {
+            "value": 40,
+            "unit": "px"
+          }
+        },
+        "branches": [
+          {
+            "property": "fontFamily",
+            "alias": "{font.family.title}"
+          },
+          {
+            "property": "fontSize",
+            "alias": "{font.size.4xl}"
+          },
+          {
+            "property": "fontWeight",
+            "alias": "{font.weight.bold}"
+          },
+          {
+            "property": "letterSpacing",
+            "alias": "{font.letterSpacing.normal}"
+          },
+          {
+            "property": "lineHeight",
+            "alias": "{font.lineHeight.5xl}"
+          }
+        ]
+      },
+      {
+        "layer": "textStyle",
+        "name": "typography.style.display.xl",
+        "type": "typography",
+        "resolved": {
+          "fontFamily": [
+            "Onest",
+            "system-ui",
+            "-apple-system",
+            "Segoe UI",
+            "sans-serif"
+          ],
+          "fontSize": {
+            "value": 56,
+            "unit": "px"
+          },
+          "fontWeight": 700,
+          "letterSpacing": {
+            "value": 0,
+            "unit": "rem"
+          },
+          "lineHeight": {
+            "value": 64,
+            "unit": "px"
+          }
+        },
+        "branches": [
+          {
+            "property": "fontFamily",
+            "alias": "{font.family.title}"
+          },
+          {
+            "property": "fontSize",
+            "alias": "{font.size.7xl}"
+          },
+          {
+            "property": "fontWeight",
+            "alias": "{font.weight.bold}"
+          },
+          {
+            "property": "letterSpacing",
+            "alias": "{font.letterSpacing.normal}"
+          },
+          {
+            "property": "lineHeight",
+            "alias": "{font.lineHeight.8xl}"
+          }
+        ]
+      },
+      {
+        "layer": "textStyle",
+        "name": "typography.style.headline.l",
+        "type": "typography",
+        "resolved": {
+          "fontFamily": [
+            "Onest",
+            "system-ui",
+            "-apple-system",
+            "Segoe UI",
+            "sans-serif"
+          ],
+          "fontSize": {
+            "value": 32,
+            "unit": "px"
+          },
+          "fontWeight": 500,
+          "letterSpacing": {
+            "value": 0,
+            "unit": "rem"
+          },
+          "lineHeight": {
+            "value": 40,
+            "unit": "px"
+          }
+        },
+        "branches": [
+          {
+            "property": "fontFamily",
+            "alias": "{font.family.headline}"
+          },
+          {
+            "property": "fontSize",
+            "alias": "{font.size.4xl}"
+          },
+          {
+            "property": "fontWeight",
+            "alias": "{font.weight.medium}"
+          },
+          {
+            "property": "letterSpacing",
+            "alias": "{font.letterSpacing.normal}"
+          },
+          {
+            "property": "lineHeight",
+            "alias": "{font.lineHeight.5xl}"
+          }
+        ]
+      },
+      {
+        "layer": "textStyle",
+        "name": "typography.style.headline.m",
+        "type": "typography",
+        "resolved": {
+          "fontFamily": [
+            "Onest",
+            "system-ui",
+            "-apple-system",
+            "Segoe UI",
+            "sans-serif"
+          ],
+          "fontSize": {
+            "value": 24,
+            "unit": "px"
+          },
+          "fontWeight": 500,
+          "letterSpacing": {
+            "value": 0,
+            "unit": "rem"
+          },
+          "lineHeight": {
+            "value": 28,
+            "unit": "px"
+          }
+        },
+        "branches": [
+          {
+            "property": "fontFamily",
+            "alias": "{font.family.headline}"
+          },
+          {
+            "property": "fontSize",
+            "alias": "{font.size.3xl}"
+          },
+          {
+            "property": "fontWeight",
+            "alias": "{font.weight.medium}"
+          },
+          {
+            "property": "letterSpacing",
+            "alias": "{font.letterSpacing.normal}"
+          },
+          {
+            "property": "lineHeight",
+            "alias": "{font.lineHeight.3xl}"
+          }
+        ]
+      },
+      {
+        "layer": "textStyle",
+        "name": "typography.style.headline.s",
+        "type": "typography",
+        "resolved": {
+          "fontFamily": [
+            "Onest",
+            "system-ui",
+            "-apple-system",
+            "Segoe UI",
+            "sans-serif"
+          ],
+          "fontSize": {
+            "value": 20,
+            "unit": "px"
+          },
+          "fontWeight": 500,
+          "letterSpacing": {
+            "value": 0,
+            "unit": "rem"
+          },
+          "lineHeight": {
+            "value": 24,
+            "unit": "px"
+          }
+        },
+        "branches": [
+          {
+            "property": "fontFamily",
+            "alias": "{font.family.headline}"
+          },
+          {
+            "property": "fontSize",
+            "alias": "{font.size.xl}"
+          },
+          {
+            "property": "fontWeight",
+            "alias": "{font.weight.medium}"
+          },
+          {
+            "property": "letterSpacing",
+            "alias": "{font.letterSpacing.normal}"
+          },
+          {
+            "property": "lineHeight",
+            "alias": "{font.lineHeight.xl}"
+          }
+        ]
+      },
+      {
+        "layer": "textStyle",
+        "name": "typography.style.headline.xl",
+        "type": "typography",
+        "resolved": {
+          "fontFamily": [
+            "Onest",
+            "system-ui",
+            "-apple-system",
+            "Segoe UI",
+            "sans-serif"
+          ],
+          "fontSize": {
+            "value": 40,
+            "unit": "px"
+          },
+          "fontWeight": 500,
+          "letterSpacing": {
+            "value": 0,
+            "unit": "rem"
+          },
+          "lineHeight": {
+            "value": 48,
+            "unit": "px"
+          }
+        },
+        "branches": [
+          {
+            "property": "fontFamily",
+            "alias": "{font.family.headline}"
+          },
+          {
+            "property": "fontSize",
+            "alias": "{font.size.5xl}"
+          },
+          {
+            "property": "fontWeight",
+            "alias": "{font.weight.medium}"
+          },
+          {
+            "property": "letterSpacing",
+            "alias": "{font.letterSpacing.normal}"
+          },
+          {
+            "property": "lineHeight",
+            "alias": "{font.lineHeight.6xl}"
+          }
+        ]
+      },
+      {
+        "layer": "textStyle",
+        "name": "typography.style.headline.xs",
+        "type": "typography",
+        "resolved": {
+          "fontFamily": [
+            "Onest",
+            "system-ui",
+            "-apple-system",
+            "Segoe UI",
+            "sans-serif"
+          ],
+          "fontSize": {
+            "value": 16,
+            "unit": "px"
+          },
+          "fontWeight": 500,
+          "letterSpacing": {
+            "value": 0,
+            "unit": "rem"
+          },
+          "lineHeight": {
+            "value": 20,
+            "unit": "px"
+          }
+        },
+        "branches": [
+          {
+            "property": "fontFamily",
+            "alias": "{font.family.headline}"
+          },
+          {
+            "property": "fontSize",
+            "alias": "{font.size.m}"
+          },
+          {
+            "property": "fontWeight",
+            "alias": "{font.weight.medium}"
+          },
+          {
+            "property": "letterSpacing",
+            "alias": "{font.letterSpacing.normal}"
+          },
+          {
+            "property": "lineHeight",
+            "alias": "{font.lineHeight.m}"
+          }
+        ]
+      },
+      {
+        "layer": "textStyle",
+        "name": "typography.style.headline.xxs",
+        "type": "typography",
+        "resolved": {
+          "fontFamily": [
+            "Onest",
+            "system-ui",
+            "-apple-system",
+            "Segoe UI",
+            "sans-serif"
+          ],
+          "fontSize": {
+            "value": 14,
+            "unit": "px"
+          },
+          "fontWeight": 500,
+          "letterSpacing": {
+            "value": 0,
+            "unit": "rem"
+          },
+          "lineHeight": {
+            "value": 16,
+            "unit": "px"
+          }
+        },
+        "branches": [
+          {
+            "property": "fontFamily",
+            "alias": "{font.family.headline}"
+          },
+          {
+            "property": "fontSize",
+            "alias": "{font.size.s}"
+          },
+          {
+            "property": "fontWeight",
+            "alias": "{font.weight.medium}"
+          },
+          {
+            "property": "letterSpacing",
+            "alias": "{font.letterSpacing.normal}"
+          },
+          {
+            "property": "lineHeight",
+            "alias": "{font.lineHeight.xs}"
+          }
+        ]
+      },
+      {
+        "layer": "textStyle",
+        "name": "typography.style.title.l",
+        "type": "typography",
+        "resolved": {
+          "fontFamily": [
+            "Onest",
+            "system-ui",
+            "-apple-system",
+            "Segoe UI",
+            "sans-serif"
+          ],
+          "fontSize": {
+            "value": 20,
+            "unit": "px"
+          },
+          "fontWeight": 700,
+          "letterSpacing": {
+            "value": 0,
+            "unit": "rem"
+          },
+          "lineHeight": {
+            "value": 28,
+            "unit": "px"
+          }
+        },
+        "branches": [
+          {
+            "property": "fontFamily",
+            "alias": "{font.family.title}"
+          },
+          {
+            "property": "fontSize",
+            "alias": "{font.size.xl}"
+          },
+          {
+            "property": "fontWeight",
+            "alias": "{font.weight.bold}"
+          },
+          {
+            "property": "letterSpacing",
+            "alias": "{font.letterSpacing.normal}"
+          },
+          {
+            "property": "lineHeight",
+            "alias": "{font.lineHeight.3xl}"
+          }
+        ]
+      },
+      {
+        "layer": "textStyle",
+        "name": "typography.style.title.m",
+        "type": "typography",
+        "resolved": {
+          "fontFamily": [
+            "Onest",
+            "system-ui",
+            "-apple-system",
+            "Segoe UI",
+            "sans-serif"
+          ],
+          "fontSize": {
+            "value": 20,
+            "unit": "px"
+          },
+          "fontWeight": 700,
+          "letterSpacing": {
+            "value": 0,
+            "unit": "rem"
+          },
+          "lineHeight": {
+            "value": 24,
+            "unit": "px"
+          }
+        },
+        "branches": [
+          {
+            "property": "fontFamily",
+            "alias": "{font.family.title}"
+          },
+          {
+            "property": "fontSize",
+            "alias": "{font.size.xl}"
+          },
+          {
+            "property": "fontWeight",
+            "alias": "{font.weight.bold}"
+          },
+          {
+            "property": "letterSpacing",
+            "alias": "{font.letterSpacing.normal}"
+          },
+          {
+            "property": "lineHeight",
+            "alias": "{font.lineHeight.xl}"
+          }
+        ]
+      },
+      {
+        "layer": "textStyle",
+        "name": "typography.style.title.s",
+        "type": "typography",
+        "resolved": {
+          "fontFamily": [
+            "Onest",
+            "system-ui",
+            "-apple-system",
+            "Segoe UI",
+            "sans-serif"
+          ],
+          "fontSize": {
+            "value": 18,
+            "unit": "px"
+          },
+          "fontWeight": 700,
+          "letterSpacing": {
+            "value": 0,
+            "unit": "rem"
+          },
+          "lineHeight": {
+            "value": 22,
+            "unit": "px"
+          }
+        },
+        "branches": [
+          {
+            "property": "fontFamily",
+            "alias": "{font.family.title}"
+          },
+          {
+            "property": "fontSize",
+            "alias": "{font.size.l}"
+          },
+          {
+            "property": "fontWeight",
+            "alias": "{font.weight.bold}"
+          },
+          {
+            "property": "letterSpacing",
+            "alias": "{font.letterSpacing.normal}"
+          },
+          {
+            "property": "lineHeight",
+            "alias": "{font.lineHeight.l}"
+          }
+        ]
+      },
+      {
+        "layer": "textStyle",
+        "name": "typography.style.title.xl",
+        "type": "typography",
+        "resolved": {
+          "fontFamily": [
+            "Onest",
+            "system-ui",
+            "-apple-system",
+            "Segoe UI",
+            "sans-serif"
+          ],
+          "fontSize": {
+            "value": 24,
+            "unit": "px"
+          },
+          "fontWeight": 700,
+          "letterSpacing": {
+            "value": 0,
+            "unit": "rem"
+          },
+          "lineHeight": {
+            "value": 32,
+            "unit": "px"
+          }
+        },
+        "branches": [
+          {
+            "property": "fontFamily",
+            "alias": "{font.family.title}"
+          },
+          {
+            "property": "fontSize",
+            "alias": "{font.size.3xl}"
+          },
+          {
+            "property": "fontWeight",
+            "alias": "{font.weight.bold}"
+          },
+          {
+            "property": "letterSpacing",
+            "alias": "{font.letterSpacing.normal}"
+          },
+          {
+            "property": "lineHeight",
+            "alias": "{font.lineHeight.4xl}"
+          }
+        ]
+      }
+    ]
+  },
+  "modes": {
+    "desktop": {
+      "source": "design/design-system/tokens/typography.json",
+      "mediaQuery": null,
+      "counts": {
+        "primitive": 36,
+        "textStyle": 20
+      },
+      "layers": {
+        "primitive": [
+          {
+            "layer": "primitive",
+            "name": "font.family.body",
+            "type": "fontFamily",
+            "resolved": [
+              "Onest",
+              "system-ui",
+              "-apple-system",
+              "Segoe UI",
+              "sans-serif"
+            ],
+            "value": [
+              "Onest",
+              "system-ui",
+              "-apple-system",
+              "Segoe UI",
+              "sans-serif"
+            ]
+          },
+          {
+            "layer": "primitive",
+            "name": "font.family.headline",
+            "type": "fontFamily",
+            "resolved": [
+              "Onest",
+              "system-ui",
+              "-apple-system",
+              "Segoe UI",
+              "sans-serif"
+            ],
+            "value": [
+              "Onest",
+              "system-ui",
+              "-apple-system",
+              "Segoe UI",
+              "sans-serif"
+            ]
+          },
+          {
+            "layer": "primitive",
+            "name": "font.family.title",
+            "type": "fontFamily",
+            "resolved": [
+              "Onest",
+              "system-ui",
+              "-apple-system",
+              "Segoe UI",
+              "sans-serif"
+            ],
+            "value": [
+              "Onest",
+              "system-ui",
+              "-apple-system",
+              "Segoe UI",
+              "sans-serif"
+            ]
+          },
+          {
+            "layer": "primitive",
+            "name": "font.letterSpacing.normal",
+            "type": "dimension",
+            "resolved": {
+              "value": 0,
+              "unit": "rem"
+            },
+            "value": {
+              "value": 0,
+              "unit": "rem"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.letterSpacing.tight",
+            "type": "dimension",
+            "resolved": {
+              "value": -0.04,
+              "unit": "rem"
+            },
+            "value": {
+              "value": -0.04,
+              "unit": "rem"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.lineHeight.2xl",
+            "type": "dimension",
+            "resolved": {
+              "value": 26,
+              "unit": "px"
+            },
+            "value": {
+              "value": 26,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.lineHeight.2xs",
+            "type": "dimension",
+            "resolved": {
+              "value": 14,
+              "unit": "px"
+            },
+            "value": {
+              "value": 14,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.lineHeight.3xl",
+            "type": "dimension",
+            "resolved": {
+              "value": 28,
+              "unit": "px"
+            },
+            "value": {
+              "value": 28,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.lineHeight.3xs",
+            "type": "dimension",
+            "resolved": {
+              "value": 12,
+              "unit": "px"
+            },
+            "value": {
+              "value": 12,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.lineHeight.4xl",
+            "type": "dimension",
+            "resolved": {
+              "value": 32,
+              "unit": "px"
+            },
+            "value": {
+              "value": 32,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.lineHeight.4xs",
+            "type": "dimension",
+            "resolved": {
+              "value": 10,
+              "unit": "px"
+            },
+            "value": {
+              "value": 10,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.lineHeight.5xl",
+            "type": "dimension",
+            "resolved": {
+              "value": 40,
+              "unit": "px"
+            },
+            "value": {
+              "value": 40,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.lineHeight.6xl",
+            "type": "dimension",
+            "resolved": {
+              "value": 48,
+              "unit": "px"
+            },
+            "value": {
+              "value": 48,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.lineHeight.7xl",
+            "type": "dimension",
+            "resolved": {
+              "value": 56,
+              "unit": "px"
+            },
+            "value": {
+              "value": 56,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.lineHeight.8xl",
+            "type": "dimension",
+            "resolved": {
+              "value": 64,
+              "unit": "px"
+            },
+            "value": {
+              "value": 64,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.lineHeight.l",
+            "type": "dimension",
+            "resolved": {
+              "value": 22,
+              "unit": "px"
+            },
+            "value": {
+              "value": 22,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.lineHeight.m",
+            "type": "dimension",
+            "resolved": {
+              "value": 20,
+              "unit": "px"
+            },
+            "value": {
+              "value": 20,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.lineHeight.s",
+            "type": "dimension",
+            "resolved": {
+              "value": 18,
+              "unit": "px"
+            },
+            "value": {
+              "value": 18,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.lineHeight.xl",
+            "type": "dimension",
+            "resolved": {
+              "value": 24,
+              "unit": "px"
+            },
+            "value": {
+              "value": 24,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.lineHeight.xs",
+            "type": "dimension",
+            "resolved": {
+              "value": 16,
+              "unit": "px"
+            },
+            "value": {
+              "value": 16,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.size.2xl",
+            "type": "dimension",
+            "resolved": {
+              "value": 22,
+              "unit": "px"
+            },
+            "value": {
+              "value": 22,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.size.2xs",
+            "type": "dimension",
+            "resolved": {
+              "value": 10,
+              "unit": "px"
+            },
+            "value": {
+              "value": 10,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.size.3xl",
+            "type": "dimension",
+            "resolved": {
+              "value": 24,
+              "unit": "px"
+            },
+            "value": {
+              "value": 24,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.size.3xs",
+            "type": "dimension",
+            "resolved": {
+              "value": 8,
+              "unit": "px"
+            },
+            "value": {
+              "value": 8,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.size.4xl",
+            "type": "dimension",
+            "resolved": {
+              "value": 32,
+              "unit": "px"
+            },
+            "value": {
+              "value": 32,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.size.5xl",
+            "type": "dimension",
+            "resolved": {
+              "value": 40,
+              "unit": "px"
+            },
+            "value": {
+              "value": 40,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.size.6xl",
+            "type": "dimension",
+            "resolved": {
+              "value": 48,
+              "unit": "px"
+            },
+            "value": {
+              "value": 48,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.size.7xl",
+            "type": "dimension",
+            "resolved": {
+              "value": 56,
+              "unit": "px"
+            },
+            "value": {
+              "value": 56,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.size.l",
+            "type": "dimension",
+            "resolved": {
+              "value": 18,
+              "unit": "px"
+            },
+            "value": {
+              "value": 18,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.size.m",
+            "type": "dimension",
+            "resolved": {
+              "value": 16,
+              "unit": "px"
+            },
+            "value": {
+              "value": 16,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.size.s",
+            "type": "dimension",
+            "resolved": {
+              "value": 14,
+              "unit": "px"
+            },
+            "value": {
+              "value": 14,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.size.xl",
+            "type": "dimension",
+            "resolved": {
+              "value": 20,
+              "unit": "px"
+            },
+            "value": {
+              "value": 20,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.size.xs",
+            "type": "dimension",
+            "resolved": {
+              "value": 12,
+              "unit": "px"
+            },
+            "value": {
+              "value": 12,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.weight.bold",
+            "type": "fontWeight",
+            "resolved": 700,
+            "value": 700
+          },
+          {
+            "layer": "primitive",
+            "name": "font.weight.medium",
+            "type": "fontWeight",
+            "resolved": 500,
+            "value": 500
+          },
+          {
+            "layer": "primitive",
+            "name": "font.weight.regular",
+            "type": "fontWeight",
+            "resolved": 400,
+            "value": 400
+          }
+        ],
+        "textStyle": [
+          {
+            "layer": "textStyle",
+            "name": "typography.style.body.l",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 18,
+                "unit": "px"
+              },
+              "fontWeight": 400,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 22,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.body}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.l}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.regular}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.l}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.body.m",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 16,
+                "unit": "px"
+              },
+              "fontWeight": 400,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 20,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.body}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.m}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.regular}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.m}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.body.s",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 14,
+                "unit": "px"
+              },
+              "fontWeight": 400,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 18,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.body}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.s}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.regular}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.s}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.body.xl",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 20,
+                "unit": "px"
+              },
+              "fontWeight": 400,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 24,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.body}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.xl}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.regular}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.xl}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.body.xs",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 12,
+                "unit": "px"
+              },
+              "fontWeight": 400,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 16,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.body}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.xs}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.regular}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.xs}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.body.xxs",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 10,
+                "unit": "px"
+              },
+              "fontWeight": 400,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 14,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.body}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.2xs}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.regular}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.2xs}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.display.l",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 48,
+                "unit": "px"
+              },
+              "fontWeight": 700,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 56,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.title}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.6xl}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.bold}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.7xl}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.display.m",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 40,
+                "unit": "px"
+              },
+              "fontWeight": 700,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 48,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.title}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.5xl}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.bold}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.6xl}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.display.s",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 32,
+                "unit": "px"
+              },
+              "fontWeight": 700,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 40,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.title}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.4xl}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.bold}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.5xl}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.display.xl",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 56,
+                "unit": "px"
+              },
+              "fontWeight": 700,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 64,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.title}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.7xl}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.bold}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.8xl}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.headline.l",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 32,
+                "unit": "px"
+              },
+              "fontWeight": 500,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 40,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.headline}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.4xl}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.medium}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.5xl}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.headline.m",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 24,
+                "unit": "px"
+              },
+              "fontWeight": 500,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 28,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.headline}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.3xl}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.medium}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.3xl}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.headline.s",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 20,
+                "unit": "px"
+              },
+              "fontWeight": 500,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 24,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.headline}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.xl}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.medium}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.xl}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.headline.xl",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 40,
+                "unit": "px"
+              },
+              "fontWeight": 500,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 48,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.headline}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.5xl}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.medium}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.6xl}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.headline.xs",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 16,
+                "unit": "px"
+              },
+              "fontWeight": 500,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 20,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.headline}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.m}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.medium}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.m}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.headline.xxs",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 14,
+                "unit": "px"
+              },
+              "fontWeight": 500,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 16,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.headline}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.s}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.medium}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.xs}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.title.l",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 20,
+                "unit": "px"
+              },
+              "fontWeight": 700,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 28,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.title}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.xl}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.bold}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.3xl}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.title.m",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 20,
+                "unit": "px"
+              },
+              "fontWeight": 700,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 24,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.title}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.xl}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.bold}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.xl}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.title.s",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 18,
+                "unit": "px"
+              },
+              "fontWeight": 700,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 22,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.title}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.l}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.bold}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.l}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.title.xl",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 24,
+                "unit": "px"
+              },
+              "fontWeight": 700,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 32,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.title}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.3xl}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.bold}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.4xl}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "mobile": {
+      "source": "design/design-system/tokens/typography-mobile.json",
+      "mediaQuery": "(max-width: 639px)",
+      "counts": {
+        "primitive": 36,
+        "textStyle": 20
+      },
+      "layers": {
+        "primitive": [
+          {
+            "layer": "primitive",
+            "name": "font.family.body",
+            "type": "fontFamily",
+            "resolved": [
+              "Onest",
+              "system-ui",
+              "-apple-system",
+              "Segoe UI",
+              "sans-serif"
+            ],
+            "value": [
+              "Onest",
+              "system-ui",
+              "-apple-system",
+              "Segoe UI",
+              "sans-serif"
+            ]
+          },
+          {
+            "layer": "primitive",
+            "name": "font.family.headline",
+            "type": "fontFamily",
+            "resolved": [
+              "Onest",
+              "system-ui",
+              "-apple-system",
+              "Segoe UI",
+              "sans-serif"
+            ],
+            "value": [
+              "Onest",
+              "system-ui",
+              "-apple-system",
+              "Segoe UI",
+              "sans-serif"
+            ]
+          },
+          {
+            "layer": "primitive",
+            "name": "font.family.title",
+            "type": "fontFamily",
+            "resolved": [
+              "Onest",
+              "system-ui",
+              "-apple-system",
+              "Segoe UI",
+              "sans-serif"
+            ],
+            "value": [
+              "Onest",
+              "system-ui",
+              "-apple-system",
+              "Segoe UI",
+              "sans-serif"
+            ]
+          },
+          {
+            "layer": "primitive",
+            "name": "font.letterSpacing.normal",
+            "type": "dimension",
+            "resolved": {
+              "value": 0,
+              "unit": "rem"
+            },
+            "value": {
+              "value": 0,
+              "unit": "rem"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.letterSpacing.tight",
+            "type": "dimension",
+            "resolved": {
+              "value": -0.04,
+              "unit": "rem"
+            },
+            "value": {
+              "value": -0.04,
+              "unit": "rem"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.lineHeight.2xl",
+            "type": "dimension",
+            "resolved": {
+              "value": 26,
+              "unit": "px"
+            },
+            "value": {
+              "value": 26,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.lineHeight.2xs",
+            "type": "dimension",
+            "resolved": {
+              "value": 14,
+              "unit": "px"
+            },
+            "value": {
+              "value": 14,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.lineHeight.3xl",
+            "type": "dimension",
+            "resolved": {
+              "value": 28,
+              "unit": "px"
+            },
+            "value": {
+              "value": 28,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.lineHeight.3xs",
+            "type": "dimension",
+            "resolved": {
+              "value": 12,
+              "unit": "px"
+            },
+            "value": {
+              "value": 12,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.lineHeight.4xl",
+            "type": "dimension",
+            "resolved": {
+              "value": 32,
+              "unit": "px"
+            },
+            "value": {
+              "value": 32,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.lineHeight.4xs",
+            "type": "dimension",
+            "resolved": {
+              "value": 10,
+              "unit": "px"
+            },
+            "value": {
+              "value": 10,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.lineHeight.5xl",
+            "type": "dimension",
+            "resolved": {
+              "value": 40,
+              "unit": "px"
+            },
+            "value": {
+              "value": 40,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.lineHeight.6xl",
+            "type": "dimension",
+            "resolved": {
+              "value": 48,
+              "unit": "px"
+            },
+            "value": {
+              "value": 48,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.lineHeight.7xl",
+            "type": "dimension",
+            "resolved": {
+              "value": 56,
+              "unit": "px"
+            },
+            "value": {
+              "value": 56,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.lineHeight.8xl",
+            "type": "dimension",
+            "resolved": {
+              "value": 64,
+              "unit": "px"
+            },
+            "value": {
+              "value": 64,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.lineHeight.l",
+            "type": "dimension",
+            "resolved": {
+              "value": 22,
+              "unit": "px"
+            },
+            "value": {
+              "value": 22,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.lineHeight.m",
+            "type": "dimension",
+            "resolved": {
+              "value": 20,
+              "unit": "px"
+            },
+            "value": {
+              "value": 20,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.lineHeight.s",
+            "type": "dimension",
+            "resolved": {
+              "value": 18,
+              "unit": "px"
+            },
+            "value": {
+              "value": 18,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.lineHeight.xl",
+            "type": "dimension",
+            "resolved": {
+              "value": 24,
+              "unit": "px"
+            },
+            "value": {
+              "value": 24,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.lineHeight.xs",
+            "type": "dimension",
+            "resolved": {
+              "value": 16,
+              "unit": "px"
+            },
+            "value": {
+              "value": 16,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.size.2xl",
+            "type": "dimension",
+            "resolved": {
+              "value": 22,
+              "unit": "px"
+            },
+            "value": {
+              "value": 22,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.size.2xs",
+            "type": "dimension",
+            "resolved": {
+              "value": 10,
+              "unit": "px"
+            },
+            "value": {
+              "value": 10,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.size.3xl",
+            "type": "dimension",
+            "resolved": {
+              "value": 24,
+              "unit": "px"
+            },
+            "value": {
+              "value": 24,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.size.3xs",
+            "type": "dimension",
+            "resolved": {
+              "value": 8,
+              "unit": "px"
+            },
+            "value": {
+              "value": 8,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.size.4xl",
+            "type": "dimension",
+            "resolved": {
+              "value": 32,
+              "unit": "px"
+            },
+            "value": {
+              "value": 32,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.size.5xl",
+            "type": "dimension",
+            "resolved": {
+              "value": 40,
+              "unit": "px"
+            },
+            "value": {
+              "value": 40,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.size.6xl",
+            "type": "dimension",
+            "resolved": {
+              "value": 48,
+              "unit": "px"
+            },
+            "value": {
+              "value": 48,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.size.7xl",
+            "type": "dimension",
+            "resolved": {
+              "value": 56,
+              "unit": "px"
+            },
+            "value": {
+              "value": 56,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.size.l",
+            "type": "dimension",
+            "resolved": {
+              "value": 18,
+              "unit": "px"
+            },
+            "value": {
+              "value": 18,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.size.m",
+            "type": "dimension",
+            "resolved": {
+              "value": 16,
+              "unit": "px"
+            },
+            "value": {
+              "value": 16,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.size.s",
+            "type": "dimension",
+            "resolved": {
+              "value": 14,
+              "unit": "px"
+            },
+            "value": {
+              "value": 14,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.size.xl",
+            "type": "dimension",
+            "resolved": {
+              "value": 20,
+              "unit": "px"
+            },
+            "value": {
+              "value": 20,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.size.xs",
+            "type": "dimension",
+            "resolved": {
+              "value": 12,
+              "unit": "px"
+            },
+            "value": {
+              "value": 12,
+              "unit": "px"
+            }
+          },
+          {
+            "layer": "primitive",
+            "name": "font.weight.bold",
+            "type": "fontWeight",
+            "resolved": 700,
+            "value": 700
+          },
+          {
+            "layer": "primitive",
+            "name": "font.weight.medium",
+            "type": "fontWeight",
+            "resolved": 500,
+            "value": 500
+          },
+          {
+            "layer": "primitive",
+            "name": "font.weight.regular",
+            "type": "fontWeight",
+            "resolved": 400,
+            "value": 400
+          }
+        ],
+        "textStyle": [
+          {
+            "layer": "textStyle",
+            "name": "typography.style.body.l",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 18,
+                "unit": "px"
+              },
+              "fontWeight": 400,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 22,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.body}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.l}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.regular}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.l}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.body.m",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 16,
+                "unit": "px"
+              },
+              "fontWeight": 400,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 20,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.body}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.m}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.regular}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.m}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.body.s",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 14,
+                "unit": "px"
+              },
+              "fontWeight": 400,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 18,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.body}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.s}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.regular}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.s}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.body.xl",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 20,
+                "unit": "px"
+              },
+              "fontWeight": 400,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 24,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.body}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.xl}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.regular}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.xl}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.body.xs",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 12,
+                "unit": "px"
+              },
+              "fontWeight": 400,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 16,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.body}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.xs}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.regular}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.xs}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.body.xxs",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 10,
+                "unit": "px"
+              },
+              "fontWeight": 400,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 14,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.body}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.2xs}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.regular}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.2xs}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.display.l",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 48,
+                "unit": "px"
+              },
+              "fontWeight": 700,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 56,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.title}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.6xl}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.bold}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.7xl}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.display.m",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 40,
+                "unit": "px"
+              },
+              "fontWeight": 700,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 48,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.title}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.5xl}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.bold}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.6xl}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.display.s",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 32,
+                "unit": "px"
+              },
+              "fontWeight": 700,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 40,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.title}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.4xl}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.bold}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.5xl}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.display.xl",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 56,
+                "unit": "px"
+              },
+              "fontWeight": 700,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 64,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.title}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.7xl}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.bold}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.8xl}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.headline.l",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 32,
+                "unit": "px"
+              },
+              "fontWeight": 500,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 40,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.headline}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.4xl}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.medium}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.5xl}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.headline.m",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 24,
+                "unit": "px"
+              },
+              "fontWeight": 500,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 28,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.headline}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.3xl}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.medium}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.3xl}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.headline.s",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 20,
+                "unit": "px"
+              },
+              "fontWeight": 500,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 24,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.headline}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.xl}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.medium}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.xl}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.headline.xl",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 40,
+                "unit": "px"
+              },
+              "fontWeight": 500,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 48,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.headline}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.5xl}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.medium}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.6xl}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.headline.xs",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 16,
+                "unit": "px"
+              },
+              "fontWeight": 500,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 20,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.headline}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.m}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.medium}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.m}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.headline.xxs",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 14,
+                "unit": "px"
+              },
+              "fontWeight": 500,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 16,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.headline}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.s}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.medium}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.xs}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.title.l",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 20,
+                "unit": "px"
+              },
+              "fontWeight": 700,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 28,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.title}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.xl}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.bold}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.3xl}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.title.m",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 20,
+                "unit": "px"
+              },
+              "fontWeight": 700,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 24,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.title}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.xl}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.bold}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.xl}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.title.s",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 18,
+                "unit": "px"
+              },
+              "fontWeight": 700,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 22,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.title}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.l}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.bold}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.l}"
+              }
+            ]
+          },
+          {
+            "layer": "textStyle",
+            "name": "typography.style.title.xl",
+            "type": "typography",
+            "resolved": {
+              "fontFamily": [
+                "Onest",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif"
+              ],
+              "fontSize": {
+                "value": 24,
+                "unit": "px"
+              },
+              "fontWeight": 700,
+              "letterSpacing": {
+                "value": 0,
+                "unit": "rem"
+              },
+              "lineHeight": {
+                "value": 32,
+                "unit": "px"
+              }
+            },
+            "branches": [
+              {
+                "property": "fontFamily",
+                "alias": "{font.family.title}"
+              },
+              {
+                "property": "fontSize",
+                "alias": "{font.size.3xl}"
+              },
+              {
+                "property": "fontWeight",
+                "alias": "{font.weight.bold}"
+              },
+              {
+                "property": "letterSpacing",
+                "alias": "{font.letterSpacing.normal}"
+              },
+              {
+                "property": "lineHeight",
+                "alias": "{font.lineHeight.4xl}"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

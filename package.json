@@ -1,0 +1,36 @@
+{
+  "name": "@ferrethikky/contour",
+  "version": "1.0.0",
+  "description": "Contour shared design system",
+  "private": false,
+  "license": "UNLICENSED",
+  "type": "module",
+  "files": [
+    "design/design-system",
+    "design/icons",
+    "design/brand",
+    "contour.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./design/design-system/adapters/react/dist/index.d.ts",
+      "import": "./design/design-system/adapters/react/dist/index.js"
+    },
+    "./styles.css": "./contour.css",
+    "./core-ui.js": "./design/design-system/web/core-ui.js",
+    "./tokens.css": "./design/design-system/generated/web/tokens.css"
+  },
+  "scripts": {
+    "build": "python3 scripts/build.py",
+    "check": "python3 scripts/check.py"
+  },
+  "peerDependencies": {
+    "react": ">=18.2.0"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "react": "19.2.6",
+    "@types/react": "19.2.14"
+  },
+  "packageManager": "pnpm@11.19.0"
+}

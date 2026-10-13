@@ -1,0 +1,798 @@
+{
+  "schemaVersion": 1,
+  "generatedFrom": [
+    "design/design-system/tokens/foundations.json"
+  ],
+  "layers": {
+    "primitive": [
+      {
+        "layer": "primitive",
+        "name": "dimension.0",
+        "type": "dimension",
+        "value": {
+          "value": 0,
+          "unit": "px"
+        },
+        "resolved": {
+          "value": 0,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "dimension.1",
+        "type": "dimension",
+        "value": {
+          "value": 1,
+          "unit": "px"
+        },
+        "resolved": {
+          "value": 1,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "dimension.2",
+        "type": "dimension",
+        "value": {
+          "value": 2,
+          "unit": "px"
+        },
+        "resolved": {
+          "value": 2,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "dimension.4",
+        "type": "dimension",
+        "value": {
+          "value": 4,
+          "unit": "px"
+        },
+        "resolved": {
+          "value": 4,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "dimension.8",
+        "type": "dimension",
+        "value": {
+          "value": 8,
+          "unit": "px"
+        },
+        "resolved": {
+          "value": 8,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "dimension.12",
+        "type": "dimension",
+        "value": {
+          "value": 12,
+          "unit": "px"
+        },
+        "resolved": {
+          "value": 12,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "dimension.16",
+        "type": "dimension",
+        "value": {
+          "value": 16,
+          "unit": "px"
+        },
+        "resolved": {
+          "value": 16,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "dimension.20",
+        "type": "dimension",
+        "value": {
+          "value": 20,
+          "unit": "px"
+        },
+        "resolved": {
+          "value": 20,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "dimension.24",
+        "type": "dimension",
+        "value": {
+          "value": 24,
+          "unit": "px"
+        },
+        "resolved": {
+          "value": 24,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "dimension.28",
+        "type": "dimension",
+        "value": {
+          "value": 28,
+          "unit": "px"
+        },
+        "resolved": {
+          "value": 28,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "dimension.32",
+        "type": "dimension",
+        "value": {
+          "value": 32,
+          "unit": "px"
+        },
+        "resolved": {
+          "value": 32,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "dimension.36",
+        "type": "dimension",
+        "value": {
+          "value": 36,
+          "unit": "px"
+        },
+        "resolved": {
+          "value": 36,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "dimension.40",
+        "type": "dimension",
+        "value": {
+          "value": 40,
+          "unit": "px"
+        },
+        "resolved": {
+          "value": 40,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "dimension.44",
+        "type": "dimension",
+        "value": {
+          "value": 44,
+          "unit": "px"
+        },
+        "resolved": {
+          "value": 44,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "dimension.48",
+        "type": "dimension",
+        "value": {
+          "value": 48,
+          "unit": "px"
+        },
+        "resolved": {
+          "value": 48,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "dimension.56",
+        "type": "dimension",
+        "value": {
+          "value": 56,
+          "unit": "px"
+        },
+        "resolved": {
+          "value": 56,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "dimension.64",
+        "type": "dimension",
+        "value": {
+          "value": 64,
+          "unit": "px"
+        },
+        "resolved": {
+          "value": 64,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "dimension.72",
+        "type": "dimension",
+        "value": {
+          "value": 72,
+          "unit": "px"
+        },
+        "resolved": {
+          "value": 72,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "dimension.80",
+        "type": "dimension",
+        "value": {
+          "value": 80,
+          "unit": "px"
+        },
+        "resolved": {
+          "value": 80,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "dimension.96",
+        "type": "dimension",
+        "value": {
+          "value": 96,
+          "unit": "px"
+        },
+        "resolved": {
+          "value": 96,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "dimension.112",
+        "type": "dimension",
+        "value": {
+          "value": 112,
+          "unit": "px"
+        },
+        "resolved": {
+          "value": 112,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "dimension.120",
+        "type": "dimension",
+        "value": {
+          "value": 120,
+          "unit": "px"
+        },
+        "resolved": {
+          "value": 120,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "dimension.128",
+        "type": "dimension",
+        "value": {
+          "value": 128,
+          "unit": "px"
+        },
+        "resolved": {
+          "value": 128,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "dimension.160",
+        "type": "dimension",
+        "value": {
+          "value": 160,
+          "unit": "px"
+        },
+        "resolved": {
+          "value": 160,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "dimension.248",
+        "type": "dimension",
+        "value": {
+          "value": 248,
+          "unit": "px"
+        },
+        "resolved": {
+          "value": 248,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "dimension.480",
+        "type": "dimension",
+        "value": {
+          "value": 480,
+          "unit": "px"
+        },
+        "resolved": {
+          "value": 480,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "dimension.560",
+        "type": "dimension",
+        "value": {
+          "value": 560,
+          "unit": "px"
+        },
+        "resolved": {
+          "value": 560,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "dimension.1600",
+        "type": "dimension",
+        "value": {
+          "value": 1600,
+          "unit": "px"
+        },
+        "resolved": {
+          "value": 1600,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "primitive",
+        "name": "opacity.0",
+        "type": "number",
+        "value": 0,
+        "resolved": 0
+      },
+      {
+        "layer": "primitive",
+        "name": "opacity.10",
+        "type": "number",
+        "value": 0.1,
+        "resolved": 0.1
+      },
+      {
+        "layer": "primitive",
+        "name": "opacity.20",
+        "type": "number",
+        "value": 0.2,
+        "resolved": 0.2
+      },
+      {
+        "layer": "primitive",
+        "name": "opacity.50",
+        "type": "number",
+        "value": 0.5,
+        "resolved": 0.5
+      },
+      {
+        "layer": "primitive",
+        "name": "opacity.70",
+        "type": "number",
+        "value": 0.7,
+        "resolved": 0.7
+      },
+      {
+        "layer": "primitive",
+        "name": "opacity.100",
+        "type": "number",
+        "value": 1,
+        "resolved": 1
+      }
+    ],
+    "semantic": [
+      {
+        "layer": "semantic",
+        "name": "spacing.0",
+        "type": "dimension",
+        "alias": "{dimension.0}",
+        "resolved": {
+          "value": 0,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "spacing.2",
+        "type": "dimension",
+        "alias": "{dimension.2}",
+        "resolved": {
+          "value": 2,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "spacing.4",
+        "type": "dimension",
+        "alias": "{dimension.4}",
+        "resolved": {
+          "value": 4,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "spacing.8",
+        "type": "dimension",
+        "alias": "{dimension.8}",
+        "resolved": {
+          "value": 8,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "spacing.12",
+        "type": "dimension",
+        "alias": "{dimension.12}",
+        "resolved": {
+          "value": 12,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "spacing.16",
+        "type": "dimension",
+        "alias": "{dimension.16}",
+        "resolved": {
+          "value": 16,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "spacing.20",
+        "type": "dimension",
+        "alias": "{dimension.20}",
+        "resolved": {
+          "value": 20,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "spacing.24",
+        "type": "dimension",
+        "alias": "{dimension.24}",
+        "resolved": {
+          "value": 24,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "spacing.32",
+        "type": "dimension",
+        "alias": "{dimension.32}",
+        "resolved": {
+          "value": 32,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "spacing.40",
+        "type": "dimension",
+        "alias": "{dimension.40}",
+        "resolved": {
+          "value": 40,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "spacing.44",
+        "type": "dimension",
+        "alias": "{dimension.44}",
+        "resolved": {
+          "value": 44,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "spacing.48",
+        "type": "dimension",
+        "alias": "{dimension.48}",
+        "resolved": {
+          "value": 48,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "spacing.64",
+        "type": "dimension",
+        "alias": "{dimension.64}",
+        "resolved": {
+          "value": 64,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "spacing.80",
+        "type": "dimension",
+        "alias": "{dimension.80}",
+        "resolved": {
+          "value": 80,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "spacing.96",
+        "type": "dimension",
+        "alias": "{dimension.96}",
+        "resolved": {
+          "value": 96,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "spacing.112",
+        "type": "dimension",
+        "alias": "{dimension.112}",
+        "resolved": {
+          "value": 112,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "spacing.128",
+        "type": "dimension",
+        "alias": "{dimension.128}",
+        "resolved": {
+          "value": 128,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "spacing.160",
+        "type": "dimension",
+        "alias": "{dimension.160}",
+        "resolved": {
+          "value": 160,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "spacing.248",
+        "type": "dimension",
+        "alias": "{dimension.248}",
+        "resolved": {
+          "value": 248,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "spacing.480",
+        "type": "dimension",
+        "alias": "{dimension.480}",
+        "resolved": {
+          "value": 480,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "spacing.560",
+        "type": "dimension",
+        "alias": "{dimension.560}",
+        "resolved": {
+          "value": 560,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "spacing.1600",
+        "type": "dimension",
+        "alias": "{dimension.1600}",
+        "resolved": {
+          "value": 1600,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "radius.none",
+        "type": "dimension",
+        "alias": "{dimension.0}",
+        "resolved": {
+          "value": 0,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "radius.xs",
+        "type": "dimension",
+        "alias": "{dimension.2}",
+        "resolved": {
+          "value": 2,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "radius.sm",
+        "type": "dimension",
+        "alias": "{dimension.4}",
+        "resolved": {
+          "value": 4,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "radius.md",
+        "type": "dimension",
+        "alias": "{dimension.8}",
+        "resolved": {
+          "value": 8,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "radius.lg",
+        "type": "dimension",
+        "alias": "{dimension.12}",
+        "resolved": {
+          "value": 12,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "radius.xl",
+        "type": "dimension",
+        "alias": "{dimension.16}",
+        "resolved": {
+          "value": 16,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "radius.2xl",
+        "type": "dimension",
+        "alias": "{dimension.24}",
+        "resolved": {
+          "value": 24,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "radius.3xl",
+        "type": "dimension",
+        "alias": "{dimension.32}",
+        "resolved": {
+          "value": 32,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "radius.4xl",
+        "type": "dimension",
+        "alias": "{dimension.40}",
+        "resolved": {
+          "value": 40,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "radius.5xl",
+        "type": "dimension",
+        "alias": "{dimension.48}",
+        "resolved": {
+          "value": 48,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "radius.6xl",
+        "type": "dimension",
+        "alias": "{dimension.64}",
+        "resolved": {
+          "value": 64,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "radius.full",
+        "type": "dimension",
+        "alias": "{dimension.160}",
+        "resolved": {
+          "value": 160,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "border.width.none",
+        "type": "dimension",
+        "alias": "{dimension.0}",
+        "resolved": {
+          "value": 0,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "border.width.thin",
+        "type": "dimension",
+        "alias": "{dimension.1}",
+        "resolved": {
+          "value": 1,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "border.width.medium",
+        "type": "dimension",
+        "alias": "{dimension.2}",
+        "resolved": {
+          "value": 2,
+          "unit": "px"
+        }
+      },
+      {
+        "layer": "semantic",
+        "name": "border.width.heavy",
+        "type": "dimension",
+        "alias": "{dimension.4}",
+        "resolved": {
+          "value": 4,
+          "unit": "px"
+        }
+      }
+    ]
+  }
+}

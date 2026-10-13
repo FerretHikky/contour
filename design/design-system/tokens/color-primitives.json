@@ -1,0 +1,63 @@
+{
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "Canonical color anchors. The token builder expands step-5 family seeds into opaque 0..10 sRGB ramps; Gray adds a dedicated deep-canvas step 11.",
+  "color": {
+    "primitive": {
+      "$type": "color",
+      "$extensions": {
+        "com.reflower.colorRamp": {
+          "version": 2,
+          "colorSpace": "srgb",
+          "steps": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+          "seedStep": "5",
+          "mix": {
+            "0": 0.96,
+            "1": 0.82,
+            "2": 0.64,
+            "3": 0.44,
+            "4": 0.28,
+            "5": 0,
+            "6": -0.1,
+            "7": -0.22,
+            "8": -0.33,
+            "9": -0.45,
+            "10": -0.56
+          },
+          "grayAnchorSteps": ["0", "1", "5", "10", "11"]
+        }
+      },
+      "coral": {
+        "$description": "Reflower coral ramp used as the source for brand semantics.",
+        "5": {"$value": {"colorSpace": "srgb", "components": [0.952941, 0.392157, 0.533333], "alpha": 1, "hex": "#F36488"}}
+      },
+      "gray": {
+        "$description": "Cool neutral gray ramp with a soft light anchor, absolute white and a dedicated deep canvas endpoint.",
+        "0": {"$value": {"colorSpace": "srgb", "components": [1, 1, 1], "alpha": 1, "hex": "#FFFFFF"}},
+        "1": {"$value": {"colorSpace": "srgb", "components": [0.964706, 0.964706, 0.976471], "alpha": 1, "hex": "#F6F6F9"}},
+        "5": {"$value": {"colorSpace": "srgb", "components": [0.560784, 0.560784, 0.560784], "alpha": 1, "hex": "#8F8F8F"}},
+        "10": {"$value": {"colorSpace": "srgb", "components": [0.203922, 0.203922, 0.227451], "alpha": 1, "hex": "#34343A"}},
+        "11": {"$value": {"colorSpace": "srgb", "components": [0.094118, 0.094118, 0.105882], "alpha": 1, "hex": "#18181B"}}
+      },
+      "green": {
+        "$description": "Deep green ramp.",
+        "5": {"$value": {"colorSpace": "srgb", "components": [0.192157, 0.482353, 0.329412], "alpha": 1, "hex": "#317B54"}}
+      },
+      "red": {
+        "$description": "Deep red ramp.",
+        "5": {"$value": {"colorSpace": "srgb", "components": [0.729412, 0.247059, 0.290196], "alpha": 1, "hex": "#BA3F4A"}}
+      },
+      "orange": {
+        "$description": "Mandarin orange ramp for warm status and supporting color.",
+        "5": {"$value": {"colorSpace": "srgb", "components": [0.819608, 0.419608, 0.14902], "alpha": 1, "hex": "#D16B26"}}
+      },
+      "blue": {
+        "$description": "Deep blue ramp.",
+        "5": {"$value": {"colorSpace": "srgb", "components": [0.219608, 0.427451, 0.729412], "alpha": 1, "hex": "#386DBA"}}
+      },
+      "yellow": {
+        "$description": "Pollen-gold yellow ramp for a warm floral supporting color.",
+        "5": {"$value": {"colorSpace": "srgb", "components": [0.831373, 0.611765, 0.192157], "alpha": 1, "hex": "#D49C31"}}
+      }
+    }
+  }
+}

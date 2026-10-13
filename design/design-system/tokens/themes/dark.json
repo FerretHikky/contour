@@ -1,0 +1,76 @@
+{
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "Dark theme Alias ramps invert Primitive mapping exactly; Context remains unchanged.",
+  "color": {
+    "alias": {
+      "$type": "color",
+      "brand": {
+        "0": {"$value": "{color.primitive.coral.10}"}, "1": {"$value": "{color.primitive.coral.9}"},
+        "2": {"$value": "{color.primitive.coral.8}"}, "3": {"$value": "{color.primitive.coral.7}"},
+        "4": {"$value": "{color.primitive.coral.6}"}, "5": {"$value": "{color.primitive.coral.5}"},
+        "6": {"$value": "{color.primitive.coral.4}"}, "7": {"$value": "{color.primitive.coral.3}"},
+        "8": {"$value": "{color.primitive.coral.2}"}, "9": {"$value": "{color.primitive.coral.1}"},
+        "10": {"$value": "{color.primitive.coral.0}"}
+      },
+      "neutral": {
+        "canvas": {"$value": "{color.primitive.gray.11}"},
+        "0": {"$value": "{color.primitive.gray.10}"}, "1": {"$value": "{color.primitive.gray.9}"},
+        "2": {"$value": "{color.primitive.gray.8}"}, "3": {"$value": "{color.primitive.gray.7}"},
+        "4": {"$value": "{color.primitive.gray.6}"}, "5": {"$value": "{color.primitive.gray.5}"},
+        "6": {"$value": "{color.primitive.gray.4}"}, "7": {"$value": "{color.primitive.gray.3}"},
+        "8": {"$value": "{color.primitive.gray.2}"}, "9": {"$value": "{color.primitive.gray.1}"},
+        "10": {"$value": "{color.primitive.gray.0}"}
+      },
+      "success": {
+        "0": {"$value": "{color.primitive.green.10}"}, "1": {"$value": "{color.primitive.green.9}"},
+        "2": {"$value": "{color.primitive.green.8}"}, "3": {"$value": "{color.primitive.green.7}"},
+        "4": {"$value": "{color.primitive.green.6}"}, "5": {"$value": "{color.primitive.green.5}"},
+        "6": {"$value": "{color.primitive.green.4}"}, "7": {"$value": "{color.primitive.green.3}"},
+        "8": {"$value": "{color.primitive.green.2}"}, "9": {"$value": "{color.primitive.green.1}"},
+        "10": {"$value": "{color.primitive.green.0}"}
+      },
+      "error": {
+        "0": {"$value": "{color.primitive.red.10}"}, "1": {"$value": "{color.primitive.red.9}"},
+        "2": {"$value": "{color.primitive.red.8}"}, "3": {"$value": "{color.primitive.red.7}"},
+        "4": {"$value": "{color.primitive.red.6}"}, "5": {"$value": "{color.primitive.red.5}"},
+        "6": {"$value": "{color.primitive.red.4}"}, "7": {"$value": "{color.primitive.red.3}"},
+        "8": {"$value": "{color.primitive.red.2}"}, "9": {"$value": "{color.primitive.red.1}"},
+        "10": {"$value": "{color.primitive.red.0}"}
+      },
+      "warning": {
+        "0": {"$value": "{color.primitive.orange.10}"}, "1": {"$value": "{color.primitive.orange.9}"},
+        "2": {"$value": "{color.primitive.orange.8}"}, "3": {"$value": "{color.primitive.orange.7}"},
+        "4": {"$value": "{color.primitive.orange.6}"}, "5": {"$value": "{color.primitive.orange.5}"},
+        "6": {"$value": "{color.primitive.orange.4}"}, "7": {"$value": "{color.primitive.orange.3}"},
+        "8": {"$value": "{color.primitive.orange.2}"}, "9": {"$value": "{color.primitive.orange.1}"},
+        "10": {"$value": "{color.primitive.orange.0}"}
+      },
+      "info": {
+        "0": {"$value": "{color.primitive.blue.10}"}, "1": {"$value": "{color.primitive.blue.9}"},
+        "2": {"$value": "{color.primitive.blue.8}"}, "3": {"$value": "{color.primitive.blue.7}"},
+        "4": {"$value": "{color.primitive.blue.6}"}, "5": {"$value": "{color.primitive.blue.5}"},
+        "6": {"$value": "{color.primitive.blue.4}"}, "7": {"$value": "{color.primitive.blue.3}"},
+        "8": {"$value": "{color.primitive.blue.2}"}, "9": {"$value": "{color.primitive.blue.1}"},
+        "10": {"$value": "{color.primitive.blue.0}"}
+      },
+      "overlay": {
+        "transparent": {"$value": {"colorSpace": "srgb", "components": [0, 0, 0], "alpha": 0, "hex": "#000000"}},
+        "hover": {"$value": {"colorSpace": "srgb", "components": [1, 1, 1], "alpha": 0.06, "hex": "#FFFFFF"}},
+        "active": {"$value": {"colorSpace": "srgb", "components": [1, 1, 1], "alpha": 0.1, "hex": "#FFFFFF"}},
+        "selected": {"$value": {"colorSpace": "srgb", "components": [1, 1, 1], "alpha": 0.14, "hex": "#FFFFFF"}},
+        "disabled": {"$value": {"colorSpace": "srgb", "components": [1, 1, 1], "alpha": 0.16, "hex": "#FFFFFF"}},
+        "scrim": {"$value": {"colorSpace": "srgb", "components": [0, 0, 0], "alpha": 0.48, "hex": "#000000"}},
+        "backdrop": {"$value": {"colorSpace": "srgb", "components": [0, 0, 0], "alpha": 0.68, "hex": "#000000"}},
+        "skeletonBase": {"$value": {"colorSpace": "srgb", "components": [1, 1, 1], "alpha": 0.08, "hex": "#FFFFFF"}},
+        "skeletonHighlight": {"$value": {"colorSpace": "srgb", "components": [1, 1, 1], "alpha": 0.12, "hex": "#FFFFFF"}}
+      }
+    }
+  },
+  "elevation": {
+    "none": {"$type": "shadow", "$value": []},
+    "sm": {"$type": "shadow", "$value": []},
+    "md": {"$type": "shadow", "$value": []},
+    "lg": {"$type": "shadow", "$value": []},
+    "overlay": {"$type": "shadow", "$value": [{"color": {"colorSpace": "srgb", "components": [0, 0, 0], "alpha": 0.52, "hex": "#000000"}, "offsetX": {"value": 0, "unit": "px"}, "offsetY": {"value": 24, "unit": "px"}, "blur": {"value": 70, "unit": "px"}, "spread": {"value": 0, "unit": "px"}}]}
+  }
+}

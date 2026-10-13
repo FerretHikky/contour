@@ -1,0 +1,317 @@
+[
+  {
+    "style": "duotone",
+    "key": "battery-02-60",
+    "nodeId": "11:7113",
+    "reason": "Non-finite coordinates in Figma SVG export; repeated export and vectorPaths confirm NaN.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "line",
+    "key": "battery-02-60",
+    "nodeId": "11:7118",
+    "reason": "Removed the remaining styles of an incomplete glyph to keep identical Line, Solid and Duotone sets.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "solid",
+    "key": "battery-02-60",
+    "nodeId": "11:7116",
+    "reason": "Removed the remaining styles of an incomplete glyph to keep identical Line, Solid and Duotone sets.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "duotone",
+    "key": "image-cr-fr-add-ou-lc",
+    "nodeId": "11:8755",
+    "reason": "Removed the remaining styles of an incomplete glyph to keep identical Line, Solid and Duotone sets.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "line",
+    "key": "image-cr-fr-add-ou-lc",
+    "nodeId": "11:8762",
+    "reason": "Removed the remaining styles of an incomplete glyph to keep identical Line, Solid and Duotone sets.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "solid",
+    "key": "image-cr-fr-add-ou-lc",
+    "nodeId": "11:8759",
+    "reason": "Non-finite coordinates in Figma SVG export; repeated export and vectorPaths confirm NaN.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "duotone",
+    "key": "image-cr-fr-check-ou-lc",
+    "nodeId": "11:8685",
+    "reason": "Removed the remaining styles of an incomplete glyph to keep identical Line, Solid and Duotone sets.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "line",
+    "key": "image-cr-fr-check-ou-lc",
+    "nodeId": "11:8692",
+    "reason": "Removed the remaining styles of an incomplete glyph to keep identical Line, Solid and Duotone sets.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "solid",
+    "key": "image-cr-fr-check-ou-lc",
+    "nodeId": "11:8689",
+    "reason": "Non-finite coordinates in Figma SVG export; repeated export and vectorPaths confirm NaN.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "duotone",
+    "key": "image-cr-fr-download-ou-lc",
+    "nodeId": "11:8699",
+    "reason": "Removed the remaining styles of an incomplete glyph to keep identical Line, Solid and Duotone sets.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "line",
+    "key": "image-cr-fr-download-ou-lc",
+    "nodeId": "11:8706",
+    "reason": "Removed the remaining styles of an incomplete glyph to keep identical Line, Solid and Duotone sets.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "solid",
+    "key": "image-cr-fr-download-ou-lc",
+    "nodeId": "11:8703",
+    "reason": "Non-finite coordinates in Figma SVG export; repeated export and vectorPaths confirm NaN.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "duotone",
+    "key": "image-cr-fr-edit-ou-lc",
+    "nodeId": "11:8587",
+    "reason": "Removed the remaining styles of an incomplete glyph to keep identical Line, Solid and Duotone sets.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "line",
+    "key": "image-cr-fr-edit-ou-lc",
+    "nodeId": "11:8594",
+    "reason": "Removed the remaining styles of an incomplete glyph to keep identical Line, Solid and Duotone sets.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "solid",
+    "key": "image-cr-fr-edit-ou-lc",
+    "nodeId": "11:8591",
+    "reason": "Non-finite coordinates in Figma SVG export; repeated export and vectorPaths confirm NaN.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "duotone",
+    "key": "image-cr-fr-export-ou-lc",
+    "nodeId": "11:8657",
+    "reason": "Removed the remaining styles of an incomplete glyph to keep identical Line, Solid and Duotone sets.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "line",
+    "key": "image-cr-fr-export-ou-lc",
+    "nodeId": "11:8664",
+    "reason": "Removed the remaining styles of an incomplete glyph to keep identical Line, Solid and Duotone sets.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "solid",
+    "key": "image-cr-fr-export-ou-lc",
+    "nodeId": "11:8661",
+    "reason": "Non-finite coordinates in Figma SVG export; repeated export and vectorPaths confirm NaN.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "duotone",
+    "key": "image-cr-fr-favourite-ou-lc",
+    "nodeId": "11:8643",
+    "reason": "Removed the remaining styles of an incomplete glyph to keep identical Line, Solid and Duotone sets.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "line",
+    "key": "image-cr-fr-favourite-ou-lc",
+    "nodeId": "11:8650",
+    "reason": "Removed the remaining styles of an incomplete glyph to keep identical Line, Solid and Duotone sets.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "solid",
+    "key": "image-cr-fr-favourite-ou-lc",
+    "nodeId": "11:8647",
+    "reason": "Non-finite coordinates in Figma SVG export; repeated export and vectorPaths confirm NaN.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "duotone",
+    "key": "image-cr-fr-import-ou-lc",
+    "nodeId": "11:8671",
+    "reason": "Removed the remaining styles of an incomplete glyph to keep identical Line, Solid and Duotone sets.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "line",
+    "key": "image-cr-fr-import-ou-lc",
+    "nodeId": "11:8678",
+    "reason": "Removed the remaining styles of an incomplete glyph to keep identical Line, Solid and Duotone sets.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "solid",
+    "key": "image-cr-fr-import-ou-lc",
+    "nodeId": "11:8675",
+    "reason": "Non-finite coordinates in Figma SVG export; repeated export and vectorPaths confirm NaN.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "duotone",
+    "key": "image-cr-fr-locked-ou-lc",
+    "nodeId": "11:8615",
+    "reason": "Removed the remaining styles of an incomplete glyph to keep identical Line, Solid and Duotone sets.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "line",
+    "key": "image-cr-fr-locked-ou-lc",
+    "nodeId": "11:8622",
+    "reason": "Removed the remaining styles of an incomplete glyph to keep identical Line, Solid and Duotone sets.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "solid",
+    "key": "image-cr-fr-locked-ou-lc",
+    "nodeId": "11:8619",
+    "reason": "Non-finite coordinates in Figma SVG export; repeated export and vectorPaths confirm NaN.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "duotone",
+    "key": "image-cr-fr-remove-ou-lc",
+    "nodeId": "11:8727",
+    "reason": "Removed the remaining styles of an incomplete glyph to keep identical Line, Solid and Duotone sets.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "line",
+    "key": "image-cr-fr-remove-ou-lc",
+    "nodeId": "11:8734",
+    "reason": "Removed the remaining styles of an incomplete glyph to keep identical Line, Solid and Duotone sets.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "solid",
+    "key": "image-cr-fr-remove-ou-lc",
+    "nodeId": "11:8731",
+    "reason": "Non-finite coordinates in Figma SVG export; repeated export and vectorPaths confirm NaN.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "duotone",
+    "key": "image-cr-fr-search-ou-lc",
+    "nodeId": "11:8629",
+    "reason": "Removed the remaining styles of an incomplete glyph to keep identical Line, Solid and Duotone sets.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "line",
+    "key": "image-cr-fr-search-ou-lc",
+    "nodeId": "11:8636",
+    "reason": "Removed the remaining styles of an incomplete glyph to keep identical Line, Solid and Duotone sets.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "solid",
+    "key": "image-cr-fr-search-ou-lc",
+    "nodeId": "11:8633",
+    "reason": "Non-finite coordinates in Figma SVG export; repeated export and vectorPaths confirm NaN.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "duotone",
+    "key": "image-cr-fr-subtract-ou-lc",
+    "nodeId": "11:8741",
+    "reason": "Removed the remaining styles of an incomplete glyph to keep identical Line, Solid and Duotone sets.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "line",
+    "key": "image-cr-fr-subtract-ou-lc",
+    "nodeId": "11:8748",
+    "reason": "Removed the remaining styles of an incomplete glyph to keep identical Line, Solid and Duotone sets.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "solid",
+    "key": "image-cr-fr-subtract-ou-lc",
+    "nodeId": "11:8745",
+    "reason": "Non-finite coordinates in Figma SVG export; repeated export and vectorPaths confirm NaN.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "duotone",
+    "key": "image-cr-fr-upload-ou-lc",
+    "nodeId": "11:8713",
+    "reason": "Removed the remaining styles of an incomplete glyph to keep identical Line, Solid and Duotone sets.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "line",
+    "key": "image-cr-fr-upload-ou-lc",
+    "nodeId": "11:8720",
+    "reason": "Removed the remaining styles of an incomplete glyph to keep identical Line, Solid and Duotone sets.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "solid",
+    "key": "image-cr-fr-upload-ou-lc",
+    "nodeId": "11:8717",
+    "reason": "Non-finite coordinates in Figma SVG export; repeated export and vectorPaths confirm NaN.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "duotone",
+    "key": "image-cr-fr-view-ou-lc",
+    "nodeId": "11:8601",
+    "reason": "Removed the remaining styles of an incomplete glyph to keep identical Line, Solid and Duotone sets.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "line",
+    "key": "image-cr-fr-view-ou-lc",
+    "nodeId": "11:8608",
+    "reason": "Removed the remaining styles of an incomplete glyph to keep identical Line, Solid and Duotone sets.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "solid",
+    "key": "image-cr-fr-view-ou-lc",
+    "nodeId": "11:8605",
+    "reason": "Non-finite coordinates in Figma SVG export; repeated export and vectorPaths confirm NaN.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "duotone",
+    "key": "nest",
+    "nodeId": "11:2049",
+    "reason": "Removed the remaining styles of an incomplete glyph to keep identical Line, Solid and Duotone sets.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "line",
+    "key": "nest",
+    "nodeId": "11:2058",
+    "reason": "Removed the remaining styles of an incomplete glyph to keep identical Line, Solid and Duotone sets.",
+    "status": "removed-by-owner-request"
+  },
+  {
+    "style": "solid",
+    "key": "nest",
+    "nodeId": "11:2054",
+    "reason": "Non-finite coordinates in Figma SVG export; repeated export and vectorPaths confirm NaN.",
+    "status": "removed-by-owner-request"
+  }
+]

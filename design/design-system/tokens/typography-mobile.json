@@ -1,0 +1,13 @@
+{
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "Mobile inherits the exact 20-style public Typography contract. Figma defines one mode-stable base scale.",
+  "$extensions": {
+    "com.reflower.typographyMode": {
+      "mode": "mobile",
+      "inherits": "typography.json",
+      "mediaQuery": "(max-width: 639px)",
+      "publicPathContract": "inherit-exact",
+      "overrides": {}
+    }
+  }
+}

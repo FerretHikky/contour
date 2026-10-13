@@ -1,0 +1,50 @@
+{
+  "name": "@ferrethikky/contour-react",
+  "version": "0.1.0",
+  "description": "React anatomy for Contour Core Web",
+  "private": true,
+  "type": "module",
+  "sideEffects": [
+    "./typography.css",
+    "./tokens.css",
+    "./styles.css"
+  ],
+  "files": [
+    "dist",
+    "fonts",
+    "typography.css",
+    "tokens.css",
+    "styles.css",
+    "icon-glyphs.js",
+    "icon-glyphs.d.ts",
+    "icon-data"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./Button": {
+      "types": "./dist/Button.d.ts",
+      "import": "./dist/Button.js"
+    },
+    "./Icon": {
+      "types": "./dist/Icon.d.ts",
+      "import": "./dist/Icon.js"
+    },
+    "./IconButton": {
+      "types": "./dist/IconButton.d.ts",
+      "import": "./dist/IconButton.js"
+    },
+    "./typography.css": "./typography.css",
+    "./tokens.css": "./tokens.css",
+    "./styles.css": "./styles.css"
+  },
+  "peerDependencies": {
+    "react": ">=18.2.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  }
+}

@@ -1,0 +1,968 @@
+{
+  "schemaVersion": 1,
+  "description": "Canonical lifecycle and compatibility contract for Reflower color token paths.",
+  "policy": {
+    "publicApiLayers": [
+      "context"
+    ],
+    "internalAuthoringLayers": [
+      "primitive",
+      "alias",
+      "static"
+    ],
+    "lifecycle": {
+      "stable": {
+        "newUsage": "allowed",
+        "replacement": "not-required",
+        "removal": "major-version-only"
+      },
+      "deprecated": {
+        "newUsage": "forbidden",
+        "replacement": "required",
+        "compatibility": "required-until-removeIn",
+        "removal": "at-removeIn"
+      }
+    }
+  },
+  "migrations": [
+    {
+      "id": "context-role-consolidation",
+      "kind": "consolidate",
+      "description": "Equivalent Context interaction roles consolidate onto the canonical primary and brand roles without keeping duplicate DTCG records.",
+      "layer": "context",
+      "status": "deprecated",
+      "deprecatedIn": "1.13.1",
+      "removeIn": "2.0.0",
+      "channels": [
+        "css",
+        "catalog-deep-link"
+      ],
+      "entries": [
+        {
+          "from": "color.context.background.tertiary.active",
+          "to": "color.context.background.primary.active"
+        },
+        {
+          "from": "color.context.border.focus.default",
+          "to": "color.context.border.brand.default"
+        },
+        {
+          "from": "color.context.border.primary.selected",
+          "to": "color.context.border.brand.selected"
+        }
+      ]
+    },
+    {
+      "id": "context-status-intensity",
+      "kind": "rename",
+      "description": "Background status intensity uses primary and secondary names consistently in code, Catalog and Figma while the published default and strong paths remain compatible.",
+      "layer": "context",
+      "status": "deprecated",
+      "deprecatedIn": "1.15.0",
+      "removeIn": "2.0.0",
+      "channels": [
+        "css",
+        "catalog-deep-link"
+      ],
+      "entries": [
+        {
+          "from": "color.context.background.error.default",
+          "to": "color.context.background.error.primary"
+        },
+        {
+          "from": "color.context.background.error.strong.active",
+          "to": "color.context.background.error.secondary.active"
+        },
+        {
+          "from": "color.context.background.error.strong.default",
+          "to": "color.context.background.error.secondary.default"
+        },
+        {
+          "from": "color.context.background.error.strong.hover",
+          "to": "color.context.background.error.secondary.hover"
+        },
+        {
+          "from": "color.context.background.info.default",
+          "to": "color.context.background.info.primary"
+        },
+        {
+          "from": "color.context.background.info.strong",
+          "to": "color.context.background.info.secondary"
+        },
+        {
+          "from": "color.context.background.success.default",
+          "to": "color.context.background.success.primary"
+        },
+        {
+          "from": "color.context.background.success.strong",
+          "to": "color.context.background.success.secondary"
+        },
+        {
+          "from": "color.context.background.warning.default",
+          "to": "color.context.background.warning.primary"
+        },
+        {
+          "from": "color.context.background.warning.strong",
+          "to": "color.context.background.warning.secondary"
+        }
+      ]
+    },
+    {
+      "id": "context-v1-to-v2",
+      "description": "Published Context v1 paths remain readable while consumers migrate to the compact DTCG-safe v2 grammar.",
+      "layer": "context",
+      "status": "deprecated",
+      "deprecatedIn": "1.12.0",
+      "removeIn": "2.0.0",
+      "channels": [
+        "css",
+        "catalog-deep-link"
+      ],
+      "entries": [
+        {
+          "from": "color.context.background.basic.active",
+          "to": "color.context.background.base.active"
+        },
+        {
+          "from": "color.context.background.basic.disabled",
+          "to": "color.context.background.base.disabled"
+        },
+        {
+          "from": "color.context.background.basic.hover",
+          "to": "color.context.background.base.hover"
+        },
+        {
+          "from": "color.context.background.basic.main",
+          "to": "color.context.background.base.default"
+        },
+        {
+          "from": "color.context.background.basic.selected",
+          "to": "color.context.background.base.selected"
+        },
+        {
+          "from": "color.context.background.brand.main",
+          "to": "color.context.background.brand.default"
+        },
+        {
+          "from": "color.context.background.canvas.main",
+          "to": "color.context.background.canvas"
+        },
+        {
+          "from": "color.context.background.error.main",
+          "to": "color.context.background.error.primary"
+        },
+        {
+          "from": "color.context.background.error.strong",
+          "to": "color.context.background.error.secondary.default"
+        },
+        {
+          "from": "color.context.background.error.strongActive",
+          "to": "color.context.background.error.secondary.active"
+        },
+        {
+          "from": "color.context.background.error.strongHover",
+          "to": "color.context.background.error.secondary.hover"
+        },
+        {
+          "from": "color.context.background.info.main",
+          "to": "color.context.background.info.primary"
+        },
+        {
+          "from": "color.context.background.inverse.main",
+          "to": "color.context.background.inverse.default"
+        },
+        {
+          "from": "color.context.background.primary.disabled",
+          "to": "color.context.background.base.disabled"
+        },
+        {
+          "from": "color.context.background.primary.main",
+          "to": "color.context.background.primary.default"
+        },
+        {
+          "from": "color.context.background.secondary.disabled",
+          "to": "color.context.background.base.disabled"
+        },
+        {
+          "from": "color.context.background.secondary.main",
+          "to": "color.context.background.secondary.default"
+        },
+        {
+          "from": "color.context.background.success.main",
+          "to": "color.context.background.success.primary"
+        },
+        {
+          "from": "color.context.background.tertiary.disabled",
+          "to": "color.context.background.base.disabled"
+        },
+        {
+          "from": "color.context.background.tertiary.main",
+          "to": "color.context.background.tertiary.default"
+        },
+        {
+          "from": "color.context.background.warning.main",
+          "to": "color.context.background.warning.primary"
+        },
+        {
+          "from": "color.context.border.brand.main",
+          "to": "color.context.border.brand.default"
+        },
+        {
+          "from": "color.context.border.error.main",
+          "to": "color.context.border.error"
+        },
+        {
+          "from": "color.context.border.focus.main",
+          "to": "color.context.border.brand.default"
+        },
+        {
+          "from": "color.context.border.info.main",
+          "to": "color.context.border.info"
+        },
+        {
+          "from": "color.context.border.inverse.main",
+          "to": "color.context.border.inverse.default"
+        },
+        {
+          "from": "color.context.border.primary.main",
+          "to": "color.context.border.primary.default"
+        },
+        {
+          "from": "color.context.border.secondary.disabled",
+          "to": "color.context.border.primary.disabled"
+        },
+        {
+          "from": "color.context.border.secondary.main",
+          "to": "color.context.border.secondary.default"
+        },
+        {
+          "from": "color.context.border.success.main",
+          "to": "color.context.border.success"
+        },
+        {
+          "from": "color.context.border.tertiary.disabled",
+          "to": "color.context.border.primary.disabled"
+        },
+        {
+          "from": "color.context.border.tertiary.main",
+          "to": "color.context.border.tertiary.default"
+        },
+        {
+          "from": "color.context.border.warning.main",
+          "to": "color.context.border.warning"
+        },
+        {
+          "from": "color.context.icon.brand.main",
+          "to": "color.context.icon.brand.default"
+        },
+        {
+          "from": "color.context.icon.error.main",
+          "to": "color.context.icon.error"
+        },
+        {
+          "from": "color.context.icon.info.main",
+          "to": "color.context.icon.info"
+        },
+        {
+          "from": "color.context.icon.inverse.disabled",
+          "to": "color.context.icon.primary.disabled"
+        },
+        {
+          "from": "color.context.icon.inverse.main",
+          "to": "color.context.icon.inverse.default"
+        },
+        {
+          "from": "color.context.icon.primary.main",
+          "to": "color.context.icon.primary.default"
+        },
+        {
+          "from": "color.context.icon.secondary.disabled",
+          "to": "color.context.icon.primary.disabled"
+        },
+        {
+          "from": "color.context.icon.secondary.main",
+          "to": "color.context.icon.secondary.default"
+        },
+        {
+          "from": "color.context.icon.success.main",
+          "to": "color.context.icon.success"
+        },
+        {
+          "from": "color.context.icon.tertiary.disabled",
+          "to": "color.context.icon.primary.disabled"
+        },
+        {
+          "from": "color.context.icon.tertiary.main",
+          "to": "color.context.icon.tertiary.default"
+        },
+        {
+          "from": "color.context.icon.warning.main",
+          "to": "color.context.icon.warning"
+        },
+        {
+          "from": "color.context.overlay.skeletonBase",
+          "to": "color.context.overlay.skeleton.base"
+        },
+        {
+          "from": "color.context.overlay.skeletonHighlight",
+          "to": "color.context.overlay.skeleton.highlight"
+        },
+        {
+          "from": "color.context.text.brand.main",
+          "to": "color.context.text.brand.default"
+        },
+        {
+          "from": "color.context.text.error.main",
+          "to": "color.context.text.error"
+        },
+        {
+          "from": "color.context.text.info.main",
+          "to": "color.context.text.info"
+        },
+        {
+          "from": "color.context.text.inverse.disabled",
+          "to": "color.context.text.primary.disabled"
+        },
+        {
+          "from": "color.context.text.inverse.main",
+          "to": "color.context.text.inverse.default"
+        },
+        {
+          "from": "color.context.text.primary.main",
+          "to": "color.context.text.primary.default"
+        },
+        {
+          "from": "color.context.text.secondary.disabled",
+          "to": "color.context.text.primary.disabled"
+        },
+        {
+          "from": "color.context.text.secondary.main",
+          "to": "color.context.text.secondary.default"
+        },
+        {
+          "from": "color.context.text.success.main",
+          "to": "color.context.text.success"
+        },
+        {
+          "from": "color.context.text.tertiary.disabled",
+          "to": "color.context.text.primary.disabled"
+        },
+        {
+          "from": "color.context.text.tertiary.main",
+          "to": "color.context.text.tertiary.default"
+        },
+        {
+          "from": "color.context.text.warning.main",
+          "to": "color.context.text.warning"
+        }
+      ]
+    },
+    {
+      "id": "legacy-color-role-to-context",
+      "description": "The original role-oriented color API resolves to the current Context public API during the major-version migration window.",
+      "layer": "context",
+      "status": "deprecated",
+      "deprecatedIn": "1.11.14",
+      "removeIn": "2.0.0",
+      "channels": [
+        "css"
+      ],
+      "entries": [
+        {
+          "from": "color.action.destructive",
+          "to": "color.context.background.error.secondary.default"
+        },
+        {
+          "from": "color.action.destructiveHover",
+          "to": "color.context.background.error.secondary.hover"
+        },
+        {
+          "from": "color.action.destructivePressed",
+          "to": "color.context.background.error.secondary.active"
+        },
+        {
+          "from": "color.action.disabled",
+          "to": "color.context.background.base.disabled"
+        },
+        {
+          "from": "color.action.onDestructive",
+          "to": "color.context.text.inverse.default"
+        },
+        {
+          "from": "color.action.onPrimary",
+          "to": "color.context.text.inverse.default"
+        },
+        {
+          "from": "color.action.primary",
+          "to": "color.context.background.brand.default"
+        },
+        {
+          "from": "color.action.primaryHover",
+          "to": "color.context.background.brand.hover"
+        },
+        {
+          "from": "color.action.primaryPressed",
+          "to": "color.context.background.brand.active"
+        },
+        {
+          "from": "color.action.secondary",
+          "to": "color.context.background.brand.subtle"
+        },
+        {
+          "from": "color.action.secondaryHover",
+          "to": "color.context.background.brand.selected"
+        },
+        {
+          "from": "color.action.secondaryText",
+          "to": "color.context.text.brand.default"
+        },
+        {
+          "from": "color.background.basic",
+          "to": "color.context.background.base.default"
+        },
+        {
+          "from": "color.background.inverse",
+          "to": "color.context.background.inverse.default"
+        },
+        {
+          "from": "color.background.primary",
+          "to": "color.context.background.primary.default"
+        },
+        {
+          "from": "color.background.secondary",
+          "to": "color.context.background.secondary.default"
+        },
+        {
+          "from": "color.background.tertiary",
+          "to": "color.context.background.tertiary.default"
+        },
+        {
+          "from": "color.border.disabled",
+          "to": "color.context.border.primary.disabled"
+        },
+        {
+          "from": "color.border.focus",
+          "to": "color.context.border.brand.default"
+        },
+        {
+          "from": "color.border.primary",
+          "to": "color.context.border.primary.default"
+        },
+        {
+          "from": "color.border.secondary",
+          "to": "color.context.border.secondary.default"
+        },
+        {
+          "from": "color.border.strong",
+          "to": "color.context.border.primary.active"
+        },
+        {
+          "from": "color.brand.background",
+          "to": "color.context.background.brand.subtle"
+        },
+        {
+          "from": "color.brand.backgroundStrong",
+          "to": "color.context.background.brand.selected"
+        },
+        {
+          "from": "color.brand.onBrand",
+          "to": "color.context.text.primary.default"
+        },
+        {
+          "from": "color.brand.primary",
+          "to": "color.context.background.brand.default"
+        },
+        {
+          "from": "color.brand.text",
+          "to": "color.context.text.brand.default"
+        },
+        {
+          "from": "color.focus.offset",
+          "to": "color.context.background.base.default"
+        },
+        {
+          "from": "color.focus.ring",
+          "to": "color.context.border.brand.default"
+        },
+        {
+          "from": "color.icon.accent",
+          "to": "color.context.icon.brand.default"
+        },
+        {
+          "from": "color.icon.disabled",
+          "to": "color.context.icon.primary.disabled"
+        },
+        {
+          "from": "color.icon.inverse",
+          "to": "color.context.icon.inverse.default"
+        },
+        {
+          "from": "color.icon.primary",
+          "to": "color.context.icon.primary.default"
+        },
+        {
+          "from": "color.icon.secondary",
+          "to": "color.context.icon.secondary.default"
+        },
+        {
+          "from": "color.overlay",
+          "to": "color.context.overlay.backdrop"
+        },
+        {
+          "from": "color.selection.background",
+          "to": "color.context.background.brand.selected"
+        },
+        {
+          "from": "color.selection.text",
+          "to": "color.context.text.primary.selected"
+        },
+        {
+          "from": "color.status.error.background",
+          "to": "color.context.background.error.primary"
+        },
+        {
+          "from": "color.status.error.border",
+          "to": "color.context.border.error"
+        },
+        {
+          "from": "color.status.error.default",
+          "to": "color.context.background.error.secondary.default"
+        },
+        {
+          "from": "color.status.error.onStatus",
+          "to": "color.context.text.inverse.default"
+        },
+        {
+          "from": "color.status.error.text",
+          "to": "color.context.text.error"
+        },
+        {
+          "from": "color.status.info.background",
+          "to": "color.context.background.info.primary"
+        },
+        {
+          "from": "color.status.info.border",
+          "to": "color.context.border.info"
+        },
+        {
+          "from": "color.status.info.default",
+          "to": "color.context.background.info.secondary"
+        },
+        {
+          "from": "color.status.info.onStatus",
+          "to": "color.context.text.inverse.default"
+        },
+        {
+          "from": "color.status.info.text",
+          "to": "color.context.text.info"
+        },
+        {
+          "from": "color.status.success.background",
+          "to": "color.context.background.success.primary"
+        },
+        {
+          "from": "color.status.success.border",
+          "to": "color.context.border.success"
+        },
+        {
+          "from": "color.status.success.default",
+          "to": "color.context.background.success.secondary"
+        },
+        {
+          "from": "color.status.success.onStatus",
+          "to": "color.context.text.inverse.default"
+        },
+        {
+          "from": "color.status.success.text",
+          "to": "color.context.text.success"
+        },
+        {
+          "from": "color.status.warning.background",
+          "to": "color.context.background.warning.primary"
+        },
+        {
+          "from": "color.status.warning.border",
+          "to": "color.context.border.warning"
+        },
+        {
+          "from": "color.status.warning.default",
+          "to": "color.context.background.warning.secondary"
+        },
+        {
+          "from": "color.status.warning.onStatus",
+          "to": "color.context.text.inverse.default"
+        },
+        {
+          "from": "color.status.warning.text",
+          "to": "color.context.text.warning"
+        },
+        {
+          "from": "color.surface.disabled",
+          "to": "color.context.background.base.disabled"
+        },
+        {
+          "from": "color.surface.elevated",
+          "to": "color.context.background.base.default"
+        },
+        {
+          "from": "color.surface.inverse",
+          "to": "color.context.background.inverse.default"
+        },
+        {
+          "from": "color.surface.primary",
+          "to": "color.context.background.base.default"
+        },
+        {
+          "from": "color.surface.secondary",
+          "to": "color.context.background.secondary.default"
+        },
+        {
+          "from": "color.surface.sunken",
+          "to": "color.context.background.tertiary.default"
+        },
+        {
+          "from": "color.surface.tertiary",
+          "to": "color.context.background.tertiary.default"
+        },
+        {
+          "from": "color.text.accent",
+          "to": "color.context.text.brand.default"
+        },
+        {
+          "from": "color.text.disabled",
+          "to": "color.context.text.primary.disabled"
+        },
+        {
+          "from": "color.text.inverse",
+          "to": "color.context.text.inverse.default"
+        },
+        {
+          "from": "color.text.link",
+          "to": "color.context.text.brand.default"
+        },
+        {
+          "from": "color.text.linkHover",
+          "to": "color.context.text.brand.hover"
+        },
+        {
+          "from": "color.text.primary",
+          "to": "color.context.text.primary.default"
+        },
+        {
+          "from": "color.text.secondary",
+          "to": "color.context.text.secondary.default"
+        },
+        {
+          "from": "color.text.tertiary",
+          "to": "color.context.text.tertiary.default"
+        },
+        {
+          "from": "color.transparent",
+          "to": "color.context.overlay.transparent"
+        }
+      ]
+    },
+    {
+      "id": "legacy-primitive-v1",
+      "description": "The original 50–1000 Primitive ramps and static color paths resolve to the compact authoring scale during the major-version migration window.",
+      "layer": "primitive",
+      "status": "deprecated",
+      "deprecatedIn": "1.11.14",
+      "removeIn": "2.0.0",
+      "channels": [
+        "css"
+      ],
+      "entries": [
+        {
+          "from": "color.primitive.amber.100",
+          "to": "color.primitive.orange.1"
+        },
+        {
+          "from": "color.primitive.amber.300",
+          "to": "color.primitive.orange.3"
+        },
+        {
+          "from": "color.primitive.amber.400",
+          "to": "color.primitive.orange.4"
+        },
+        {
+          "from": "color.primitive.amber.50",
+          "to": "color.primitive.orange.0"
+        },
+        {
+          "from": "color.primitive.amber.700",
+          "to": "color.primitive.orange.7"
+        },
+        {
+          "from": "color.primitive.amber.950",
+          "to": "color.primitive.orange.10"
+        },
+        {
+          "from": "color.primitive.black",
+          "to": "color.static.black"
+        },
+        {
+          "from": "color.primitive.blue.100",
+          "to": "color.primitive.blue.1"
+        },
+        {
+          "from": "color.primitive.blue.300",
+          "to": "color.primitive.blue.3"
+        },
+        {
+          "from": "color.primitive.blue.400",
+          "to": "color.primitive.blue.4"
+        },
+        {
+          "from": "color.primitive.blue.50",
+          "to": "color.primitive.blue.0"
+        },
+        {
+          "from": "color.primitive.blue.700",
+          "to": "color.primitive.blue.7"
+        },
+        {
+          "from": "color.primitive.blue.950",
+          "to": "color.primitive.blue.10"
+        },
+        {
+          "from": "color.primitive.green.100",
+          "to": "color.primitive.green.1"
+        },
+        {
+          "from": "color.primitive.green.300",
+          "to": "color.primitive.green.3"
+        },
+        {
+          "from": "color.primitive.green.400",
+          "to": "color.primitive.green.4"
+        },
+        {
+          "from": "color.primitive.green.50",
+          "to": "color.primitive.green.0"
+        },
+        {
+          "from": "color.primitive.green.700",
+          "to": "color.primitive.green.7"
+        },
+        {
+          "from": "color.primitive.green.950",
+          "to": "color.primitive.green.10"
+        },
+        {
+          "from": "color.primitive.petal.100",
+          "to": "color.primitive.coral.1"
+        },
+        {
+          "from": "color.primitive.petal.200",
+          "to": "color.primitive.coral.2"
+        },
+        {
+          "from": "color.primitive.petal.25",
+          "to": "color.primitive.coral.0"
+        },
+        {
+          "from": "color.primitive.petal.300",
+          "to": "color.primitive.coral.3"
+        },
+        {
+          "from": "color.primitive.petal.400",
+          "to": "color.primitive.coral.4"
+        },
+        {
+          "from": "color.primitive.petal.50",
+          "to": "color.primitive.coral.0"
+        },
+        {
+          "from": "color.primitive.petal.500",
+          "to": "color.primitive.coral.5"
+        },
+        {
+          "from": "color.primitive.petal.600",
+          "to": "color.primitive.coral.6"
+        },
+        {
+          "from": "color.primitive.petal.700",
+          "to": "color.primitive.coral.7"
+        },
+        {
+          "from": "color.primitive.petal.800",
+          "to": "color.primitive.coral.8"
+        },
+        {
+          "from": "color.primitive.petal.900",
+          "to": "color.primitive.coral.9"
+        },
+        {
+          "from": "color.primitive.petal.950",
+          "to": "color.primitive.coral.10"
+        },
+        {
+          "from": "color.primitive.red.100",
+          "to": "color.primitive.red.1"
+        },
+        {
+          "from": "color.primitive.red.300",
+          "to": "color.primitive.red.3"
+        },
+        {
+          "from": "color.primitive.red.400",
+          "to": "color.primitive.red.4"
+        },
+        {
+          "from": "color.primitive.red.50",
+          "to": "color.primitive.red.0"
+        },
+        {
+          "from": "color.primitive.red.700",
+          "to": "color.primitive.red.7"
+        },
+        {
+          "from": "color.primitive.red.950",
+          "to": "color.primitive.red.10"
+        },
+        {
+          "from": "color.primitive.transparent",
+          "to": "color.context.overlay.transparent"
+        },
+        {
+          "from": "color.primitive.warm.0",
+          "to": "color.primitive.gray.0"
+        },
+        {
+          "from": "color.primitive.warm.100",
+          "to": "color.primitive.gray.1"
+        },
+        {
+          "from": "color.primitive.warm.1000",
+          "to": "color.primitive.gray.10"
+        },
+        {
+          "from": "color.primitive.warm.150",
+          "to": "color.primitive.gray.1"
+        },
+        {
+          "from": "color.primitive.warm.200",
+          "to": "color.primitive.gray.2"
+        },
+        {
+          "from": "color.primitive.warm.25",
+          "to": "color.primitive.gray.0"
+        },
+        {
+          "from": "color.primitive.warm.250",
+          "to": "color.primitive.gray.2"
+        },
+        {
+          "from": "color.primitive.warm.300",
+          "to": "color.primitive.gray.3"
+        },
+        {
+          "from": "color.primitive.warm.400",
+          "to": "color.primitive.gray.4"
+        },
+        {
+          "from": "color.primitive.warm.50",
+          "to": "color.primitive.gray.0"
+        },
+        {
+          "from": "color.primitive.warm.500",
+          "to": "color.primitive.gray.5"
+        },
+        {
+          "from": "color.primitive.warm.600",
+          "to": "color.primitive.gray.6"
+        },
+        {
+          "from": "color.primitive.warm.700",
+          "to": "color.primitive.gray.7"
+        },
+        {
+          "from": "color.primitive.warm.800",
+          "to": "color.primitive.gray.8"
+        },
+        {
+          "from": "color.primitive.warm.850",
+          "to": "color.primitive.gray.8"
+        },
+        {
+          "from": "color.primitive.warm.900",
+          "to": "color.primitive.gray.9"
+        },
+        {
+          "from": "color.primitive.warm.925",
+          "to": "color.primitive.gray.9"
+        },
+        {
+          "from": "color.primitive.warm.950",
+          "to": "color.primitive.gray.10"
+        },
+        {
+          "from": "color.primitive.warm.975",
+          "to": "color.primitive.gray.10"
+        },
+        {
+          "from": "color.primitive.white",
+          "to": "color.static.white"
+        }
+      ]
+    },
+    {
+      "id": "primitive-brand-to-coral",
+      "description": "The color family is named Coral at the authoring layer; Brand remains a Semantic purpose rather than a Primitive family name.",
+      "layer": "primitive",
+      "status": "deprecated",
+      "deprecatedIn": "1.12.0",
+      "removeIn": "2.0.0",
+      "channels": [
+        "css"
+      ],
+      "entries": [
+        {
+          "from": "color.primitive.brand.0",
+          "to": "color.primitive.coral.0"
+        },
+        {
+          "from": "color.primitive.brand.1",
+          "to": "color.primitive.coral.1"
+        },
+        {
+          "from": "color.primitive.brand.10",
+          "to": "color.primitive.coral.10"
+        },
+        {
+          "from": "color.primitive.brand.2",
+          "to": "color.primitive.coral.2"
+        },
+        {
+          "from": "color.primitive.brand.3",
+          "to": "color.primitive.coral.3"
+        },
+        {
+          "from": "color.primitive.brand.4",
+          "to": "color.primitive.coral.4"
+        },
+        {
+          "from": "color.primitive.brand.5",
+          "to": "color.primitive.coral.5"
+        },
+        {
+          "from": "color.primitive.brand.6",
+          "to": "color.primitive.coral.6"
+        },
+        {
+          "from": "color.primitive.brand.7",
+          "to": "color.primitive.coral.7"
+        },
+        {
+          "from": "color.primitive.brand.8",
+          "to": "color.primitive.coral.8"
+        },
+        {
+          "from": "color.primitive.brand.9",
+          "to": "color.primitive.coral.9"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://reflower.example/design-system/stress-fixtures.schema.json",
+  "title": "Reflower Core UI stress fixtures",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["$schema", "$description", "text", "number", "image"],
+  "properties": {
+    "$schema": {"type": "string"},
+    "$description": {"type": "string", "minLength": 1},
+    "text": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "short",
+        "long",
+        "longUnbroken",
+        "emptyOptional",
+        "longUserName",
+        "longTitle",
+        "multilineDescription",
+        "localized",
+        "rtlReady"
+      ],
+      "properties": {
+        "short": {"type": "string", "minLength": 1},
+        "long": {"type": "string", "minLength": 40},
+        "longUnbroken": {"type": "string", "minLength": 60, "pattern": "^[^\\s]+$"},
+        "emptyOptional": {"const": ""},
+        "longUserName": {"type": "string", "minLength": 40},
+        "longTitle": {"type": "string", "minLength": 60},
+        "multilineDescription": {
+          "type": "string",
+          "minLength": 40,
+          "pattern": "\\n"
+        },
+        "localized": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["ru", "en", "ky", "uz"],
+          "properties": {
+            "ru": {"type": "string", "minLength": 1},
+            "en": {"type": "string", "minLength": 1},
+            "ky": {"type": "string", "minLength": 1},
+            "uz": {"type": "string", "minLength": 1}
+          }
+        },
+        "rtlReady": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["dir", "value"],
+          "properties": {
+            "dir": {"const": "auto"},
+            "value": {"type": "string", "minLength": 1}
+          }
+        }
+      }
+    },
+    "number": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["large"],
+      "properties": {"large": {"type": "string", "minLength": 1}}
+    },
+    "image": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["missing", "failed"],
+      "properties": {
+        "missing": {"const": ""},
+        "failed": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

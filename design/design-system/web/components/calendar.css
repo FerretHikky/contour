@@ -1,0 +1,26 @@
+/* Calendar owns its grid; all visual values come from Foundation/Context. */
+.rf-calendar{width:100%;max-width:calc(var(--rf-spacing-64)*10);min-width:0;padding:var(--rf-spacing-16);box-sizing:border-box;border-radius:var(--rf-radius-2xl);background:var(--rf-color-context-background-canvas);color:var(--rf-color-context-text-primary-default)}
+.rf-calendar__header{display:flex;align-items:center;justify-content:space-between;gap:var(--rf-spacing-8);margin-bottom:var(--rf-spacing-16)}
+.rf-calendar__header>span{text-align:center;min-width:0}
+.rf-calendar__months{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,var(--rf-spacing-248)),1fr));gap:var(--rf-spacing-16)}
+.rf-calendar__month{width:100%;table-layout:fixed;border-collapse:separate;border-spacing:var(--rf-spacing-0)}
+.rf-calendar__month th{font-weight:var(--rf-font-weight-regular);color:var(--rf-color-context-text-secondary-default);height:var(--rf-spacing-32)}
+.rf-calendar__month td{padding:0;text-align:center}
+.rf-calendar__month caption{padding-bottom:var(--rf-spacing-8)}
+.rf-calendar__day{display:block;width:100%;min-height:var(--rf-spacing-32);aspect-ratio:var(--rf-media-aspect-ratio-square);padding:0;border:var(--rf-border-width-thin) solid transparent;border-radius:var(--rf-radius-full);background:transparent;color:inherit;font:inherit;cursor:pointer}
+.rf-calendar__day:hover:not(:disabled){background:var(--rf-color-context-background-primary-default)}
+.rf-calendar__day:focus-visible{outline:var(--rf-border-width-medium) solid var(--rf-color-context-border-brand-default);outline-offset:calc(var(--rf-border-width-medium)*-1)}
+.rf-calendar__day[aria-current="date"]{border-color:var(--rf-color-context-border-brand-default)}
+.rf-calendar__day[data-selected="true"],.rf-calendar__day[data-selected="true"]:hover{background:var(--rf-color-context-background-brand-default);color:var(--rf-color-context-text-inverse-default)}
+.rf-calendar__range{background:var(--rf-color-context-background-brand-selected)}
+.rf-calendar__range .rf-calendar__day:not([data-endpoint]){background:transparent;color:inherit;border-radius:0}
+.rf-calendar__day:disabled{color:var(--rf-color-context-text-primary-disabled);cursor:default}
+.rf-calendar[data-state="skeleton"] .rf-calendar__months{visibility:hidden}
+.rf-calendar[data-state="skeleton"]{background:var(--rf-color-context-background-primary-default)}
+
+.rf-calendar[data-months="1"]{max-width:calc(var(--rf-spacing-64)*5);margin-inline:auto}
+.rf-calendar[data-state="skeleton"] .rf-calendar__months{visibility:visible}
+.rf-calendar[data-state="skeleton"] .rf-calendar__day{color:transparent;border-color:transparent;background:var(--rf-color-context-background-secondary-default)}
+
+.rf-calendar__range[data-range-start]{border-start-start-radius:var(--rf-radius-full);border-end-start-radius:var(--rf-radius-full)}
+.rf-calendar__range[data-range-end]{border-start-end-radius:var(--rf-radius-full);border-end-end-radius:var(--rf-radius-full)}

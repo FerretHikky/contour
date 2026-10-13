@@ -1,0 +1,184 @@
+{
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "Theme-independent application roles. Names follow property.role.modifier.state; Catalog hides the DTCG-safe default suffix. Every Context color aliases an Alias color.",
+  "color": {
+    "context": {
+      "$type": "color",
+      "background": {
+        "$description": "Холст страницы, секции, карточки, панели, поля, элементы управления и статусные контейнеры.",
+        "canvas": {
+          "$value": "{color.alias.neutral.canvas}"
+        },
+        "base": {
+          "default": {"$value": "{color.alias.neutral.0}"},
+          "hover": {"$value": "{color.alias.neutral.1}"},
+          "active": {"$value": "{color.alias.neutral.2}"},
+          "disabled": {"$value": "{color.alias.neutral.2}"},
+          "selected": {"$value": "{color.alias.neutral.1}"}
+        },
+        "primary": {
+          "default": {"$value": "{color.alias.neutral.1}"},
+          "hover": {"$value": "{color.alias.neutral.2}"},
+          "active": {"$value": "{color.alias.neutral.3}"},
+          "selected": {"$value": "{color.alias.neutral.2}"}
+        },
+        "secondary": {
+          "default": {"$value": "{color.alias.neutral.2}"},
+          "hover": {"$value": "{color.alias.neutral.3}"},
+          "active": {"$value": "{color.alias.neutral.4}"},
+          "selected": {"$value": "{color.alias.neutral.3}"}
+        },
+        "tertiary": {
+          "default": {"$value": "{color.alias.neutral.3}"},
+          "hover": {"$value": "{color.alias.neutral.4}"},
+          "selected": {"$value": "{color.alias.neutral.4}"}
+        },
+        "brand": {
+          "default": {"$value": "{color.alias.brand.7}"},
+          "subtle": {"$value": "{color.alias.brand.0}"},
+          "hover": {"$value": "{color.alias.brand.8}"},
+          "active": {"$value": "{color.alias.brand.9}"},
+          "disabled": {"$value": "{color.alias.brand.3}"},
+          "selected": {"$value": "{color.alias.brand.1}"}
+        },
+        "inverse": {
+          "default": {"$value": "{color.alias.neutral.9}"},
+          "hover": {"$value": "{color.alias.neutral.8}"},
+          "active": {"$value": "{color.alias.neutral.7}"}
+        },
+        "success": {
+          "primary": {"$value": "{color.alias.success.1}"},
+          "secondary": {"$value": "{color.alias.success.7}"},
+          "hover": {"$value": "{color.alias.success.8}"},
+          "active": {"$value": "{color.alias.success.9}"}
+        },
+        "error": {
+          "primary": {"$value": "{color.alias.error.1}"},
+          "secondary": {
+            "default": {"$value": "{color.alias.error.7}"},
+            "hover": {"$value": "{color.alias.error.8}"},
+            "active": {"$value": "{color.alias.error.9}"}
+          }
+        },
+        "warning": {
+          "primary": {"$value": "{color.alias.warning.1}"},
+          "secondary": {"$value": "{color.alias.warning.7}"}
+        },
+        "info": {
+          "primary": {"$value": "{color.alias.info.1}"},
+          "secondary": {"$value": "{color.alias.info.7}"}
+        },
+        "skeleton": {
+          "base": {"$value": "{color.alias.neutral.2}"},
+          "highlight": {"$value": "{color.alias.neutral.1}"}
+        }
+      },
+      "text": {
+        "$description": "Заголовки, основной и вспомогательный текст, подписи, ссылки и статусные сообщения на проверенном фоне.",
+        "primary": {
+          "default": {"$value": "{color.alias.neutral.9}"},
+          "disabled": {"$value": "{color.alias.neutral.4}"},
+          "selected": {"$value": "{color.alias.neutral.10}"}
+        },
+        "secondary": {
+          "default": {"$value": "{color.alias.neutral.8}"},
+          "selected": {"$value": "{color.alias.neutral.8}"}
+        },
+        "tertiary": {
+          "default": {"$value": "{color.alias.neutral.7}"}
+        },
+        "brand": {
+          "default": {"$value": "{color.alias.brand.8}"},
+          "hover": {"$value": "{color.alias.brand.9}"},
+          "active": {"$value": "{color.alias.brand.10}"},
+          "disabled": {"$value": "{color.alias.brand.4}"}
+        },
+        "inverse": {
+          "default": {"$value": "{color.alias.neutral.0}"}
+        },
+        "success": {"$value": "{color.alias.success.8}"},
+        "error": {"$value": "{color.alias.error.8}"},
+        "warning": {"$value": "{color.alias.warning.8}"},
+        "info": {"$value": "{color.alias.info.8}"}
+      },
+      "icon": {
+        "$description": "Самостоятельные, управляющие и статусные иконки; рядом с текстом иконка использует ту же смысловую роль.",
+        "primary": {
+          "default": {"$value": "{color.alias.neutral.9}"},
+          "disabled": {"$value": "{color.alias.neutral.4}"},
+          "selected": {"$value": "{color.alias.neutral.10}"}
+        },
+        "secondary": {
+          "default": {"$value": "{color.alias.neutral.8}"},
+          "selected": {"$value": "{color.alias.neutral.8}"}
+        },
+        "tertiary": {
+          "default": {"$value": "{color.alias.neutral.6}"}
+        },
+        "brand": {
+          "default": {"$value": "{color.alias.brand.8}"},
+          "hover": {"$value": "{color.alias.brand.9}"},
+          "active": {"$value": "{color.alias.brand.10}"},
+          "disabled": {"$value": "{color.alias.brand.4}"}
+        },
+        "inverse": {
+          "default": {"$value": "{color.alias.neutral.0}"}
+        },
+        "success": {"$value": "{color.alias.success.8}"},
+        "successInverse": {"$value": "{color.alias.success.2}"},
+        "error": {"$value": "{color.alias.error.8}"},
+        "warning": {"$value": "{color.alias.warning.8}"},
+        "info": {"$value": "{color.alias.info.8}"}
+      },
+      "border": {
+        "$description": "Границы карточек, полей и элементов управления, разделители, фокусное кольцо и статусные контуры.",
+        "primary": {
+          "default": {"$value": "{color.alias.neutral.1}"},
+          "hover": {"$value": "{color.alias.neutral.4}"},
+          "active": {"$value": "{color.alias.neutral.6}"},
+          "disabled": {"$value": "{color.alias.neutral.2}"}
+        },
+        "secondary": {
+          "default": {"$value": "{color.alias.neutral.2}"},
+          "hover": {"$value": "{color.alias.neutral.3}"},
+          "active": {"$value": "{color.alias.neutral.4}"}
+        },
+        "tertiary": {
+          "default": {"$value": "{color.alias.neutral.3}"}
+        },
+        "brand": {
+          "default": {"$value": "{color.alias.brand.7}"},
+          "hover": {"$value": "{color.alias.brand.8}"},
+          "active": {"$value": "{color.alias.brand.9}"},
+          "disabled": {"$value": "{color.alias.brand.3}"},
+          "selected": {"$value": "{color.alias.brand.8}"}
+        },
+        "inverse": {
+          "default": {"$value": "{color.alias.neutral.1}"},
+          "disabled": {"$value": "{color.alias.neutral.3}"}
+        },
+        "success": {"$value": "{color.alias.success.7}"},
+        "error": {"$value": "{color.alias.error.7}"},
+        "warning": {"$value": "{color.alias.warning.7}"},
+        "info": {"$value": "{color.alias.info.7}"},
+        "focus": {
+          "inverse": {"$value": "{color.alias.brand.3}"}
+        }
+      },
+      "overlay": {
+        "$description": "Слои hover, active и selected, scrim, backdrop и skeleton поверх уже заданного фона.",
+        "transparent": {"$value": "{color.alias.overlay.transparent}"},
+        "hover": {"$value": "{color.alias.overlay.hover}"},
+        "active": {"$value": "{color.alias.overlay.active}"},
+        "selected": {"$value": "{color.alias.overlay.selected}"},
+        "disabled": {"$value": "{color.alias.overlay.disabled}"},
+        "scrim": {"$value": "{color.alias.overlay.scrim}"},
+        "backdrop": {"$value": "{color.alias.overlay.backdrop}"},
+        "skeleton": {
+          "base": {"$value": "{color.alias.overlay.skeletonBase}"},
+          "highlight": {"$value": "{color.alias.overlay.skeletonHighlight}"}
+        }
+      }
+    }
+  }
+}
