@@ -17,7 +17,7 @@ spec.loader.exec_module(consumer)
 
 def bundle(files):
     output = io.BytesIO()
-    manifest = {"repository": consumer.REPOSITORY, "version": "1.0.0", "revision": "a" * 40,
+    manifest = {"schemaVersion": 1, "repository": consumer.REPOSITORY, "version": "1.0.0", "revision": "a" * 40,
                 "files": {name: hashlib.sha256(data).hexdigest() for name, data in files.items()}}
     with zipfile.ZipFile(output, "w") as archive:
         for name, data in files.items():
@@ -27,6 +27,22 @@ def bundle(files):
 
 
 class DistributionTests(unittest.TestCase):
+    def test_api_credentials_are_not_sent_to_release_asset_urls(self):
+        import os
+        with patch.dict(os.environ, {"GH_TOKEN": "ephemeral-test-token"}):
+            with patch.object(consumer, "urlopen", return_value=io.BytesIO(b"ok")) as request:
+                consumer.download("https://api.github.com/repos/" + consumer.REPOSITORY + "/releases/latest")
+                self.assertEqual(request.call_args.args[0].get_header("Authorization"), "Bearer ephemeral-test-token")
+            with patch.object(consumer, "urlopen", return_value=io.BytesIO(b"ok")) as request:
+                consumer.download("https://github.com/" + consumer.REPOSITORY + "/releases/download/v1.0.0/contour-v1.0.0.zip")
+                self.assertIsNone(request.call_args.args[0].get_header("Authorization"))
+
+    def test_version_cannot_inject_an_api_path(self):
+        with patch.object(consumer, "download") as request:
+            with self.assertRaises(ValueError):
+                consumer.release("../../another-repository")
+            request.assert_not_called()
+
     def test_archive_paths_cannot_escape_consumer(self):
         for name in ("../outside.py", "/absolute.py", "design\\outside.py"):
             with self.subTest(name=name), self.assertRaises(ValueError):

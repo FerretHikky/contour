@@ -45,6 +45,8 @@ def download(url: str) -> bytes:
 
 
 def release(version: str | None) -> tuple[str, bytes, str]:
+    if version is not None and not VERSION.fullmatch(version):
+        raise ValueError("Invalid Contour version")
     suffix = "tags/v" + version if version else "latest"
     metadata = json.loads(download("https://api.github.com/repos/" + REPOSITORY + "/releases/" + suffix))
     tag = metadata["tag_name"]
@@ -77,7 +79,9 @@ def read_bundle(data: bytes) -> tuple[dict, dict[str, bytes]]:
             if not entry.is_dir():
                 files[name] = archive.read(entry)
     manifest = json.loads(files.pop("contour-manifest.json"))
-    if manifest["repository"] != REPOSITORY or not VERSION.fullmatch(manifest["version"]):
+    if (manifest.get("schemaVersion") != 1 or manifest["repository"] != REPOSITORY
+            or not VERSION.fullmatch(manifest["version"])
+            or not re.fullmatch(r"[a-f0-9]{40}", manifest["revision"])):
         raise ValueError("Invalid Contour manifest identity")
     if set(files) != set(manifest["files"]):
         raise ValueError("Contour manifest file set mismatch")
@@ -256,6 +260,8 @@ def main() -> int:
         install(profile, args.bundle.read_bytes(), "local-integration-bundle")
     else:
         selected, data, url = release(args.version if args.version else (None if args.update else lock and lock["version"]))
+        if lock and selected == lock["version"] and digest(data) != lock["sha256"] and lock["archive"] != "local-integration-bundle":
+            raise ValueError("Cannot replace an immutable Contour version")
         if lock and selected == lock["version"] and digest(data) == lock["sha256"]:
             print("Contour is already current: " + selected)
             return 0
