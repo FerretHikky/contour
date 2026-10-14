@@ -18,7 +18,7 @@ prefixes = ("design/", "docs/design-system/", "tests/test_design_system_core")
 names = subprocess.check_output(["git", "ls-files", "-z"], cwd=ROOT).decode().split("\0")
 files = {}
 for name in sorted(names):
-    if not name or not (name.startswith(prefixes) or name in ("package.json", "contour.css", "README.md")):
+    if not name or not (name.startswith(prefixes) or name in ("package.json", "contour.css", "README.md", "docs/phone-field.md")):
         continue
     if any(part in ("node_modules", ".env", ".git", "__pycache__") for part in Path(name).parts):
         raise SystemExit("Unexpected release path: " + name)

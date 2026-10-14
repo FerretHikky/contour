@@ -92,7 +92,19 @@ def read_bundle(data: bytes) -> tuple[dict, dict[str, bytes]]:
     return manifest, files
 
 
+PHONE_FILES = frozenset({
+    "design/design-system/web/phone-field.js",
+    "design/design-system/web/phone-field.css",
+    "design/design-system/web/licenses/libphonenumber-js.txt",
+    "design/design-system/web/licenses/libphonenumber-metadata.txt",
+    "design/design-system/web/licenses/country-flag-icons.txt",
+})
+
+
 def projected(profile: str, sources: dict[str, bytes]) -> dict[str, bytes]:
+    present = PHONE_FILES.intersection(sources)
+    if present and present != PHONE_FILES:
+        raise ValueError("Incomplete Contour phone bundle")
     result = {}
     if profile == "reflower":
         prefixes = ("design/design-system/", "design/icons/", "design/brand/colors/",
@@ -104,6 +116,11 @@ def projected(profile: str, sources: dict[str, bytes]) -> dict[str, bytes]:
         direct = {
             "design/design-system/generated/web/core-ui.css": "design-system/core-ui.css",
             "design/design-system/web/core-ui.js": "design-system/core-ui.js",
+            "design/design-system/web/phone-field.js": "design-system/phone-field.js",
+            "design/design-system/web/phone-field.css": "design-system/phone-field.css",
+            "design/design-system/web/licenses/libphonenumber-js.txt": "design-system/licenses/libphonenumber-js.txt",
+            "design/design-system/web/licenses/libphonenumber-metadata.txt": "design-system/licenses/libphonenumber-metadata.txt",
+            "design/design-system/web/licenses/country-flag-icons.txt": "design-system/licenses/country-flag-icons.txt",
             "design/design-system/web/icon-glyphs.js": "design-system/icon-glyphs.js",
             "design/brand/colors/tokens.css": "brand/colors/tokens.css",
             "design/brand/foundations/tokens.css": "brand/foundations/tokens.css",
@@ -114,7 +131,10 @@ def projected(profile: str, sources: dict[str, bytes]) -> dict[str, bytes]:
             if not (ROOT / "services" / service).is_dir():
                 continue
             for name, destination in direct.items():
-                result[base + destination] = sources[name]
+                if name in sources:
+                    result[base + destination] = sources[name]
+                elif name not in PHONE_FILES:
+                    raise ValueError("Missing required Contour file: " + name)
             for name, content in sources.items():
                 if name.startswith("design/design-system/web/icon-data/"):
                     result[base + "design-system/icon-data/" + PurePosixPath(name).name] = content
@@ -125,13 +145,21 @@ def projected(profile: str, sources: dict[str, bytes]) -> dict[str, bytes]:
         direct = {
             "design/design-system/generated/web/core-ui.css": "design-system/core-ui.css",
             "design/design-system/web/core-ui.js": "design-system/core-ui.js",
+            "design/design-system/web/phone-field.js": "design-system/phone-field.js",
+            "design/design-system/web/phone-field.css": "design-system/phone-field.css",
+            "design/design-system/web/licenses/libphonenumber-js.txt": "design-system/licenses/libphonenumber-js.txt",
+            "design/design-system/web/licenses/libphonenumber-metadata.txt": "design-system/licenses/libphonenumber-metadata.txt",
+            "design/design-system/web/licenses/country-flag-icons.txt": "design-system/licenses/country-flag-icons.txt",
             "design/design-system/web/icon-glyphs.js": "design-system/icon-glyphs.js",
             "design/brand/colors/tokens.css": "brand/colors/tokens.css",
             "design/brand/foundations/tokens.css": "brand/foundations/tokens.css",
             "design/brand/typography/typography.css": "brand/typography/typography.css",
         }
         for name, destination in direct.items():
-            result[target + destination] = sources[name]
+            if name in sources:
+                result[target + destination] = sources[name]
+            elif name not in PHONE_FILES:
+                raise ValueError("Missing required Contour file: " + name)
         for name, content in sources.items():
             if name.startswith("design/design-system/web/icon-data/"):
                 result[target + "design-system/icon-data/" + PurePosixPath(name).name] = content

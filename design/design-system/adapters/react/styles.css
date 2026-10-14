@@ -885,6 +885,16 @@ button.rf-banner:is(:focus-visible,[data-state="focused"]){outline:var(--rf-bord
 .rf-bottom-sheet__hint{text-align:center}
 .rf-bottom-sheet__hint:empty{display:none}
 
+/* Full-screen dialog composition: the same slots, with a centered reading width. */
+.rf-dialog--screen{position:fixed;inset:var(--rf-spacing-0);width:100%;height:100dvh;max-width:none;max-height:none;margin:var(--rf-spacing-0);border:var(--rf-border-width-none);border-radius:var(--rf-radius-none);overflow:hidden}
+.rf-dialog__frame{width:min(100%,var(--rf-spacing-480));height:100%;margin-inline:auto;display:flex;flex-direction:column;padding-inline:var(--rf-spacing-16);padding-block-start:env(safe-area-inset-top)}
+.rf-dialog--screen .rf-dialog__header{flex:none;align-items:center;padding:var(--rf-spacing-20) var(--rf-spacing-0);border:var(--rf-border-width-none)}
+.rf-dialog--screen .rf-dialog__body{display:block;flex:1;min-height:var(--rf-spacing-0);overflow-y:auto;overscroll-behavior:contain;padding:var(--rf-spacing-0)}
+.rf-dialog--screen .rf-dialog__footer{flex:none;flex-direction:column;padding:var(--rf-spacing-16) var(--rf-spacing-0) max(var(--rf-spacing-16),env(safe-area-inset-bottom));border:var(--rf-border-width-none)}
+.rf-dialog--screen .rf-dialog__footer>.rf-button{width:100%}
+.rf-bottom-sheet{border:var(--rf-border-width-none)}
+.rf-bottom-sheet::backdrop{background:var(--rf-color-context-overlay-backdrop)}
+
 /* Source: design/design-system/web/components/disclosure.css */
 /* Disclosure: Accordion uses native details/summary behavior. */
 .rf-accordion{min-width:0;border-top:var(--rf-border-width-thin) var(--rf-border-style-solid) var(--rf-color-context-border-secondary-default)}

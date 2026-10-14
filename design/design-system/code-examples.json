@@ -34,7 +34,8 @@
       "implementations": {
         "Button": "design/design-system/adapters/react/src/Button.tsx",
         "IconButton": "design/design-system/adapters/react/src/IconButton.tsx",
-        "Icon": "design/design-system/adapters/react/src/Icon.tsx"
+        "Icon": "design/design-system/adapters/react/src/Icon.tsx",
+        "TextField": "design/design-system/adapters/react/src/PhoneField.tsx"
       }
     }
   },
@@ -724,6 +725,22 @@
               "language": "html",
               "languageLabel": "HTML",
               "file": "design/design-system/examples/text-field/date.html"
+            }
+          ]
+        },
+        "phone": {
+          "previewLabel": "Phone",
+          "description": "Телефон со страной, кодом и национальной маской. React-композиция PhoneField использует Core Dropdown; доступные страны и локализованные подписи задаёт продукт.",
+          "targets": [
+            {
+              "platforms": [
+                "web"
+              ],
+              "targetLabel": "React",
+              "adapter": "react",
+              "language": "tsx",
+              "languageLabel": "TSX",
+              "file": "design/design-system/adapters/react/examples/PhoneFieldExample.tsx"
             }
           ]
         }

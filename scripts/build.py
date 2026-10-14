@@ -6,6 +6,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 SYSTEM = ROOT / "design/design-system"
+subprocess.run(["node", "scripts/build-phone.mjs"], cwd=ROOT, check=True)
 for name in ("build_web_runtime.py", "build_iconography.py", "build_tokens.py"):
     subprocess.run([sys.executable, str(SYSTEM / "scripts" / name)], cwd=ROOT, check=True)
 subprocess.run(["pnpm", "--dir", str(SYSTEM / "site"), "run", "build:catalog-runtime"], cwd=ROOT, check=True)

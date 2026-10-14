@@ -139,7 +139,7 @@ class CoreUILibraryTests(unittest.TestCase):
         self,
     ):
         self.assertEqual(self.registry["schemaVersion"], 2)
-        self.assertEqual(self.registry["registryVersion"], "1.17.0")
+        self.assertEqual(self.registry["registryVersion"], "1.18.0")
         governance = self.registry["governance"]
         self.assertEqual(
             governance["lifecycleOrder"],

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "registryVersion": "1.17.0",
+  "registryVersion": "1.18.0",
   "catalogVersions": {
     "foundations/colors": "1.15.1",
     "foundations/dimensions": "2.0.1",
@@ -972,7 +972,8 @@
         "password",
         "price",
         "multiline",
-        "date"
+        "date",
+        "phone"
       ],
       "sizes": [
         "sm",
@@ -1013,7 +1014,7 @@
         "form-reset-reconciles-derived-actions"
       ],
       "platformDifferences": {
-        "web": "Один native input с rf-text-field сохраняет стандартные types, attributes, events и прямой DOM/ref access; Core не ставит начальный focus. Product задаёт назначение: non-auth использует autocomplete=off + data-rf-autofill=off, auth — username/current-password/new-password. Core best-effort подавляет manager/WebKit suggestions, но не подменяет назначение one-time-code; Safari может игнорировать off. Leading Icon не конкурирует с trailing slot. Справа ровно один смысловой элемент: control-owned action (password eye/calendar), затем clear, status Icon или пустой слот. data-rf-input-clear использует системную x и виден только у непустого редактируемого поля во время focus-within; переход клавиатурой на сам action сохраняет его видимость. Очистка отправляет native input/change events и возвращает focus. form.reset пересинхронизирует только derived visibility/type/action state.",
+        "web": "Один native input с rf-text-field сохраняет стандартные types, attributes, events и прямой DOM/ref access; Core не ставит начальный focus. Product задаёт назначение: non-auth использует autocomplete=off + data-rf-autofill=off, auth — username/current-password/new-password. Core best-effort подавляет manager/WebKit suggestions, но не подменяет назначение one-time-code; Safari может игнорировать off. Leading Icon не конкурирует с trailing slot. Справа ровно один смысловой элемент: control-owned action (password eye/calendar), затем clear, status Icon или пустой слот. data-rf-input-clear использует системную x и виден только у непустого редактируемого поля во время focus-within; переход клавиатурой на сам action сохраняет его видимость. Очистка отправляет native input/change events и возвращает focus. form.reset пересинхронизирует только derived visibility/type/action state. React PhoneField — опциональная композиция со страной, маской и форматированием международного номера; контракт описан в docs/phone-field.md. Значение +digits отделено от отображаемых разделителей. Доступные страны задаёт продукт.",
         "telegram-mini-app": "Пилот ProfileSettingsFlow использует rf-text-field для имени и локации с autocomplete=off; при открытии modal flow focus получает не текстовое поле, а не вызывающее экранную клавиатуру действие. WebView keyboard и viewport обрабатывает product adapter.",
         "ios": "Будущий adapter сохраняет назначение и validation contract.",
         "android": "Будущий adapter сохраняет назначение и validation contract."
@@ -1069,6 +1070,20 @@
             "symbols": [
               "data-rf-date-picker",
               "initializeDatePickers"
+            ]
+          },
+          {
+            "platform": "web",
+            "file": "design/design-system/web/components/phone-field.css",
+            "symbols": [
+              ".rf-phone-field"
+            ]
+          },
+          {
+            "platform": "web",
+            "file": "design/design-system/adapters/react/src/PhoneField.tsx",
+            "symbols": [
+              "PhoneField"
             ]
           }
         ],
@@ -2791,7 +2806,8 @@
       "purpose": "Модальное окно для ограниченной задачи, требующей явного завершения или отмены.",
       "variants": [
         "default",
-        "destructive"
+        "destructive",
+        "screen"
       ],
       "sizes": [
         "sm",
@@ -2818,7 +2834,7 @@
         "focus-return"
       ],
       "platformDifferences": {
-        "web": "Experimental reference использует native dialog и возвращает focus opener; полный overlay policy ещё не stable.",
+        "web": "Experimental reference использует native dialog и возвращает focus opener; полный overlay policy ещё не stable. Optional rf-dialog--screen variant uses rf-dialog__frame and the same header/body/footer slots for full-screen flows with centered reading width, scrollable body and safe-area footer.",
         "telegram-mini-app": "Должен учитывать BackButton, viewport и экранную клавиатуру.",
         "ios": "Использует подходящий native sheet/alert/dialog.",
         "android": "Использует подходящий native dialog/sheet."
@@ -2832,7 +2848,9 @@
               ".rf-dialog",
               ".rf-dialog__header",
               ".rf-dialog__body",
-              ".rf-dialog__footer"
+              ".rf-dialog__footer",
+              ".rf-dialog--screen",
+              ".rf-dialog__frame"
             ]
           },
           {

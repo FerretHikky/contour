@@ -15,3 +15,6 @@ export {
   type IconButtonSize,
   type IconButtonVariant,
 } from "./IconButton.js";
+
+export { PhoneField, type PhoneFieldProps } from './PhoneField.js';
+export { phoneDisplay, normalizePhoneInput, phoneDetails, phoneMask } from './phone.js';

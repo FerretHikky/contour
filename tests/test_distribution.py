@@ -27,6 +27,35 @@ def bundle(files):
 
 
 class DistributionTests(unittest.TestCase):
+    def test_phone_bundle_is_optional_but_must_be_complete(self):
+        files = {name: b"core" for name in (
+            "design/design-system/generated/web/core-ui.css",
+            "design/design-system/web/core-ui.js",
+            "design/design-system/web/icon-glyphs.js",
+            "design/brand/colors/tokens.css",
+            "design/brand/foundations/tokens.css",
+            "design/brand/typography/typography.css",
+        )}
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "services/admin").mkdir(parents=True)
+            with patch.object(consumer, "ROOT", root):
+                for profile, base in (
+                    ("lavlio", "design/prototypes/storefront/public/contour/"),
+                    ("reflower", "services/admin/static/"),
+                ):
+                    with self.subTest(profile=profile):
+                        old = consumer.projected(profile, files)
+                        self.assertIn(base + "design-system/core-ui.js", old)
+                        self.assertNotIn(base + "design-system/phone-field.js", old)
+                        for missing in consumer.PHONE_FILES:
+                            partial = files | {name: b"phone" for name in consumer.PHONE_FILES if name != missing}
+                            with self.assertRaisesRegex(ValueError, "Incomplete Contour phone bundle"):
+                                consumer.projected(profile, partial)
+                        full = consumer.projected(profile, files | {name: b"phone" for name in consumer.PHONE_FILES})
+                        self.assertEqual(full[base + "design-system/phone-field.js"], b"phone")
+                        self.assertEqual(full[base + "design-system/licenses/country-flag-icons.txt"], b"phone")
+
     def test_api_credentials_are_not_sent_to_release_asset_urls(self):
         import os
         with patch.dict(os.environ, {"GH_TOKEN": "ephemeral-test-token"}):

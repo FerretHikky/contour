@@ -1575,6 +1575,25 @@ class CoreUIBrowserContractTests(unittest.TestCase):
         self.assertEqual(password_toggle.get_attribute("aria-pressed"), "false")
         self.assertEqual(password_toggle.get_attribute("aria-label"), "Show")
 
+    def test_selection_scroll_stays_inside_listbox(self):
+        page = self.open_catalog()
+        page.locator("main").evaluate("""root => { root.innerHTML = `
+          <div id="outer-scroll" style="width:240px;height:220px;overflow:auto">
+            <div class="rf-dropdown rf-dropdown--anchored" data-rf-dropdown data-rf-dropdown-mode="selection">
+              <button id="scroll-trigger" data-rf-dropdown-trigger>Choose</button>
+              <div id="scroll-list" class="rf-dropdown__panel" role="listbox" hidden style="width:480px;max-width:none;max-height:100px">
+                ${Array.from({length:40}, (_, i) => `<div role="option" class="rf-dropdown__item rf-list-item" data-value="${i}" aria-selected="${i===30}">Option ${i}</div>`).join('')}
+              </div>
+            </div>
+          </div>`; }""")
+        page.locator("#scroll-trigger").click()
+        self.assertGreater(page.locator("#scroll-list").evaluate("e => e.scrollTop"), 0)
+        self.assertEqual(page.locator("#outer-scroll").evaluate("e => [e.scrollLeft,e.scrollTop]"), [0, 0])
+        page.locator("#scroll-list").press("End")
+        self.assertEqual(page.locator("#outer-scroll").evaluate("e => [e.scrollLeft,e.scrollTop]"), [0, 0])
+        page.locator("#scroll-list").press("Escape")
+        self.assertTrue(page.locator("#scroll-list").is_hidden())
+
     def test_date_picker_and_custom_select_interactions(self):
         page = self.open_catalog()
         page.locator("main").evaluate(

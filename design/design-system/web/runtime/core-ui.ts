@@ -677,7 +677,15 @@
     }
     if (option) {
       option.closest('[role="listbox"]').setAttribute("aria-activedescendant", option.id);
-      option.scrollIntoView({ block: "nearest" });
+      // Scroll the listbox only: scrollIntoView also moves outer dialog/page
+      // containers, including horizontally when a wide menu is clipped.
+      var listbox = option.closest('[role="listbox"]');
+      var optionRect = option.getBoundingClientRect();
+      var listRect = listbox.getBoundingClientRect();
+      var visibleTop = listRect.top + listbox.clientTop;
+      var visibleBottom = visibleTop + listbox.clientHeight;
+      if (optionRect.top < visibleTop) listbox.scrollTop += optionRect.top - visibleTop;
+      else if (optionRect.bottom > visibleBottom) listbox.scrollTop += optionRect.bottom - visibleBottom;
     }
   }
 
