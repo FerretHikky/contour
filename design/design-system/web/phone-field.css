@@ -5,7 +5,7 @@
 .rf-phone-field[data-disabled]{opacity:.5}
 .rf-phone-field .rf-phone-field__country{position:static;display:flex;align-self:stretch;flex:none;min-width:0}
 .rf-phone-field .rf-phone-field__country>.rf-dropdown__panel{width:100%;min-width:0;max-width:100%}
-.rf-phone-field .rf-phone-field__country-trigger{display:flex;align-items:center;justify-content:center;gap:var(--rf-spacing-8);width:auto;min-height:var(--rf-spacing-40);padding:var(--rf-spacing-8);border:0;border-radius:var(--rf-radius-full);background:var(--rf-surface-secondary);color:inherit;font:inherit}
+.rf-phone-field .rf-phone-field__country-trigger{display:flex;align-items:center;justify-content:center;gap:var(--rf-spacing-8);width:auto;min-height:var(--rf-spacing-40);padding:var(--rf-spacing-8);border:0;border-radius:var(--rf-radius-full);background:var(--rf-surface-primary);color:inherit;font:inherit}
 .rf-phone-field .rf-phone-field__country-trigger:disabled{opacity:1;cursor:default}
 .rf-phone-field__flag{display:inline-flex;flex:none;width:var(--rf-spacing-24);height:var(--rf-spacing-24);border-radius:50%;overflow:hidden}
 .rf-phone-field__flag svg{width:100%;height:100%;flex:none;object-fit:cover}

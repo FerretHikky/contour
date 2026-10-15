@@ -6,7 +6,7 @@ var __export = (target, all) => {
 };
 
 // design/design-system/adapters/react/src/PhoneField.tsx
-import { forwardRef, useImperativeHandle, useLayoutEffect, useRef, useState } from "react";
+import { forwardRef, useImperativeHandle, useLayoutEffect, useRef, useState, useId } from "react";
 
 // node_modules/.pnpm/country-flag-icons@1.6.20/node_modules/country-flag-icons/react/1x1/index.js
 var x1_exports = {};
@@ -11190,6 +11190,7 @@ var allCountries = getCountries2();
 var PhoneField = forwardRef(function PhoneField2({ value, onValueChange, label, countryLabel, clearLabel, invalidMessage, defaultCountry = "US", countries = allCountries, locale = "en", id, disabled, readOnly, required, ...props }, ref) {
   if (!countries.length || !countries.includes(defaultCountry)) throw new Error("PhoneField needs an allowed defaultCountry");
   const [focused, setFocused] = useState(false);
+  const errorId = useId(), [validationError, setValidationError] = useState("");
   const [within, setWithin] = useState(false);
   const countryInput = useRef(null);
   const [selected, setSelected] = useState(defaultCountry);
@@ -11218,6 +11219,7 @@ var PhoneField = forwardRef(function PhoneField2({ value, onValueChange, label, 
       const next = node.value;
       if (!countries.includes(next)) return;
       setSelected(next);
+      setValidationError("");
       caret.current = null;
       onValueChange("", phoneDetails("", next, countries));
       queueMicrotask(() => input.current?.focus());
@@ -11226,6 +11228,7 @@ var PhoneField = forwardRef(function PhoneField2({ value, onValueChange, label, 
     return () => node.removeEventListener("change", change);
   }, [countries, onValueChange]);
   function update(text, position) {
+    setValidationError("");
     const before = text.slice(0, position).replace(/\D/g, "").length;
     const next = normalizePhoneInput(text, country);
     const nextDetails = phoneDetails(next, country, countries);
@@ -11242,84 +11245,94 @@ var PhoneField = forwardRef(function PhoneField2({ value, onValueChange, label, 
       caret.current = null;
     }
   }
-  return /* @__PURE__ */ jsx("div", { className: "rf-text-field-group", children: /* @__PURE__ */ jsxs("div", { className: "rf-phone-field rf-text-field", onFocusCapture: () => setWithin(true), onBlurCapture: (event) => {
-    if (!event.currentTarget.contains(event.relatedTarget)) setWithin(false);
-  }, "data-disabled": disabled || void 0, "data-invalid": props["aria-invalid"] || void 0, children: [
-    /* @__PURE__ */ jsxs("div", { className: "rf-phone-field__country rf-dropdown rf-dropdown--anchored", "data-rf-dropdown": "", "data-rf-dropdown-mode": "selection", children: [
-      /* @__PURE__ */ jsxs("button", { type: "button", className: "rf-dropdown__trigger rf-phone-field__country-trigger", "data-rf-dropdown-trigger": "", "aria-label": countryLabel + ": " + names.of(country) + " (+" + getCountryCallingCode2(country) + ")", disabled: disabled || readOnly || countries.length === 1, children: [
-        /* @__PURE__ */ jsx("span", { "aria-hidden": "true", className: "rf-phone-field__flag", children: Flag && /* @__PURE__ */ jsx(Flag, {}) }),
-        /* @__PURE__ */ jsxs("span", { className: "rf-phone-field__code", "aria-hidden": "true", children: [
-          "+",
-          getCountryCallingCode2(country)
+  return /* @__PURE__ */ jsxs("div", { className: "rf-text-field-group", children: [
+    /* @__PURE__ */ jsxs("div", { className: "rf-phone-field rf-text-field", onFocusCapture: () => setWithin(true), onBlurCapture: (event) => {
+      if (!event.currentTarget.contains(event.relatedTarget)) setWithin(false);
+    }, "data-disabled": disabled || void 0, "data-invalid": !!validationError || props["aria-invalid"] || void 0, children: [
+      /* @__PURE__ */ jsxs("div", { className: "rf-phone-field__country rf-dropdown rf-dropdown--anchored", "data-rf-dropdown": "", "data-rf-dropdown-mode": "selection", children: [
+        /* @__PURE__ */ jsxs("button", { type: "button", className: "rf-dropdown__trigger rf-phone-field__country-trigger", "data-rf-dropdown-trigger": "", "aria-label": countryLabel + ": " + names.of(country) + " (+" + getCountryCallingCode2(country) + ")", disabled: disabled || readOnly || countries.length === 1, children: [
+          /* @__PURE__ */ jsx("span", { "aria-hidden": "true", className: "rf-phone-field__flag", children: Flag && /* @__PURE__ */ jsx(Flag, {}) }),
+          /* @__PURE__ */ jsxs("span", { className: "rf-phone-field__code", "aria-hidden": "true", children: [
+            "+",
+            getCountryCallingCode2(country)
+          ] }),
+          countries.length > 1 && /* @__PURE__ */ jsx("span", { className: "rf-icon rf-icon--sm", "data-rf-icon-glyph": "chevron-down", "data-rf-dropdown-chevron": "", "aria-hidden": "true" })
         ] }),
-        countries.length > 1 && /* @__PURE__ */ jsx("span", { className: "rf-icon rf-icon--sm", "data-rf-icon-glyph": "chevron-down", "data-rf-dropdown-chevron": "", "aria-hidden": "true" })
+        /* @__PURE__ */ jsx("input", { ref: countryInput, type: "hidden", "data-rf-dropdown-input": "", value: country, readOnly: true }),
+        /* @__PURE__ */ jsx("div", { className: "rf-dropdown__panel", "data-rf-dropdown-panel": "", role: "listbox", "aria-label": countryLabel, hidden: true, children: [...countries].sort((a, b) => (names.of(a) || a).localeCompare(names.of(b) || b, locale)).map((code) => {
+          const OptionFlag = x1_exports[code];
+          return /* @__PURE__ */ jsxs("div", { role: "option", className: "rf-dropdown__item rf-list-item", "data-value": code, "aria-selected": code === country, children: [
+            /* @__PURE__ */ jsx("span", { className: "rf-phone-field__flag", "aria-hidden": "true", children: OptionFlag && /* @__PURE__ */ jsx(OptionFlag, {}) }),
+            /* @__PURE__ */ jsxs("span", { "data-rf-dropdown-label": "", children: [
+              names.of(code),
+              " (+",
+              getCountryCallingCode2(code),
+              ")"
+            ] })
+          ] }, code);
+        }) })
       ] }),
-      /* @__PURE__ */ jsx("input", { ref: countryInput, type: "hidden", "data-rf-dropdown-input": "", value: country, readOnly: true }),
-      /* @__PURE__ */ jsx("div", { className: "rf-dropdown__panel", "data-rf-dropdown-panel": "", role: "listbox", "aria-label": countryLabel, hidden: true, children: [...countries].sort((a, b) => (names.of(a) || a).localeCompare(names.of(b) || b, locale)).map((code) => {
-        const OptionFlag = x1_exports[code];
-        return /* @__PURE__ */ jsxs("div", { role: "option", className: "rf-dropdown__item rf-list-item", "data-value": code, "aria-selected": code === country, children: [
-          /* @__PURE__ */ jsx("span", { className: "rf-phone-field__flag", "aria-hidden": "true", children: OptionFlag && /* @__PURE__ */ jsx(OptionFlag, {}) }),
-          /* @__PURE__ */ jsxs("span", { "data-rf-dropdown-label": "", children: [
-            names.of(code),
-            " (+",
-            getCountryCallingCode2(code),
-            ")"
-          ] })
-        ] }, code);
-      }) })
-    ] }),
-    /* @__PURE__ */ jsx("div", { className: "rf-phone-field__number rf-text-field__control", children: /* @__PURE__ */ jsx(
-      "input",
-      {
-        ...props,
-        id,
-        ref: input,
-        type: "tel",
-        inputMode: "tel",
-        autoComplete: "tel-national",
-        dir: "ltr",
-        className: clearLabel ? "rf-text-field rf-text-field--with-action" : "rf-text-field",
-        placeholder: focused ? nationalMask : label,
-        onFocus: (event) => {
-          setFocused(true);
-          props.onFocus?.(event);
-        },
-        onBlur: (event) => {
-          setFocused(false);
-          props.onBlur?.(event);
-        },
-        disabled,
-        readOnly,
-        required,
-        value: display,
-        "aria-label": label + " (+" + getCountryCallingCode2(country) + ")",
-        "aria-describedby": props["aria-describedby"],
-        onChange: (event) => update(event.target.value, event.target.selectionStart ?? event.target.value.length),
-        onKeyDown: (event) => {
-          props.onKeyDown?.(event);
-          if (event.defaultPrevented || readOnly || disabled || event.altKey || event.ctrlKey || event.metaKey) return;
-          const node = event.currentTarget, a = node.selectionStart ?? 0, b = node.selectionEnd ?? 0;
-          if (a !== b) return;
-          if (event.key === "Backspace" && a > 0 && /[ ()-]/.test(display[a - 1])) {
+      /* @__PURE__ */ jsx("div", { className: "rf-phone-field__number rf-text-field__control", children: /* @__PURE__ */ jsx(
+        "input",
+        {
+          ...props,
+          id,
+          ref: input,
+          type: "tel",
+          inputMode: "tel",
+          autoComplete: "tel-national",
+          dir: "ltr",
+          className: clearLabel ? "rf-text-field rf-text-field--with-action" : "rf-text-field",
+          placeholder: focused ? nationalMask : label,
+          onFocus: (event) => {
+            setFocused(true);
+            props.onFocus?.(event);
+          },
+          onBlur: (event) => {
+            setFocused(false);
+            props.onBlur?.(event);
+          },
+          disabled,
+          readOnly,
+          required,
+          value: display,
+          "aria-label": label + " (+" + getCountryCallingCode2(country) + ")",
+          "aria-invalid": !!validationError || props["aria-invalid"] || void 0,
+          "aria-describedby": [props["aria-describedby"], validationError ? errorId : null].filter(Boolean).join(" ") || void 0,
+          onInvalid: (event) => {
             event.preventDefault();
-            let at = a - 1;
-            while (at > 0 && !/\d/.test(display[at])) at--;
-            update(display.slice(0, at) + display.slice(a), at);
-          } else if (event.key === "Delete" && /[ ()-]/.test(display[a] || "")) {
-            event.preventDefault();
-            let at = a;
-            while (at < display.length && !/\d/.test(display[at])) at++;
-            update(display.slice(0, a) + display.slice(at + 1), a);
+            setValidationError(invalidMessage);
+            props.onInvalid?.(event);
+          },
+          onChange: (event) => update(event.target.value, event.target.selectionStart ?? event.target.value.length),
+          onKeyDown: (event) => {
+            props.onKeyDown?.(event);
+            if (event.defaultPrevented || readOnly || disabled || event.altKey || event.ctrlKey || event.metaKey) return;
+            const node = event.currentTarget, a = node.selectionStart ?? 0, b = node.selectionEnd ?? 0;
+            if (a !== b) return;
+            if (event.key === "Backspace" && a > 0 && /[ ()-]/.test(display[a - 1])) {
+              event.preventDefault();
+              let at = a - 1;
+              while (at > 0 && !/\d/.test(display[at])) at--;
+              update(display.slice(0, at) + display.slice(a), at);
+            } else if (event.key === "Delete" && /[ ()-]/.test(display[a] || "")) {
+              event.preventDefault();
+              let at = a;
+              while (at < display.length && !/\d/.test(display[at])) at++;
+              update(display.slice(0, a) + display.slice(at + 1), a);
+            }
           }
         }
-      }
-    ) }),
-    clearLabel && within && display && !disabled && !readOnly && /* @__PURE__ */ jsx("span", { className: "rf-text-field__action", children: /* @__PURE__ */ jsx("button", { type: "button", className: "rf-text-field__action-trigger", "aria-label": clearLabel, onClick: () => {
-      caret.current = null;
-      onValueChange("", phoneDetails("", country, countries));
-      input.current?.focus();
-    }, children: /* @__PURE__ */ jsx("span", { className: "rf-icon rf-icon--md", "data-rf-icon-glyph": "close", "aria-hidden": "true" }) }) })
-  ] }) });
+      ) }),
+      clearLabel && within && display && !disabled && !readOnly && /* @__PURE__ */ jsx("span", { className: "rf-text-field__action", children: /* @__PURE__ */ jsx("button", { type: "button", className: "rf-text-field__action-trigger", "aria-label": clearLabel, onClick: () => {
+        caret.current = null;
+        setValidationError("");
+        onValueChange("", phoneDetails("", country, countries));
+        input.current?.focus();
+      }, children: /* @__PURE__ */ jsx("span", { className: "rf-icon rf-icon--md", "data-rf-icon-glyph": "close", "aria-hidden": "true" }) }) })
+    ] }),
+    validationError && /* @__PURE__ */ jsx("span", { id: errorId, className: "rf-text-field__error", role: "alert", children: validationError })
+  ] });
 });
 export {
   PhoneField
