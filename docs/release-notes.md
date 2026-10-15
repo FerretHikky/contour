@@ -1,7 +1,5 @@
-# Contour 1.1.0
+# Contour 1.1.1
 
-Adds optional React `PhoneField`, composed from TextField and the Core country Dropdown: round SVG flags, calling code, country-specific national masks, formatted separators, international paste, accessible clear action and localized product-provided labels. Its tinted country control fills the inner field height. The optional bundle includes pinned phone metadata and third-party licenses; ordinary TextField usage is unchanged.
+PhoneField uses the primary surface for the country selector. Invalid required or incomplete numbers display the standard TextField error below the control instead of browser validation popups. Error text is associated through aria-describedby and cleared on editing or changing country. Existing input constraints remain active.
 
-Adds the experimental full-screen Dialog variant with shared header/body/footer anatomy. Country Dropdown navigation scrolls only its listbox, preserving the surrounding form position. The installer accepts releases before PhoneField and rejects incomplete phone bundles.
-
-Validated with generated-asset checks, React type checking, Core browser contracts and phone-formatting tests. Consumer adoption requires a reviewed PR and product checks; this release does not deploy consumers or advance the independently pinned public catalog.
+Consumer adoption remains through an immutable release and reviewed update PR.
